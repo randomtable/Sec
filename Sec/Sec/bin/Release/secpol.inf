@@ -1,0 +1,34 @@
+[Unicode]
+Unicode=yes
+[System Access]
+PasswordHistorySize = 24
+PasswordComplexity = 1
+MinimumPasswordLength = 7
+MaximumPasswordAge = 42
+LockoutBadCount = 0
+ResetLockoutCount = 10
+LockoutDuration = 10
+[Event Audit]
+AuditObjectAccess = 3
+AuditDSAccess = 3
+AuditAccountLogon = 3
+AuditLogonEvents = 3
+AuditSystemEvents = 3
+AuditAccountManage = 3
+AuditPolicyChange = 3
+AuditProcessTracking = 3
+AuditPrivilegeUse = 3
+[Registry Values]
+MACHINE\System\CurrentControlSet\Control\Lsa\SCENoApplyLegacyAuditPolicy=4,0
+[Privilege Rights]
+SeNetworkLogonRight =
+SeServiceLogonRight =
+SeBatchLogonRight =
+SeTakeOwnershipPrivilege =
+SeRemoteShutdownPrivilege =
+SeIncreaseBasePriorityPrivilege =
+SeBackupPrivilege =
+SeLoadDriverPrivilege =
+[Version]
+signature="$CHICAGO$"
+Revision=1

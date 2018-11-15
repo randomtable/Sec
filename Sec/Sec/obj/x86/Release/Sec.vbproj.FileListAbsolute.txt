@@ -1,0 +1,18 @@
+C:\Users\Alessandro Fiori\documents\visual studio 2010\Projects\Sec\Sec\bin\Release\Sec.exe
+C:\Users\Alessandro Fiori\documents\visual studio 2010\Projects\Sec\Sec\bin\Release\Sec.pdb
+C:\Users\Alessandro Fiori\documents\visual studio 2010\Projects\Sec\Sec\bin\Release\Sec.xml
+C:\Users\Alessandro Fiori\documents\visual studio 2010\Projects\Sec\Sec\obj\x86\Release\Sec.Form1.resources
+C:\Users\Alessandro Fiori\documents\visual studio 2010\Projects\Sec\Sec\obj\x86\Release\Sec.Resources.resources
+C:\Users\Alessandro Fiori\documents\visual studio 2010\Projects\Sec\Sec\obj\x86\Release\Sec.vbproj.GenerateResource.Cache
+C:\Users\Alessandro Fiori\documents\visual studio 2010\Projects\Sec\Sec\obj\x86\Release\Sec.exe
+C:\Users\Alessandro Fiori\documents\visual studio 2010\Projects\Sec\Sec\obj\x86\Release\Sec.xml
+C:\Users\Alessandro Fiori\documents\visual studio 2010\Projects\Sec\Sec\obj\x86\Release\Sec.pdb
+C:\Users\Alessandro Fiori\Downloads\Sec\Sec\Sec\obj\x86\Release\Sec.exe
+C:\Users\Alessandro Fiori\Downloads\Sec\Sec\Sec\obj\x86\Release\Sec.xml
+C:\Users\Alessandro Fiori\Downloads\Sec\Sec\Sec\obj\x86\Release\Sec.pdb
+C:\Users\Alessandro Fiori\Downloads\Sec\Sec\Sec\bin\Release\Sec.exe
+C:\Users\Alessandro Fiori\Downloads\Sec\Sec\Sec\bin\Release\Sec.pdb
+C:\Users\Alessandro Fiori\Downloads\Sec\Sec\Sec\bin\Release\Sec.xml
+C:\Users\Alessandro Fiori\Downloads\Sec\Sec\Sec\obj\x86\Release\Sec.Form1.resources
+C:\Users\Alessandro Fiori\Downloads\Sec\Sec\Sec\obj\x86\Release\Sec.Resources.resources
+C:\Users\Alessandro Fiori\Downloads\Sec\Sec\Sec\obj\x86\Release\Sec.vbproj.GenerateResource.Cache
