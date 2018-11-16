@@ -1,4 +1,4 @@
-Translation in progress... :)
+We are translating the entire project in english... Thanks for patience :)
 
 # README (English version):
 
