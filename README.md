@@ -43,7 +43,7 @@ Since this software and these configurations are special, before using it in a p
 
 Let me know what you think, any suggestions / corrections / additions are welcome.
 
-This software does not want to be a solution to all security problems (also because it would be a utopia), but wants to be a piece of the puzzle to help the PA in the security issue, which lately is making a lot of talk.
+This software does not want to be a solution to all security problems (also because it would be a utopia), but wants to be a piece of the puzzle to help users in the security issue, which lately is making a lot of talk.
 
 
 
@@ -86,5 +86,5 @@ Dal momento che questo software e queste configurazioni sono particolari, prima 
 
 Fatemi sapere cosa ne pensate, qualsiasi suggerimento/correzione/integrazione sono ben accette.
 
-Questo software non vuole essere una soluzione a tutti i problemi di sicurezza (anche perchè sarebbe un’utopia), ma vuole essere un pezzo del puzzle per aiutare la PA nel tema della sicurezza, che ultimamente sta facendo molto parlare.
+Questo software non vuole essere una soluzione a tutti i problemi di sicurezza (anche perchè sarebbe un’utopia), ma vuole essere un pezzo del puzzle per aiutare gli utenti nel tema della sicurezza, che ultimamente sta facendo molto parlare.
 
