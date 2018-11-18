@@ -1,0 +1,12 @@
+C:\Users\a\documents\visual studio 2010\Projects\WebSec\WebSec\bin\Debug\WebSec.exe
+C:\Users\a\documents\visual studio 2010\Projects\WebSec\WebSec\bin\Debug\WebSec.pdb
+C:\Users\a\documents\visual studio 2010\Projects\WebSec\WebSec\bin\Debug\WebSec.xml
+C:\Users\a\documents\visual studio 2010\Projects\WebSec\WebSec\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\a\documents\visual studio 2010\Projects\WebSec\WebSec\obj\x86\Debug\WebSec.Form1.resources
+C:\Users\a\documents\visual studio 2010\Projects\WebSec\WebSec\obj\x86\Debug\WebSec.Resources.resources
+C:\Users\a\documents\visual studio 2010\Projects\WebSec\WebSec\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\a\documents\visual studio 2010\Projects\WebSec\WebSec\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\a\documents\visual studio 2010\Projects\WebSec\WebSec\obj\x86\Debug\WebSec.exe
+C:\Users\a\documents\visual studio 2010\Projects\WebSec\WebSec\obj\x86\Debug\WebSec.xml
+C:\Users\a\documents\visual studio 2010\Projects\WebSec\WebSec\obj\x86\Debug\WebSec.pdb
+C:\Users\a\documents\visual studio 2010\Projects\WebSec\WebSec\obj\x86\Debug\WebSec.Rules.resources
