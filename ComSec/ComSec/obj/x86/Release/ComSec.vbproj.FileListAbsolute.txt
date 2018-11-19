@@ -1,0 +1,11 @@
+C:\Users\a\documents\visual studio 2010\Projects\ComSec\ComSec\bin\Release\ComSec.exe
+C:\Users\a\documents\visual studio 2010\Projects\ComSec\ComSec\bin\Release\ComSec.pdb
+C:\Users\a\documents\visual studio 2010\Projects\ComSec\ComSec\bin\Release\ComSec.xml
+C:\Users\a\documents\visual studio 2010\Projects\ComSec\ComSec\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Users\a\documents\visual studio 2010\Projects\ComSec\ComSec\obj\x86\Release\ComSec.Form1.resources
+C:\Users\a\documents\visual studio 2010\Projects\ComSec\ComSec\obj\x86\Release\ComSec.Resources.resources
+C:\Users\a\documents\visual studio 2010\Projects\ComSec\ComSec\obj\x86\Release\GenerateResource.read.1.tlog
+C:\Users\a\documents\visual studio 2010\Projects\ComSec\ComSec\obj\x86\Release\GenerateResource.write.1.tlog
+C:\Users\a\documents\visual studio 2010\Projects\ComSec\ComSec\obj\x86\Release\ComSec.exe
+C:\Users\a\documents\visual studio 2010\Projects\ComSec\ComSec\obj\x86\Release\ComSec.xml
+C:\Users\a\documents\visual studio 2010\Projects\ComSec\ComSec\obj\x86\Release\ComSec.pdb
