@@ -1,4 +1,4 @@
-﻿<%@ Page Language="VB" AutoEventWireup="false" CodeFile="Default.aspx.vb" Inherits="_Default" %>
+﻿<%@ Page Language="VB" AutoEventWireup="false" CodeFile="Registra.aspx.vb" Inherits="Registra" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
@@ -65,21 +65,19 @@
 
       <div class="card mb-3">
           <div class="card-body">
-            <h5 class="card-title border-bottom border-italia">Cassaforte</h5>
+            <h5 class="card-title border-bottom border-italia">Registra Amministratore</h5>
             <div class="row">
               
               <div style="float:none; margin-left:auto; margin-right:auto; text-align:center;">
-              <h1>Benvenuti</h1>
-              <h3>Questa piattaforma ti consente di gestire il tuo mondo con la tua sicurezza.</h3>
-              <h5>Per iniziare, effettua il Login o procedi alla registrazione di un Amministratore.</h5>
+              <p>Questa maschera ti permette di registrare un Amministratore.</p>
               </div>
 
-              <div class="container">
-                  <br />
-  <div class="row">
+            </div>
+
+            <div class="row">
     <div class="col">
 
-    <p>Effettua il Login o procedi alla registrazione:</p>
+    <p>Inserisci indirizzo e-mail e password per la registrazione:</p>
 
     </div>
     </div>
@@ -89,9 +87,9 @@
 
     <div class="col input-group pb-3">
                     <div class="input-group-prepend">
-                      <span class="input-group-text" id="basic-addon1">Username</span>
+                      <span class="input-group-text" id="basic-addon1">Email</span>
                     </div>
-                    <input type="text" class="form-control" placeholder="Inserisci qui il tuo Username" aria-label="Username" aria-describedby="basic-addon1">
+                    <input type="text" class="form-control" placeholder="Inserisci qui il tuo indirizzo email" aria-label="Email" aria-describedby="basic-addon1">
                   </div>
 
     </div>
@@ -114,35 +112,12 @@
     <div class="col">
 
     <div style="float:none; margin-left:auto; margin-right:auto; text-align:center;">
-    <button style="width: 300px;" type="button" class="btn mb-1 btn-primary">Effettua il Login</button>
+    <button style="width: 300px;" type="button" class="btn mb-1 btn-primary">Registrati</button>
     </div>
 
     </div>
     </div>
 
-    <div class="row">
-    <div class="col">
-
-    <div style="float:none; margin-left:auto; margin-right:auto; text-align:center;">
-    <p>Oppure</p>
-    </div>
-
-    </div>
-    </div>
-
-    <div class="row">
-    <div class="col">
-
-    <div style="float:none; margin-left:auto; margin-right:auto; text-align:center;">
-<asp:Button ID="Button1" runat="server" Text="Registra un Amministratore" style="width: 300px;" type="button" class="btn mb-1 btn-secondary"></asp:Button>
-    </div>
-
-    </div>
-    </div>
-
-    </div>
-            
-            </div>
           </div>
         </div>
 
