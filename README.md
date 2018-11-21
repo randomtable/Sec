@@ -1,5 +1,8 @@
 We are translating the entire project in english... Thanks for patience :)
 
+I am developing the new project "Cassaforte", for a complete distributed security platform.
+Take a look, and let me know!
+
 # README (English version):
 
 Welcome,
