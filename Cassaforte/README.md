@@ -7,7 +7,6 @@ Per raggiungere questo, la Piattaforma mette a disposizione:
 
 - Agent: Imposta le configurazioni dei singoli dispositivi e permette di avere sempre traccia da parte degli
   Amministratori di tutte le configurazioni e impostazioni nella propria rete.
-  - L'Agent può eventualmente agire stand-alone.
   
 Questa piattaforma è in progettazione e sviluppo.
 Il progetto mira ad essere una piattaforma utilizzabile in grandi realtà.

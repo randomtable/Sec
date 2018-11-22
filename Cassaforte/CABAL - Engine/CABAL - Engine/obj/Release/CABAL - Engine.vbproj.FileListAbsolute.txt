@@ -1,0 +1,45 @@
+C:\Users\Alessandro Fiori\Desktop\Sviluppo\Maschere PADOVA\TEMP\DLL\CABAL - Engine\CABAL - Engine\bin\Release\CABAL - Engine.dll
+C:\Users\Alessandro Fiori\Desktop\Sviluppo\Maschere PADOVA\TEMP\DLL\CABAL - Engine\CABAL - Engine\bin\Release\CABAL - Engine.pdb
+C:\Users\Alessandro Fiori\Desktop\Sviluppo\Maschere PADOVA\TEMP\DLL\CABAL - Engine\CABAL - Engine\bin\Release\CABAL - Engine.xml
+C:\Users\Alessandro Fiori\Desktop\Sviluppo\Maschere PADOVA\TEMP\DLL\CABAL - Engine\CABAL - Engine\obj\Release\CABAL___Engine.Resources.resources
+C:\Users\Alessandro Fiori\Desktop\Sviluppo\Maschere PADOVA\TEMP\DLL\CABAL - Engine\CABAL - Engine\obj\Release\CABAL - Engine.vbproj.GenerateResource.Cache
+C:\Users\Alessandro Fiori\Desktop\Sviluppo\Maschere PADOVA\TEMP\DLL\CABAL - Engine\CABAL - Engine\obj\Release\CABAL - Engine.dll
+C:\Users\Alessandro Fiori\Desktop\Sviluppo\Maschere PADOVA\TEMP\DLL\CABAL - Engine\CABAL - Engine\obj\Release\CABAL - Engine.xml
+C:\Users\Alessandro Fiori\Desktop\Sviluppo\Maschere PADOVA\TEMP\DLL\CABAL - Engine\CABAL - Engine\obj\Release\CABAL - Engine.pdb
+C:\Users\Alessandro Fiori\Desktop\Sviluppo\Maschere PADOVA\TEMP\DLL\CABAL - Engine\CABAL - Engine\obj\Release\Interop.VBScript_RegExp_55.dll
+C:\Users\Alessandro Fiori\Desktop\Sviluppo\Maschere PADOVA\TEMP\DLL\CABAL - Engine\CABAL - Engine\obj\Release\CABAL - Engine.vbproj.ResolveComReference.cache
+C:\Users\Alessandro Fiori\Desktop\Sviluppo\Maschere PADOVA\TEMP\DLL\CABAL - Engine\CABAL - Engine\bin\Release\ListaCitta.txt
+C:\Users\Alessandro Fiori\Desktop\Sviluppo\Maschere PADOVA\TEMP\DLL\CABAL - Engine\CABAL - Engine\bin\Release\ListaCAP.txt
+C:\Users\Alessandro Fiori\Desktop\Sviluppo\Maschere PADOVA\TEMP\DLL\CABAL - Engine\CABAL - Engine\bin\Release\ListaProvince.txt
+C:\Users\Alessandro Fiori\Desktop\Sviluppo\Maschere PADOVA\TEMP\DLL\CABAL - Engine\CABAL - Engine\bin\Release\ListaNazioni.txt
+C:\Users\Alessandro Fiori\Desktop\Sviluppo\Maschere PADOVA\TEMP\DLL\CABAL - Engine\CABAL - Engine\bin\Release\ListaPrefissi.txt
+C:\Users\Alessandro Fiori\Desktop\Sviluppo\CABAL\CABAL - Engine\CABAL - Engine\bin\Release\ListaCAP.txt
+C:\Users\Alessandro Fiori\Desktop\Sviluppo\CABAL\CABAL - Engine\CABAL - Engine\bin\Release\ListaCitta.txt
+C:\Users\Alessandro Fiori\Desktop\Sviluppo\CABAL\CABAL - Engine\CABAL - Engine\bin\Release\ListaNazioni.txt
+C:\Users\Alessandro Fiori\Desktop\Sviluppo\CABAL\CABAL - Engine\CABAL - Engine\bin\Release\ListaPrefissi.txt
+C:\Users\Alessandro Fiori\Desktop\Sviluppo\CABAL\CABAL - Engine\CABAL - Engine\bin\Release\ListaProvince.txt
+C:\Users\Alessandro Fiori\Desktop\Sviluppo\CABAL\CABAL - Engine\CABAL - Engine\bin\Release\CABAL - Engine.dll
+C:\Users\Alessandro Fiori\Desktop\Sviluppo\CABAL\CABAL - Engine\CABAL - Engine\bin\Release\CABAL - Engine.pdb
+C:\Users\Alessandro Fiori\Desktop\Sviluppo\CABAL\CABAL - Engine\CABAL - Engine\bin\Release\CABAL - Engine.xml
+C:\Users\Alessandro Fiori\Desktop\Sviluppo\CABAL\CABAL - Engine\CABAL - Engine\obj\Release\Interop.VBScript_RegExp_55.dll
+C:\Users\Alessandro Fiori\Desktop\Sviluppo\CABAL\CABAL - Engine\CABAL - Engine\obj\Release\CABAL - Engine.vbproj.ResolveComReference.cache
+C:\Users\Alessandro Fiori\Desktop\Sviluppo\CABAL\CABAL - Engine\CABAL - Engine\obj\Release\CABAL___Engine.Resources.resources
+C:\Users\Alessandro Fiori\Desktop\Sviluppo\CABAL\CABAL - Engine\CABAL - Engine\obj\Release\CABAL - Engine.vbproj.GenerateResource.Cache
+C:\Users\Alessandro Fiori\Desktop\Sviluppo\CABAL\CABAL - Engine\CABAL - Engine\obj\Release\CABAL - Engine.dll
+C:\Users\Alessandro Fiori\Desktop\Sviluppo\CABAL\CABAL - Engine\CABAL - Engine\obj\Release\CABAL - Engine.xml
+C:\Users\Alessandro Fiori\Desktop\Sviluppo\CABAL\CABAL - Engine\CABAL - Engine\obj\Release\CABAL - Engine.pdb
+C:\Users\Alessandro Fiori\Desktop\Nuovo Sviluppo\Cassaforte\CABAL - Engine\CABAL - Engine\bin\Release\ListaCAP.txt
+C:\Users\Alessandro Fiori\Desktop\Nuovo Sviluppo\Cassaforte\CABAL - Engine\CABAL - Engine\bin\Release\ListaCitta.txt
+C:\Users\Alessandro Fiori\Desktop\Nuovo Sviluppo\Cassaforte\CABAL - Engine\CABAL - Engine\bin\Release\ListaNazioni.txt
+C:\Users\Alessandro Fiori\Desktop\Nuovo Sviluppo\Cassaforte\CABAL - Engine\CABAL - Engine\bin\Release\ListaPrefissi.txt
+C:\Users\Alessandro Fiori\Desktop\Nuovo Sviluppo\Cassaforte\CABAL - Engine\CABAL - Engine\bin\Release\ListaProvince.txt
+C:\Users\Alessandro Fiori\Desktop\Nuovo Sviluppo\Cassaforte\CABAL - Engine\CABAL - Engine\bin\Release\CABAL - Engine.dll
+C:\Users\Alessandro Fiori\Desktop\Nuovo Sviluppo\Cassaforte\CABAL - Engine\CABAL - Engine\bin\Release\CABAL - Engine.pdb
+C:\Users\Alessandro Fiori\Desktop\Nuovo Sviluppo\Cassaforte\CABAL - Engine\CABAL - Engine\bin\Release\CABAL - Engine.xml
+C:\Users\Alessandro Fiori\Desktop\Nuovo Sviluppo\Cassaforte\CABAL - Engine\CABAL - Engine\obj\Release\Interop.VBScript_RegExp_55.dll
+C:\Users\Alessandro Fiori\Desktop\Nuovo Sviluppo\Cassaforte\CABAL - Engine\CABAL - Engine\obj\Release\CABAL - Engine.vbproj.ResolveComReference.cache
+C:\Users\Alessandro Fiori\Desktop\Nuovo Sviluppo\Cassaforte\CABAL - Engine\CABAL - Engine\obj\Release\CABAL___Engine.Resources.resources
+C:\Users\Alessandro Fiori\Desktop\Nuovo Sviluppo\Cassaforte\CABAL - Engine\CABAL - Engine\obj\Release\CABAL - Engine.vbproj.GenerateResource.Cache
+C:\Users\Alessandro Fiori\Desktop\Nuovo Sviluppo\Cassaforte\CABAL - Engine\CABAL - Engine\obj\Release\CABAL - Engine.dll
+C:\Users\Alessandro Fiori\Desktop\Nuovo Sviluppo\Cassaforte\CABAL - Engine\CABAL - Engine\obj\Release\CABAL - Engine.xml
+C:\Users\Alessandro Fiori\Desktop\Nuovo Sviluppo\Cassaforte\CABAL - Engine\CABAL - Engine\obj\Release\CABAL - Engine.pdb

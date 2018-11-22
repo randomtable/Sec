@@ -1,10 +1,10 @@
-﻿<%@ Page Language="VB" AutoEventWireup="false" CodeFile="Registra.aspx.vb" Inherits="Registra" %>
+﻿<%@ Page Language="VB" AutoEventWireup="false" CodeFile="Risultato.aspx.vb" Inherits="Risultato" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <!-- Required meta tags -->
+<!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -49,7 +49,7 @@
 <body>
     <form id="form1" runat="server">
     <div>
-    
+
     <header class="bg-primary">
       <div class="container text-white pt-4 pb-4">
         <h1>Cassaforte</h1>
@@ -62,67 +62,12 @@
       <section>
 
       <br />
-
-      <div class="card mb-3">
-          <div class="card-body">
-            <h5 class="card-title border-bottom border-italia">Registra Amministratore</h5>
-            <div class="row">
-              
-              <div style="float:none; margin-left:auto; margin-right:auto; text-align:center;">
-              <p>Questa maschera ti permette di registrare un Amministratore.</p>
-              </div>
-
+<div class="alert alert-danger alert-dismissible fade show" role="alert">
+              <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
+              </button>
             </div>
 
-            <div class="row">
-    <div class="col">
-
-    <p>Inserisci indirizzo e-mail e password per la registrazione:</p>
-
-    </div>
-    </div>
-
-    <div class="row">
-    <div class="col">
-
-    <div class="col input-group pb-3">
-                    <div class="input-group-prepend">
-                      <span class="input-group-text" id="basic-addon1">Email</span>
-                    </div>
-<asp:TextBox ID="TextBox1" runat="server" type="text" class="form-control" placeholder="Inserisci qui il tuo indirizzo email" aria-label="Email" aria-describedby="basic-addon1"></asp:TextBox>
-                  </div>
-
-    </div>
-    </div>
-
-    <div class="row">
-    <div class="col">
-
-    <div class="col input-group pb-3">
-                    <div class="input-group-prepend">
-                      <span class="input-group-text" id="Span1">Password</span>
-                    </div>
-<asp:TextBox ID="TextBox2" runat="server" type="password" class="form-control" placeholder="Inserisci qui la tua Password" aria-label="Username" aria-describedby="basic-addon1"></asp:TextBox>
-                  </div>
-
-    </div>
-    </div>
-
-    <div class="row">
-    <div class="col">
-
-    <div style="float:none; margin-left:auto; margin-right:auto; text-align:center;">
-<asp:Button ID="Button1" runat="server" Text="Registra Super Admin" 
-            style="width: 300px;" type="button" class="btn mb-1 btn-primary"></asp:Button>
-    </div>
-
-    </div>
-    </div>
-
-          </div>
-        </div>
-
-      </section>
+    </section>
       </div>
 
     <!-- Optional JavaScript -->
