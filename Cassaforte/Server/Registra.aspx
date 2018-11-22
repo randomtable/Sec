@@ -112,7 +112,8 @@
     <div class="col">
 
     <div style="float:none; margin-left:auto; margin-right:auto; text-align:center;">
-    <button style="width: 300px;" type="button" class="btn mb-1 btn-primary">Registrati</button>
+<asp:Button ID="Button1" runat="server" Text="Registra Super Admin" 
+            style="width: 300px;" type="button" class="btn mb-1 btn-primary"></asp:Button>
     </div>
 
     </div>

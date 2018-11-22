@@ -1,0 +1,9 @@
+C:\Users\Alessandro Fiori\Desktop\Nuovo Sviluppo\Cassaforte\Client\Locker\Locker\bin\Release\Locker.exe
+C:\Users\Alessandro Fiori\Desktop\Nuovo Sviluppo\Cassaforte\Client\Locker\Locker\bin\Release\Locker.pdb
+C:\Users\Alessandro Fiori\Desktop\Nuovo Sviluppo\Cassaforte\Client\Locker\Locker\bin\Release\Locker.xml
+C:\Users\Alessandro Fiori\Desktop\Nuovo Sviluppo\Cassaforte\Client\Locker\Locker\obj\x86\Release\Locker.Form1.resources
+C:\Users\Alessandro Fiori\Desktop\Nuovo Sviluppo\Cassaforte\Client\Locker\Locker\obj\x86\Release\Locker.Resources.resources
+C:\Users\Alessandro Fiori\Desktop\Nuovo Sviluppo\Cassaforte\Client\Locker\Locker\obj\x86\Release\Locker.vbproj.GenerateResource.Cache
+C:\Users\Alessandro Fiori\Desktop\Nuovo Sviluppo\Cassaforte\Client\Locker\Locker\obj\x86\Release\Locker.exe
+C:\Users\Alessandro Fiori\Desktop\Nuovo Sviluppo\Cassaforte\Client\Locker\Locker\obj\x86\Release\Locker.xml
+C:\Users\Alessandro Fiori\Desktop\Nuovo Sviluppo\Cassaforte\Client\Locker\Locker\obj\x86\Release\Locker.pdb
