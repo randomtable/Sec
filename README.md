@@ -38,6 +38,8 @@ https://iase.disa.mil/stigs/Pages/index.aspx
 The "LGPO.exe" tool, can be found here:
 https://blogs.technet.microsoft.com/secguide/2016/01/21/lgpo-exe-local-group-policy-object-utility-v1-0/
 
+AS ALWAYS, TEST IT BEFORE RELEASE ON PRODUCTION SYSTEMS!
+
 Stay safe :)
 
 # Project SCAP (all releases) - Italian Version
@@ -81,8 +83,9 @@ https://iase.disa.mil/stigs/Pages/index.aspx
 Lo strumento "LGPO.exe" può essere trovato qui:
 https://blogs.technet.microsoft.com/secguide/2016/01/21/lgpo-exe-local-group-policy-object-utility-v1-0/
 
-Rimani sicuro! :)
+COME SEMPRE, TESTA PRIMA DI RILASCIARE IN PRODUZIONE!
 
+Rimani sicuro! :)
 
 =======
 We are translating the entire project in english... Thanks for patience :)
