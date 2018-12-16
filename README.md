@@ -1,3 +1,90 @@
+# Project SCAP (all releases) - English Version
+I do not own the rules (released by NIST), nor the tool "LGPO.exe" (released by Microsoft)!
+
+Welcome to my Repository!
+Below you can find old "Sec" Readme, useful if you want to apply USGCB rules.
+
+Since NIST has published the "National Checklist Program" (NCP), and since there are no tools on the web (or maybe i don't found them), i decided to write my own tool.
+
+As i want to simplify the Security Process, this project aims to bring "simplicity" to this complex matter.
+
+The NIST releases a lot of rules, GPOs and configurations for almost all type of devices.
+I decided to start with Windows, since this project is focused on it.
+
+I'll release periodically updated tools that apply latest version of rules from NIST for Windows.
+There are focused rules for IE or SQL Server, i'm implementing it in the near future.
+
+You can find the software in the "SCAP" folders, named by release date (format of version name: "SCAP_YYYY_MM_DD").
+For example, you can find the folder "SCAP_2018_12_16".
+In a "version", you can find the software, NIST rules and Microsoft tool, to release a single folder that contains everything.
+
+You can find the software here:
+https://github.com/randomtable/Sec/tree/master/SCAP_2018_12_16/SCAP/bin/Release
+
+You can apply all rules simple double clicking on "SCAP.exe" and click on the "START" button on the form.
+Restart of System is needed, after rules is applied.
+
+The tool i created, imports all ADMX files and ADML, and through "LGPO.exe" applies GPOs to local System.
+
+Internet connection is not required, so you can easily copy entire folder and apply rules directly to your System Images too.
+
+More information about SCAP and Checklist Program can be found here:
+https://csrc.nist.gov/projects/security-content-automation-protocol/scap-releases/scap-1-3
+https://nvd.nist.gov/ncp/repository
+
+More information about Security Technical Implementation Guide (STIG):
+https://iase.disa.mil/stigs/Pages/index.aspx
+
+The "LGPO.exe" tool, can be found here:
+https://blogs.technet.microsoft.com/secguide/2016/01/21/lgpo-exe-local-group-policy-object-utility-v1-0/
+
+Stay safe :)
+
+# Project SCAP (all releases) - Italian Version
+
+Non possiedo le regole (rilasciate da NIST), né lo strumento "LGPO.exe" (rilasciato da Microsoft)!
+
+Benvenuto nel mio repository!
+Di seguito è possibile trovare il file Leggimi "Sec", utile se si desidera applicare le regole USGCB.
+
+Dal momento che il NIST ha pubblicato il "National Checklist Program" (NCP), e dal momento che non ci sono strumenti sul web (o forse non li ho trovati), ho deciso di scrivere il mio strumento.
+
+Dal momento che voglio semplificare il processo di sicurezza, questo progetto mira a portare "semplicità" a questa complessa questione.
+
+Il NIST rilascia molte regole, GPO e configurazioni per quasi tutti i tipi di dispositivi.
+Ho deciso di iniziare con Windows, poiché questo progetto è focalizzato su di esso.
+
+Rilascerò strumenti periodicamente aggiornati che applicano l'ultima versione di regole da NIST per Windows.
+Ci sono regole focalizzate per IE o SQL Server, le implementerò nel prossimo futuro.
+
+È possibile trovare il software nelle cartelle "SCAP", denominate in base alla data di rilascio (formato del nome della versione: "SCAP_YYYY_MM_DD").
+Ad esempio, puoi trovare la cartella "SCAP_2018_12_16".
+In una "versione", puoi trovare il software, le regole NIST e lo strumento Microsoft, per rilasciare una singola cartella che contiene tutto.
+
+Puoi trovare il software qui:
+https://github.com/randomtable/Sec/tree/master/SCAP_2018_12_16/SCAP/bin/Release
+
+È possibile applicare tutte le regole semplicemente facendo doppio clic su "SCAP.exe" e fare clic sul pulsante "START" sul form.
+È necessario riavviare il sistema, dopo aver applicato le regole.
+
+Lo strumento che ho creato, importa tutti i file ADMX e ADML, e tramite "LGPO.exe" applica gli oggetti Criteri di gruppo al sistema locale.
+
+La connessione Internet non è necessaria, quindi puoi facilmente copiare l'intera cartella e applicare le regole direttamente anche alle immagini di sistema.
+
+Ulteriori informazioni su SCAP e Checklist Program sono disponibili qui:
+https://csrc.nist.gov/projects/security-content-automation-protocol/scap-releases/scap-1-3
+https://nvd.nist.gov/ncp/repository
+
+Ulteriori informazioni sulla Security Technical Implementation Guide (STIG):
+https://iase.disa.mil/stigs/Pages/index.aspx
+
+Lo strumento "LGPO.exe" può essere trovato qui:
+https://blogs.technet.microsoft.com/secguide/2016/01/21/lgpo-exe-local-group-policy-object-utility-v1-0/
+
+Rimani sicuro! :)
+
+
+=======
 We are translating the entire project in english... Thanks for patience :)
 
 I am developing the new project "Cassaforte", for a complete distributed security platform.
