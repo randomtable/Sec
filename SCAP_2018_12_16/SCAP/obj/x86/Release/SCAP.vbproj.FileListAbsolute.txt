@@ -1,0 +1,11 @@
+C:\Users\a\documents\visual studio 2010\Projects\SCAP\SCAP\bin\Release\SCAP.exe
+C:\Users\a\documents\visual studio 2010\Projects\SCAP\SCAP\bin\Release\SCAP.pdb
+C:\Users\a\documents\visual studio 2010\Projects\SCAP\SCAP\bin\Release\SCAP.xml
+C:\Users\a\documents\visual studio 2010\Projects\SCAP\SCAP\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Users\a\documents\visual studio 2010\Projects\SCAP\SCAP\obj\x86\Release\SCAP.Form1.resources
+C:\Users\a\documents\visual studio 2010\Projects\SCAP\SCAP\obj\x86\Release\SCAP.Resources.resources
+C:\Users\a\documents\visual studio 2010\Projects\SCAP\SCAP\obj\x86\Release\GenerateResource.read.1.tlog
+C:\Users\a\documents\visual studio 2010\Projects\SCAP\SCAP\obj\x86\Release\GenerateResource.write.1.tlog
+C:\Users\a\documents\visual studio 2010\Projects\SCAP\SCAP\obj\x86\Release\SCAP.exe
+C:\Users\a\documents\visual studio 2010\Projects\SCAP\SCAP\obj\x86\Release\SCAP.xml
+C:\Users\a\documents\visual studio 2010\Projects\SCAP\SCAP\obj\x86\Release\SCAP.pdb

@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<CHECKLIST>
+    <ASSET>
+        <ROLE>None</ROLE>
+        <ASSET_TYPE>Computing</ASSET_TYPE>
+        <HOST_NAME></HOST_NAME>
+        <HOST_IP></HOST_IP>
+        <HOST_MAC></HOST_MAC>
+        <HOST_GUID></HOST_GUID>
+        <HOST_FQDN></HOST_FQDN>
+        <TECH_AREA></TECH_AREA>
+        <TARGET_KEY></TARGET_KEY>
+        <WEB_OR_DATABASE>false</WEB_OR_DATABASE>
+        <WEB_DB_SITE></WEB_DB_SITE>
+        <WEB_DB_INSTANCE></WEB_DB_INSTANCE>
+    </ASSET>
+    <STIGS>
+        <iSTIG>
+            <STIG_INFO>
+                <SI_DATA>
+                    <SID_NAME>version</SID_NAME>
+                    <SID_DATA>1</SID_DATA>
+                </SI_DATA>
+                <SI_DATA>
+                    <SID_NAME>classification</SID_NAME>
+                    <SID_DATA>UNCLASSIFIED</SID_DATA>
+                </SI_DATA>
+                <SI_DATA>
+                    <SID_NAME>customname</SID_NAME>
+                </SI_DATA>
+                <SI_DATA>
+                    <SID_NAME>stigid</SID_NAME>
+                    <SID_DATA>Microsoft_Lync_2013</SID_DATA>
+                </SI_DATA>
+                <SI_DATA>
+                    <SID_NAME>description</SID_NAME>
+                    <SID_DATA>The Microsoft Lync 2013 Security Technical Implementation Guide (STIG) is published as a tool to improve the security of Department of Defense (DoD) information systems.  Comments or proposed revisions to this document should be sent via e-mail to the following address: disa.stig_spt@mail.mil.</SID_DATA>
+                </SI_DATA>
+                <SI_DATA>
+                    <SID_NAME>filename</SID_NAME>
+                    <SID_DATA>U_MS_Lync_2013_STIG_V1R4_Manual-xccdf.xml</SID_DATA>
+                </SI_DATA>
+                <SI_DATA>
+                    <SID_NAME>releaseinfo</SID_NAME>
+                    <SID_DATA>Release: 4 Benchmark Date: 27 Apr 2018</SID_DATA>
+                </SI_DATA>
+                <SI_DATA>
+                    <SID_NAME>title</SID_NAME>
+                    <SID_DATA>Microsoft Lync 2013 STIG</SID_DATA>
+                </SI_DATA>
+                <SI_DATA>
+                    <SID_NAME>uuid</SID_NAME>
+                    <SID_DATA>a51d6fde-f74f-40a0-a8ae-e8b1939811fe</SID_DATA>
+                </SI_DATA>
+                <SI_DATA>
+                    <SID_NAME>notice</SID_NAME>
+                    <SID_DATA>terms-of-use</SID_DATA>
+                </SI_DATA>
+                <SI_DATA>
+                    <SID_NAME>source</SID_NAME>
+                    <SID_DATA></SID_DATA>
+                </SI_DATA>
+            </STIG_INFO>
+            <VULN>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Vuln_Num</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>V-40776</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Severity</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>medium</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Group_Title</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>DTOO420 - Store user passwords</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Rule_ID</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>SV-52834r1_rule</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Rule_Ver</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>DTOO420</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Rule_Title</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>The ability of Lync to store user passwords must be disabled.</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Vuln_Discuss</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Lync 2013 provides a single, unified client for real-time communications, including voice and video calls, Lync Meetings, presence, instant messaging, and persistent chat. These features require the ability to log into the service with a username and password. The Lync client could potentially be configured to store user passwords locally which would allow it to be susceptible to compromise and to be used maliciously.</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>IA_Controls</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Check_Content</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Verify the policy value for Computer Configuration -&gt; Administrative Templates -&gt; Microsoft Lync 2013 -&gt; Microsoft Lync Feature Policies "Allow storage of user passwords" is set to "Disabled".
+
+Procedure: Use the Windows Registry Editor to navigate to the following key: 
+
+HKLM\Software\Policies\Microsoft\office\15.0\lync
+
+Criteria: If the value savepassword is REG_DWORD = 0, this is not a finding.</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Fix_Text</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Set the policy value for Computer Configuration -&gt; Administrative Templates -&gt; Microsoft Lync 2013 -&gt; Microsoft Lync Feature Policies "Allow storage of user passwords" to "Disabled".</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>False_Positives</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>False_Negatives</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Documentable</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>false</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Mitigations</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Potential_Impact</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Third_Party_Tools</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Mitigation_Control</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Responsibility</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>System Administrator</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Security_Override_Guidance</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Check_Content_Ref</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>M</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Weight</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>10.0</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Class</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Unclass</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>STIGRef</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Microsoft Lync 2013 STIG :: Release: 4 Benchmark Date: 27 Apr 2018</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>TargetKey</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>CCI_REF</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>CCI-000196</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STATUS>NotAFinding</STATUS>
+                <FINDING_DETAILS></FINDING_DETAILS>
+                <COMMENTS></COMMENTS>
+                <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
+                <SEVERITY_JUSTIFICATION></SEVERITY_JUSTIFICATION>
+            </VULN>
+            <VULN>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Vuln_Num</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>V-40777</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Severity</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>medium</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Group_Title</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>DTOO421 - Session Initiation Protocol (SIP) security mode</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Rule_ID</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>SV-52835r1_rule</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Rule_Ver</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>DTOO421</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Rule_Title</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Session Initiation Protocol (SIP) security mode must be configured.</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Vuln_Discuss</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Lync 2013 provides a single, unified client for real-time communications, including voice and video calls, Lync Meetings, presence, instant messaging, and persistent chat, using the Session Initiation Protocol (SIP). SIP is widely used for controlling multimedia communication sessions, such as voice and video calls over Internet Protocol (IP) networks. By using TLS it would render a sniff/man in the middle attack very difficult to impossible to achieve within the time period in which a given conversation could be attacked. TLS authenticates all parties and encrypts all traffic. This does not prevent listening over the wire, but the attacker cannot read the traffic unless the encryption is broken.</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>IA_Controls</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Check_Content</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Verify the policy value for Computer Configuration -&gt; Administrative Templates -&gt; Microsoft Lync 2013 -&gt; Microsoft Lync Feature Policies "Configure SIP security mode" is set to "Enabled".
+
+Procedure: Use the Windows Registry Editor to navigate to the following key: 
+
+HKLM\Software\Policies\Microsoft\office\15.0\lync
+
+Criteria: If the value enablesiphighsecuritymode is REG_DWORD = 1, this is not a finding.</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Fix_Text</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Set the policy value for Computer Configuration -&gt; Administrative Templates -&gt; Microsoft Lync 2013 -&gt; Microsoft Lync Feature Policies "Configure SIP security mode" to "Enabled".</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>False_Positives</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>False_Negatives</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Documentable</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>false</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Mitigations</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Potential_Impact</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Third_Party_Tools</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Mitigation_Control</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Responsibility</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>System Administrator</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Security_Override_Guidance</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Check_Content_Ref</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>M</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Weight</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>10.0</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Class</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Unclass</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>STIGRef</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Microsoft Lync 2013 STIG :: Release: 4 Benchmark Date: 27 Apr 2018</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>TargetKey</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>CCI_REF</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>CCI-001184</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STATUS>NotAFinding</STATUS>
+                <FINDING_DETAILS></FINDING_DETAILS>
+                <COMMENTS></COMMENTS>
+                <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
+                <SEVERITY_JUSTIFICATION></SEVERITY_JUSTIFICATION>
+            </VULN>
+            <VULN>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Vuln_Num</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>V-40778</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Severity</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>medium</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Group_Title</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>DTOO422 - Session Initiation Protocol (SIP)</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Rule_ID</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>SV-52836r2_rule</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Rule_Ver</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>DTOO422</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Rule_Title</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>In the event a secure Session Initiation Protocol (SIP) connection fails, the connection must be restricted from resorting to the unencrypted HTTP.</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Vuln_Discuss</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Lync 2013 provides a single, unified client for real-time communications, including voice and video calls, Lync Meetings, presence, instant messaging, and persistent chat. The Lync client has a fall back option so that, in the event the Lync client cannot make a secure SIP connection to the Lync server, it will fall back to an unencrypted HTTP connection. In that event, all traffic will be unencrypted and in clear text. The configuration must be set to prevent HTTP being used for SIP connections in the event TLS or TCP fail.</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>IA_Controls</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Check_Content</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Verify the policy value for Computer Configuration -&gt; Administrative Templates -&gt; Microsoft Lync 2013 -&gt; Microsoft Lync Feature Policies "Disable HTTP fallback for SIP connection" is set to "Enabled".
+
+Procedure: Use the Windows Registry Editor to navigate to the following key: 
+
+HKLM\Software\Policies\Microsoft\office\15.0\lync
+
+Criteria: If the value disablehttpconnect is REG_DWORD = 1, this is not a finding.</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Fix_Text</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Set the policy value for Computer Configuration -&gt; Administrative Templates -&gt; Microsoft Lync 2013 -&gt; Microsoft Lync Feature Policies "Disable HTTP fallback for SIP connection" to "Enabled".</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>False_Positives</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>False_Negatives</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Documentable</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>false</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Mitigations</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Potential_Impact</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Third_Party_Tools</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Mitigation_Control</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Responsibility</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>System Administrator</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Security_Override_Guidance</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Check_Content_Ref</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>M</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Weight</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>10.0</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Class</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Unclass</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>STIGRef</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Microsoft Lync 2013 STIG :: Release: 4 Benchmark Date: 27 Apr 2018</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>TargetKey</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>CCI_REF</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>CCI-001184</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STATUS>NotAFinding</STATUS>
+                <FINDING_DETAILS></FINDING_DETAILS>
+                <COMMENTS></COMMENTS>
+                <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
+                <SEVERITY_JUSTIFICATION></SEVERITY_JUSTIFICATION>
+            </VULN>
+        </iSTIG>
+    </STIGS>
+</CHECKLIST>

@@ -1,0 +1,760 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8EB5E4C6-3E81-49CE-A839-D5FEBA4F15D1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>SCAP.My.MyApplication</StartupObject>
+    <RootNamespace>SCAP</RootNamespace>
+    <AssemblyName>SCAP</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>SCAP.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>SCAP.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="LGPO.bat" />
+    <None Include="My Project\app.manifest">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="November 2018 DISA STIG GPO Package\ADMX Templates\Adobe\AcrobatProDCClassic.admx" />
+    <None Include="November 2018 DISA STIG GPO Package\ADMX Templates\Adobe\AcrobatProDCContinuous.admx" />
+    <None Include="November 2018 DISA STIG GPO Package\ADMX Templates\Adobe\en-us\AcrobatProDCClassic.adml" />
+    <None Include="November 2018 DISA STIG GPO Package\ADMX Templates\Adobe\en-us\AcrobatProDCContinuous.adml" />
+    <None Include="November 2018 DISA STIG GPO Package\ADMX Templates\Google\chrome.admx" />
+    <None Include="November 2018 DISA STIG GPO Package\ADMX Templates\Google\en-US\chrome.adml" />
+    <None Include="November 2018 DISA STIG GPO Package\ADMX Templates\Google\en-US\google.adml" />
+    <None Include="November 2018 DISA STIG GPO Package\ADMX Templates\Google\en-US\GoogleUpdate.adml" />
+    <None Include="November 2018 DISA STIG GPO Package\ADMX Templates\Google\google.admx" />
+    <None Include="November 2018 DISA STIG GPO Package\ADMX Templates\Google\GoogleUpdate.admx" />
+    <None Include="November 2018 DISA STIG GPO Package\ADMX Templates\Microsoft\AdmPwd.admx" />
+    <None Include="November 2018 DISA STIG GPO Package\ADMX Templates\Microsoft\en-US\AdmPwd.adml" />
+    <None Include="November 2018 DISA STIG GPO Package\ADMX Templates\Microsoft\en-US\MSS-legacy.adml" />
+    <None Include="November 2018 DISA STIG GPO Package\ADMX Templates\Microsoft\en-US\SecGuide.adml" />
+    <None Include="November 2018 DISA STIG GPO Package\ADMX Templates\Microsoft\MSS-legacy.admx" />
+    <None Include="November 2018 DISA STIG GPO Package\ADMX Templates\Microsoft\SecGuide.admx" />
+    <None Include="November 2018 DISA STIG GPO Package\ADMX Templates\Office 2013\access15.admx" />
+    <None Include="November 2018 DISA STIG GPO Package\ADMX Templates\Office 2013\en-us\access15.adml" />
+    <None Include="November 2018 DISA STIG GPO Package\ADMX Templates\Office 2013\en-us\excel15.adml" />
+    <None Include="November 2018 DISA STIG GPO Package\ADMX Templates\Office 2013\en-us\inf15.adml" />
+    <None Include="November 2018 DISA STIG GPO Package\ADMX Templates\Office 2013\en-us\lync15.adml" />
+    <None Include="November 2018 DISA STIG GPO Package\ADMX Templates\Office 2013\en-us\office15.adml" />
+    <None Include="November 2018 DISA STIG GPO Package\ADMX Templates\Office 2013\en-us\onent15.adml" />
+    <None Include="November 2018 DISA STIG GPO Package\ADMX Templates\Office 2013\en-us\outlk15.adml" />
+    <None Include="November 2018 DISA STIG GPO Package\ADMX Templates\Office 2013\en-us\ppt15.adml" />
+    <None Include="November 2018 DISA STIG GPO Package\ADMX Templates\Office 2013\en-us\proj15.adml" />
+    <None Include="November 2018 DISA STIG GPO Package\ADMX Templates\Office 2013\en-us\pub15.adml" />
+    <None Include="November 2018 DISA STIG GPO Package\ADMX Templates\Office 2013\en-us\spd15.adml" />
+    <None Include="November 2018 DISA STIG GPO Package\ADMX Templates\Office 2013\en-us\visio15.adml" />
+    <None Include="November 2018 DISA STIG GPO Package\ADMX Templates\Office 2013\en-us\word15.adml" />
+    <None Include="November 2018 DISA STIG GPO Package\ADMX Templates\Office 2013\excel15.admx" />
+    <None Include="November 2018 DISA STIG GPO Package\ADMX Templates\Office 2013\inf15.admx" />
+    <None Include="November 2018 DISA STIG GPO Package\ADMX Templates\Office 2013\lync15.admx" />
+    <None Include="November 2018 DISA STIG GPO Package\ADMX Templates\Office 2013\office15.admx" />
+    <None Include="November 2018 DISA STIG GPO Package\ADMX Templates\Office 2013\onent15.admx" />
+    <None Include="November 2018 DISA STIG GPO Package\ADMX Templates\Office 2013\outlk15.admx" />
+    <None Include="November 2018 DISA STIG GPO Package\ADMX Templates\Office 2013\ppt15.admx" />
+    <None Include="November 2018 DISA STIG GPO Package\ADMX Templates\Office 2013\proj15.admx" />
+    <None Include="November 2018 DISA STIG GPO Package\ADMX Templates\Office 2013\pub15.admx" />
+    <None Include="November 2018 DISA STIG GPO Package\ADMX Templates\Office 2013\spd15.admx" />
+    <None Include="November 2018 DISA STIG GPO Package\ADMX Templates\Office 2013\visio15.admx" />
+    <None Include="November 2018 DISA STIG GPO Package\ADMX Templates\Office 2013\word15.admx" />
+    <None Include="November 2018 DISA STIG GPO Package\ADMX Templates\Office 2016\access16.admx" />
+    <None Include="November 2018 DISA STIG GPO Package\ADMX Templates\Office 2016\en-us\access16.adml" />
+    <None Include="November 2018 DISA STIG GPO Package\ADMX Templates\Office 2016\en-us\excel16.adml" />
+    <None Include="November 2018 DISA STIG GPO Package\ADMX Templates\Office 2016\en-us\lync16.adml" />
+    <None Include="November 2018 DISA STIG GPO Package\ADMX Templates\Office 2016\en-us\office16.adml" />
+    <None Include="November 2018 DISA STIG GPO Package\ADMX Templates\Office 2016\en-us\onent16.adml" />
+    <None Include="November 2018 DISA STIG GPO Package\ADMX Templates\Office 2016\en-us\outlk16.adml" />
+    <None Include="November 2018 DISA STIG GPO Package\ADMX Templates\Office 2016\en-us\ppt16.adml" />
+    <None Include="November 2018 DISA STIG GPO Package\ADMX Templates\Office 2016\en-us\proj16.adml" />
+    <None Include="November 2018 DISA STIG GPO Package\ADMX Templates\Office 2016\en-us\pub16.adml" />
+    <None Include="November 2018 DISA STIG GPO Package\ADMX Templates\Office 2016\en-us\visio16.adml" />
+    <None Include="November 2018 DISA STIG GPO Package\ADMX Templates\Office 2016\en-us\word16.adml" />
+    <None Include="November 2018 DISA STIG GPO Package\ADMX Templates\Office 2016\excel16.admx" />
+    <None Include="November 2018 DISA STIG GPO Package\ADMX Templates\Office 2016\lync16.admx" />
+    <None Include="November 2018 DISA STIG GPO Package\ADMX Templates\Office 2016\office16.admx" />
+    <None Include="November 2018 DISA STIG GPO Package\ADMX Templates\Office 2016\onent16.admx" />
+    <None Include="November 2018 DISA STIG GPO Package\ADMX Templates\Office 2016\outlk16.admx" />
+    <None Include="November 2018 DISA STIG GPO Package\ADMX Templates\Office 2016\ppt16.admx" />
+    <None Include="November 2018 DISA STIG GPO Package\ADMX Templates\Office 2016\proj16.admx" />
+    <None Include="November 2018 DISA STIG GPO Package\ADMX Templates\Office 2016\pub16.admx" />
+    <None Include="November 2018 DISA STIG GPO Package\ADMX Templates\Office 2016\visio16.admx" />
+    <None Include="November 2018 DISA STIG GPO Package\ADMX Templates\Office 2016\word16.admx" />
+    <None Include="November 2018 DISA STIG GPO Package\ADMX Templates\OneDrive NextGen\en-US\OneDrive.adml" />
+    <None Include="November 2018 DISA STIG GPO Package\ADMX Templates\OneDrive NextGen\OneDrive.admx" />
+    <None Include="November 2018 DISA STIG GPO Package\Change Log.docx" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Adobe Acrobat Pro DC Classic v1r1\Checklist\DoD Adobe Acrobat Professional DC Classic v1r1.ckl" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Adobe Acrobat Pro DC Classic v1r1\GPOs\{50E9FDAE-7AC9-4FD7-9B5C-C62E2A00E77B}\DomainSysvol\GPO\Machine\comment.cmtx" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Adobe Acrobat Pro DC Classic v1r1\GPOs\{50E9FDAE-7AC9-4FD7-9B5C-C62E2A00E77B}\DomainSysvol\GPO\Machine\registry.pol" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Adobe Acrobat Pro DC Classic v1r1\GPOs\{8D1F29D5-FEB8-4856-90FB-DFA6FC639228}\DomainSysvol\GPO\User\comment.cmtx" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Adobe Acrobat Pro DC Classic v1r1\GPOs\{8D1F29D5-FEB8-4856-90FB-DFA6FC639228}\DomainSysvol\GPO\User\registry.pol" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Adobe Acrobat Pro DC Classic v1r1\WMI Filter\Adobe Acrobat Professional DC Classic.mof" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Adobe Acrobat Pro DC Continuous V1R1\GPOs\{E3003C1B-88BA-459B-8EB9-29BB2CDDE9EE}\DomainSysvol\GPO\User\comment.cmtx" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Adobe Acrobat Pro DC Continuous V1R1\GPOs\{E3003C1B-88BA-459B-8EB9-29BB2CDDE9EE}\DomainSysvol\GPO\User\registry.pol" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Adobe Acrobat Pro DC Continuous V1R1\GPOs\{FDC970C1-39F1-43C3-9622-EA9A9D803BDB}\DomainSysvol\GPO\Machine\comment.cmtx" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Adobe Acrobat Pro DC Continuous V1R1\GPOs\{FDC970C1-39F1-43C3-9622-EA9A9D803BDB}\DomainSysvol\GPO\Machine\registry.pol" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Google Chrome v1r14\Checklist\DoD Google Chrome v1r12.ckl" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Google Chrome v1r14\GPO\{1FB10FC8-55E7-4443-BDC2-9E9ADA43C07E}\DomainSysvol\GPO\Machine\comment.cmtx" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Google Chrome v1r14\GPO\{1FB10FC8-55E7-4443-BDC2-9E9ADA43C07E}\DomainSysvol\GPO\Machine\registry.pol" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Google Chrome v1r14\Report\DoD Google Chrome STIG Computer Deltas.xlsx" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Google Chrome v1r14\WMI Filter\Google Chrome.mof" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Internet Explorer 11 v1r16\GPOs\{C8671D92-73D3-47EA-9128-6F562EE2DB0B}\DomainSysvol\GPO\Machine\comment.cmtx" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Internet Explorer 11 v1r16\GPOs\{C8671D92-73D3-47EA-9128-6F562EE2DB0B}\DomainSysvol\GPO\Machine\registry.pol" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Internet Explorer 11 v1r16\GPOs\{EF166337-6ABD-49FC-B897-58A484870D1D}\DomainSysvol\GPO\User\comment.cmtx" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Internet Explorer 11 v1r16\GPOs\{EF166337-6ABD-49FC-B897-58A484870D1D}\DomainSysvol\GPO\User\registry.pol" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Internet Explorer 11 v1r16\WMI Filter\Internet Explorer 11.mof" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Office System 2013 and Components\Checklist\desktop.ini" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Office System 2013 and Components\Checklist\DoD Access 2013 STIG v1r6.ckl" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Office System 2013 and Components\Checklist\DoD Excel 2013 STIG v1r7.ckl" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Office System 2013 and Components\Checklist\DoD Groove 2013 STIG v1r3.ckl" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Office System 2013 and Components\Checklist\DoD InfoPath 2013 STIG v1r5.ckl" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Office System 2013 and Components\Checklist\DoD Lync 2013 STIG v1r4.ckl" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Office System 2013 and Components\Checklist\DoD Office System 2013 v1r6.ckl" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Office System 2013 and Components\Checklist\DoD OneNote 2013 STIG v1r3.ckl" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Office System 2013 and Components\Checklist\DoD Outlook 2013 STIG v1r12.ckl" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Office System 2013 and Components\Checklist\DoD PowerPoint 2013 STIG v1r6.ckl" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Office System 2013 and Components\Checklist\DoD Project 2013 v1r4.ckl" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Office System 2013 and Components\Checklist\DoD Publisher 2013 STIG v1r5.ckl" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Office System 2013 and Components\Checklist\DoD SharePoint Designer 2013 STIG v1r3.ckl" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Office System 2013 and Components\Checklist\DoD Visio 2013 STIG v1r4.ckl" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Office System 2013 and Components\Checklist\DoD Word 2013 STIG v1r6.ckl" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Office System 2013 and Components\GPOs\{01075AED-59DB-4038-A9E0-14C3035397EE}\DomainSysvol\GPO\User\comment.cmtx" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Office System 2013 and Components\GPOs\{01075AED-59DB-4038-A9E0-14C3035397EE}\DomainSysvol\GPO\User\registry.pol" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Office System 2013 and Components\GPOs\{064ADD40-EE60-45B1-8360-B1B571009ED5}\DomainSysvol\GPO\User\comment.cmtx" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Office System 2013 and Components\GPOs\{064ADD40-EE60-45B1-8360-B1B571009ED5}\DomainSysvol\GPO\User\registry.pol" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Office System 2013 and Components\GPOs\{1EC59F61-2230-4D8C-BF66-FF371B3856F3}\DomainSysvol\GPO\User\comment.cmtx" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Office System 2013 and Components\GPOs\{1EC59F61-2230-4D8C-BF66-FF371B3856F3}\DomainSysvol\GPO\User\registry.pol" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Office System 2013 and Components\GPOs\{3953F2DB-BDAF-4A79-AA00-295202AFCDF6}\DomainSysvol\GPO\User\comment.cmtx" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Office System 2013 and Components\GPOs\{3953F2DB-BDAF-4A79-AA00-295202AFCDF6}\DomainSysvol\GPO\User\registry.pol" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Office System 2013 and Components\GPOs\{55140CB1-DC6B-4446-B4C9-143B18CD169A}\DomainSysvol\GPO\User\comment.cmtx" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Office System 2013 and Components\GPOs\{55140CB1-DC6B-4446-B4C9-143B18CD169A}\DomainSysvol\GPO\User\registry.pol" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Office System 2013 and Components\GPOs\{585A3219-A613-4BE9-B625-5CC0D464EA07}\DomainSysvol\GPO\User\comment.cmtx" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Office System 2013 and Components\GPOs\{585A3219-A613-4BE9-B625-5CC0D464EA07}\DomainSysvol\GPO\User\registry.pol" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Office System 2013 and Components\GPOs\{8D7C8677-1CBF-4E6D-9AB0-604987A15727}\DomainSysvol\GPO\GPO.cmt" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Office System 2013 and Components\GPOs\{8D7C8677-1CBF-4E6D-9AB0-604987A15727}\DomainSysvol\GPO\Machine\comment.cmtx" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Office System 2013 and Components\GPOs\{8D7C8677-1CBF-4E6D-9AB0-604987A15727}\DomainSysvol\GPO\Machine\registry.pol" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Office System 2013 and Components\GPOs\{8D7C8677-1CBF-4E6D-9AB0-604987A15727}\DomainSysvol\GPO\User\comment.cmtx" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Office System 2013 and Components\GPOs\{8D7C8677-1CBF-4E6D-9AB0-604987A15727}\DomainSysvol\GPO\User\registry.pol" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Office System 2013 and Components\GPOs\{8FC2FEC2-5C88-4AF9-97B9-3ABA89BBFB98}\DomainSysvol\GPO\GPO.cmt" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Office System 2013 and Components\GPOs\{8FC2FEC2-5C88-4AF9-97B9-3ABA89BBFB98}\DomainSysvol\GPO\Machine\comment.cmtx" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Office System 2013 and Components\GPOs\{8FC2FEC2-5C88-4AF9-97B9-3ABA89BBFB98}\DomainSysvol\GPO\Machine\registry.pol" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Office System 2013 and Components\GPOs\{8FC2FEC2-5C88-4AF9-97B9-3ABA89BBFB98}\DomainSysvol\GPO\User\comment.cmtx" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Office System 2013 and Components\GPOs\{8FC2FEC2-5C88-4AF9-97B9-3ABA89BBFB98}\DomainSysvol\GPO\User\registry.pol" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Office System 2013 and Components\GPOs\{A73DE41F-D939-4745-B367-E9B8565F3B72}\DomainSysvol\GPO\User\comment.cmtx" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Office System 2013 and Components\GPOs\{A73DE41F-D939-4745-B367-E9B8565F3B72}\DomainSysvol\GPO\User\registry.pol" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Office System 2013 and Components\GPOs\{C0F3729A-76F4-4448-8E16-0DEABEFE201D}\DomainSysvol\GPO\User\comment.cmtx" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Office System 2013 and Components\GPOs\{C0F3729A-76F4-4448-8E16-0DEABEFE201D}\DomainSysvol\GPO\User\registry.pol" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Office System 2013 and Components\GPOs\{C7602FD4-A36E-466F-997E-1AB944770CC7}\DomainSysvol\GPO\GPO.cmt" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Office System 2013 and Components\GPOs\{C7602FD4-A36E-466F-997E-1AB944770CC7}\DomainSysvol\GPO\Machine\comment.cmtx" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Office System 2013 and Components\GPOs\{C7602FD4-A36E-466F-997E-1AB944770CC7}\DomainSysvol\GPO\Machine\registry.pol" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Office System 2013 and Components\GPOs\{C7602FD4-A36E-466F-997E-1AB944770CC7}\DomainSysvol\GPO\User\comment.cmtx" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Office System 2013 and Components\GPOs\{C7602FD4-A36E-466F-997E-1AB944770CC7}\DomainSysvol\GPO\User\registry.pol" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Office System 2013 and Components\GPOs\{F0106EE7-98E3-4235-AEC7-5D03B455508F}\DomainSysvol\GPO\User\comment.cmtx" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Office System 2013 and Components\GPOs\{F0106EE7-98E3-4235-AEC7-5D03B455508F}\DomainSysvol\GPO\User\registry.pol" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Office System 2013 and Components\GPOs\{F2C43CE2-7224-4364-8945-F3B8AC0413E5}\DomainSysvol\GPO\User\comment.cmtx" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Office System 2013 and Components\GPOs\{F2C43CE2-7224-4364-8945-F3B8AC0413E5}\DomainSysvol\GPO\User\registry.pol" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Office System 2013 and Components\WMI Filter\Access 2013.mof" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Office System 2013 and Components\WMI Filter\Excel 2013.mof" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Office System 2013 and Components\WMI Filter\Groove %28OneDrive%29 2013.mof" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Office System 2013 and Components\WMI Filter\InfoPath 2013.mof" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Office System 2013 and Components\WMI Filter\Lync 2013.mof" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Office System 2013 and Components\WMI Filter\Microsoft Office 2013.mof" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Office System 2013 and Components\WMI Filter\Outlook 2013.mof" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Office System 2013 and Components\WMI Filter\PowerPoint 2013.mof" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Office System 2013 and Components\WMI Filter\Project 2013.mof" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Office System 2013 and Components\WMI Filter\Publisher 2013.mof" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Office System 2013 and Components\WMI Filter\Visio 2013.mof" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Office System 2013 and Components\WMI Filter\Word 2013.mof" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Office System 2016 and Components\Checklist\desktop.ini" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Office System 2016 and Components\Checklist\DoD Access 2016 STIG v1r1.ckl" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Office System 2016 and Components\Checklist\DoD Excel 2016 STIG v1r2.ckl" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Office System 2016 and Components\Checklist\DoD Office System 2016 STIG v1r1.ckl" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Office System 2016 and Components\Checklist\DoD OneDrive for Business 2016 STIG v1r2.ckl" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Office System 2016 and Components\Checklist\DoD OneNote 2016 STIG v1r2.ckl" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Office System 2016 and Components\Checklist\DoD Outlook 2016 v1r2.ckl" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Office System 2016 and Components\Checklist\DOD PowerPoint 2016 STIG v1r1.ckl" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Office System 2016 and Components\Checklist\DoD Project 2016 STIG v1r1.ckl" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Office System 2016 and Components\Checklist\DoD Publisher 2016 STIG v1r3.ckl" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Office System 2016 and Components\Checklist\DoD Skype for Business 2016 STIG v1r1.ckl" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Office System 2016 and Components\Checklist\DoD Visio 2016 STIG v1r1.ckl" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Office System 2016 and Components\Checklist\DoD Word 2016 STIG v1r1.ckl" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Office System 2016 and Components\GPOs\{16C8C3FE-5178-4477-97EB-66635C0AF317}\DomainSysvol\GPO\User\comment.cmtx" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Office System 2016 and Components\GPOs\{16C8C3FE-5178-4477-97EB-66635C0AF317}\DomainSysvol\GPO\User\registry.pol" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Office System 2016 and Components\GPOs\{1F9FF067-F802-4113-A304-416F5F30C648}\DomainSysvol\GPO\Machine\comment.cmtx" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Office System 2016 and Components\GPOs\{1F9FF067-F802-4113-A304-416F5F30C648}\DomainSysvol\GPO\Machine\registry.pol" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Office System 2016 and Components\GPOs\{560A259A-9112-439E-AAA1-E1B7CAA7B5FF}\DomainSysvol\GPO\User\comment.cmtx" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Office System 2016 and Components\GPOs\{560A259A-9112-439E-AAA1-E1B7CAA7B5FF}\DomainSysvol\GPO\User\registry.pol" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Office System 2016 and Components\GPOs\{7399DFF7-447B-4316-887A-22101FFB42BB}\DomainSysvol\GPO\User\comment.cmtx" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Office System 2016 and Components\GPOs\{7399DFF7-447B-4316-887A-22101FFB42BB}\DomainSysvol\GPO\User\registry.pol" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Office System 2016 and Components\GPOs\{8255547D-1FD8-4D82-BD26-FEA2F7252888}\DomainSysvol\GPO\User\comment.cmtx" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Office System 2016 and Components\GPOs\{8255547D-1FD8-4D82-BD26-FEA2F7252888}\DomainSysvol\GPO\User\registry.pol" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Office System 2016 and Components\GPOs\{9715CCE4-BD80-4DBA-B8F4-4A3DB1582A09}\DomainSysvol\GPO\Machine\comment.cmtx" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Office System 2016 and Components\GPOs\{9715CCE4-BD80-4DBA-B8F4-4A3DB1582A09}\DomainSysvol\GPO\Machine\registry.pol" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Office System 2016 and Components\GPOs\{A81D179E-B119-463F-B67A-772738B389FC}\DomainSysvol\GPO\User\comment.cmtx" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Office System 2016 and Components\GPOs\{A81D179E-B119-463F-B67A-772738B389FC}\DomainSysvol\GPO\User\registry.pol" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Office System 2016 and Components\GPOs\{AA368E8D-F981-40D9-9C53-7685CE5318BC}\DomainSysvol\GPO\User\comment.cmtx" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Office System 2016 and Components\GPOs\{AA368E8D-F981-40D9-9C53-7685CE5318BC}\DomainSysvol\GPO\User\registry.pol" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Office System 2016 and Components\GPOs\{BA0CE875-D1DB-41DF-A29D-44AC746165C2}\DomainSysvol\GPO\User\comment.cmtx" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Office System 2016 and Components\GPOs\{BA0CE875-D1DB-41DF-A29D-44AC746165C2}\DomainSysvol\GPO\User\registry.pol" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Office System 2016 and Components\GPOs\{E497C6CE-F10F-44B1-A976-0019280C82D2}\DomainSysvol\GPO\User\comment.cmtx" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Office System 2016 and Components\GPOs\{E497C6CE-F10F-44B1-A976-0019280C82D2}\DomainSysvol\GPO\User\registry.pol" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Office System 2016 and Components\GPOs\{E8400E34-D02C-4876-8D49-19F241C8206C}\DomainSysvol\GPO\User\comment.cmtx" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Office System 2016 and Components\GPOs\{E8400E34-D02C-4876-8D49-19F241C8206C}\DomainSysvol\GPO\User\registry.pol" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Office System 2016 and Components\GPOs\{F53005B5-CC31-4743-876E-FA0FA64862E3}\DomainSysvol\GPO\Machine\comment.cmtx" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Office System 2016 and Components\GPOs\{F53005B5-CC31-4743-876E-FA0FA64862E3}\DomainSysvol\GPO\Machine\registry.pol" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Office System 2016 and Components\GPOs\{FC16FE3D-57D0-4D99-8AC5-A22D26D66BF7}\DomainSysvol\GPO\User\comment.cmtx" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Office System 2016 and Components\GPOs\{FC16FE3D-57D0-4D99-8AC5-A22D26D66BF7}\DomainSysvol\GPO\User\registry.pol" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Office System 2016 and Components\WMI Filter\Access 2016.mof" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Office System 2016 and Components\WMI Filter\Excel 2016.mof" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Office System 2016 and Components\WMI Filter\Microsoft Office 2016.mof" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Office System 2016 and Components\WMI Filter\OneDrive for Business 2016.mof" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Office System 2016 and Components\WMI Filter\Outlook 2016.mof" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Office System 2016 and Components\WMI Filter\PowerPoint 2016.mof" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Office System 2016 and Components\WMI Filter\Project 2016.mof" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Office System 2016 and Components\WMI Filter\Publisher 2016.mof" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Office System 2016 and Components\WMI Filter\Skype for Business 2016.mof" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Office System 2016 and Components\WMI Filter\Visio 2016.mof" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Office System 2016 and Components\WMI Filter\Word 2016.mof" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Windows 10 v1r14\GPOs\{AABF948A-F169-4112-A28D-F2C7378695B4}\DomainSysvol\GPO\User\comment.cmtx" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Windows 10 v1r14\GPOs\{AABF948A-F169-4112-A28D-F2C7378695B4}\DomainSysvol\GPO\User\registry.pol" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Windows 10 v1r14\GPOs\{F262651F-C861-4AED-B308-E8384674F81E}\DomainSysvol\GPO\Machine\comment.cmtx" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Windows 10 v1r14\GPOs\{F262651F-C861-4AED-B308-E8384674F81E}\DomainSysvol\GPO\Machine\microsoft\windows nt\Audit\audit.csv" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Windows 10 v1r14\GPOs\{F262651F-C861-4AED-B308-E8384674F81E}\DomainSysvol\GPO\Machine\registry.pol" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Windows 10 v1r14\WMI Filter\Windows 10.mof" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Windows 7 v1r30\Checklist\DoD Windows 7 v1r30.ckl" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Windows 7 v1r30\GPOs\{7238AD29-B0D6-4065-B6E6-17BE6281F3EF}\DomainSysvol\GPO\User\registry.pol" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Windows 7 v1r30\GPOs\{D68DB48F-11DE-48F8-80F3-5B2A0A33BD4F}\DomainSysvol\GPO\GPO.cmt" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Windows 7 v1r30\GPOs\{D68DB48F-11DE-48F8-80F3-5B2A0A33BD4F}\DomainSysvol\GPO\Machine\comment.cmtx" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Windows 7 v1r30\GPOs\{D68DB48F-11DE-48F8-80F3-5B2A0A33BD4F}\DomainSysvol\GPO\Machine\microsoft\windows nt\Audit\audit.csv" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Windows 7 v1r30\GPOs\{D68DB48F-11DE-48F8-80F3-5B2A0A33BD4F}\DomainSysvol\GPO\Machine\registry.pol" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Windows 7 v1r30\WMI Filter\Windows 7.mof" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Windows 8 and 8.1 v1r21\Checklist\DoD Windows 8 and 8.1 v1r21.ckl" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Windows 8 and 8.1 v1r21\GPOs\{3676F25C-F4ED-4F82-9608-FA3D2F2A7029}\DomainSysvol\GPO\User\comment.cmtx" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Windows 8 and 8.1 v1r21\GPOs\{3676F25C-F4ED-4F82-9608-FA3D2F2A7029}\DomainSysvol\GPO\User\registry.pol" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Windows 8 and 8.1 v1r21\GPOs\{C90F20B6-3C33-413F-AF81-50EE47D18F6C}\DomainSysvol\GPO\Machine\comment.cmtx" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Windows 8 and 8.1 v1r21\GPOs\{C90F20B6-3C33-413F-AF81-50EE47D18F6C}\DomainSysvol\GPO\Machine\microsoft\windows nt\Audit\audit.csv" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Windows 8 and 8.1 v1r21\GPOs\{C90F20B6-3C33-413F-AF81-50EE47D18F6C}\DomainSysvol\GPO\Machine\registry.pol" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Windows 8 and 8.1 v1r21\WMI Filter\Windows 8.1.mof" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Windows Defender Antivirus STIG v1r4\Checklist\DoD Windows Defender Antivirus v1r4.ckl" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Windows Defender Antivirus STIG v1r4\GPO\{0AE33879-37EA-4108-8563-458A0E64B1CE}\DomainSysvol\GPO\Machine\comment.cmtx" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Windows Defender Antivirus STIG v1r4\GPO\{0AE33879-37EA-4108-8563-458A0E64B1CE}\DomainSysvol\GPO\Machine\registry.pol" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Windows Defender Antivirus STIG v1r4\WMI Filter\Windows Defender Antivirus.mof" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Windows Firewall v1r7\Checklist\DoD Windows Firewall v1r7.ckl" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Windows Firewall v1r7\GPO\{4C150323-AE6F-4899-B2C8-0FA639FBD94C}\DomainSysvol\GPO\Machine\registry.pol" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Windows Server 2008 R2 MS and DC v1r28\Checklist\DoD Windows Server 2008 R2 DC v1r26.ckl" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Windows Server 2008 R2 MS and DC v1r28\GPOs\{355ECEC4-424C-45AD-9E24-6A1331A62214}\DomainSysvol\GPO\User\registry.pol" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Windows Server 2008 R2 MS and DC v1r28\GPOs\{C4D9C190-DD83-412F-A90F-74641928C914}\DomainSysvol\GPO\GPO.cmt" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Windows Server 2008 R2 MS and DC v1r28\GPOs\{C4D9C190-DD83-412F-A90F-74641928C914}\DomainSysvol\GPO\Machine\comment.cmtx" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Windows Server 2008 R2 MS and DC v1r28\GPOs\{C4D9C190-DD83-412F-A90F-74641928C914}\DomainSysvol\GPO\Machine\microsoft\windows nt\Audit\audit.csv" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Windows Server 2008 R2 MS and DC v1r28\GPOs\{C4D9C190-DD83-412F-A90F-74641928C914}\DomainSysvol\GPO\Machine\registry.pol" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Windows Server 2008 R2 MS and DC v1r28\GPOs\{C92DDE5D-E3A3-483D-A527-BE5707426B34}\DomainSysvol\GPO\User\registry.pol" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Windows Server 2008 R2 MS and DC v1r28\GPOs\{FDC3E033-142C-4AB6-A147-A1902E4E2407}\DomainSysvol\GPO\GPO.cmt" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Windows Server 2008 R2 MS and DC v1r28\GPOs\{FDC3E033-142C-4AB6-A147-A1902E4E2407}\DomainSysvol\GPO\Machine\comment.cmtx" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Windows Server 2008 R2 MS and DC v1r28\GPOs\{FDC3E033-142C-4AB6-A147-A1902E4E2407}\DomainSysvol\GPO\Machine\microsoft\windows nt\Audit\audit.csv" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Windows Server 2008 R2 MS and DC v1r28\GPOs\{FDC3E033-142C-4AB6-A147-A1902E4E2407}\DomainSysvol\GPO\Machine\registry.pol" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Windows Server 2008 R2 MS and DC v1r28\WMI Filter\Windows Server 2008 R2 Domain Controller.mof" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Windows Server 2008 R2 MS and DC v1r28\WMI Filter\Windows Server 2008 R2 Member Server.mof" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Windows Server 2012 R2 MS and DC v2r14\GPOs\{0537A302-FBC2-4C43-A0C3-045419A1F221}\DomainSysvol\GPO\User\comment.cmtx" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Windows Server 2012 R2 MS and DC v2r14\GPOs\{0537A302-FBC2-4C43-A0C3-045419A1F221}\DomainSysvol\GPO\User\registry.pol" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Windows Server 2012 R2 MS and DC v2r14\GPOs\{B9379DEB-619C-4313-A9EE-8F899928D4EF}\DomainSysvol\GPO\User\comment.cmtx" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Windows Server 2012 R2 MS and DC v2r14\GPOs\{B9379DEB-619C-4313-A9EE-8F899928D4EF}\DomainSysvol\GPO\User\registry.pol" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Windows Server 2012 R2 MS and DC v2r14\GPOs\{DAF7CEC7-3321-4455-A007-A495EF54B03D}\DomainSysvol\GPO\Machine\comment.cmtx" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Windows Server 2012 R2 MS and DC v2r14\GPOs\{DAF7CEC7-3321-4455-A007-A495EF54B03D}\DomainSysvol\GPO\Machine\microsoft\windows nt\Audit\audit.csv" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Windows Server 2012 R2 MS and DC v2r14\GPOs\{DAF7CEC7-3321-4455-A007-A495EF54B03D}\DomainSysvol\GPO\Machine\registry.pol" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Windows Server 2012 R2 MS and DC v2r14\GPOs\{E253CCCA-26B5-4CC7-8863-AC3AADBE5C31}\DomainSysvol\GPO\Machine\comment.cmtx" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Windows Server 2012 R2 MS and DC v2r14\GPOs\{E253CCCA-26B5-4CC7-8863-AC3AADBE5C31}\DomainSysvol\GPO\Machine\microsoft\windows nt\Audit\audit.csv" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Windows Server 2012 R2 MS and DC v2r14\GPOs\{E253CCCA-26B5-4CC7-8863-AC3AADBE5C31}\DomainSysvol\GPO\Machine\registry.pol" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Windows Server 2012 R2 MS and DC v2r14\Reports\DoD Windows Server 2012 R2 DC Deltas.xlsx" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Windows Server 2012 R2 MS and DC v2r14\Reports\DoD Windows Server 2012 R2 MS Deltas.xlsx" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Windows Server 2012 R2 MS and DC v2r14\WMI Filter\Windows Server 2012 R2 Domain Controller.mof" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Windows Server 2012 R2 MS and DC v2r14\WMI Filter\Windows Server 2012 R2 Member Server.mof" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Windows Server 2016 MS and DC v1r6\GPOs\{29A63C78-F00E-45ED-AFA5-882E578BAA1B}\DomainSysvol\GPO\User\comment.cmtx" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Windows Server 2016 MS and DC v1r6\GPOs\{29A63C78-F00E-45ED-AFA5-882E578BAA1B}\DomainSysvol\GPO\User\registry.pol" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Windows Server 2016 MS and DC v1r6\GPOs\{43FD046C-96DA-4AA6-86B1-DD9A1247E7B7}\DomainSysvol\GPO\Machine\comment.cmtx" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Windows Server 2016 MS and DC v1r6\GPOs\{43FD046C-96DA-4AA6-86B1-DD9A1247E7B7}\DomainSysvol\GPO\Machine\microsoft\windows nt\Audit\audit.csv" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Windows Server 2016 MS and DC v1r6\GPOs\{43FD046C-96DA-4AA6-86B1-DD9A1247E7B7}\DomainSysvol\GPO\Machine\registry.pol" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Windows Server 2016 MS and DC v1r6\GPOs\{5D6A8577-2553-49EE-87E7-87C7E3E537D8}\DomainSysvol\GPO\Machine\comment.cmtx" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Windows Server 2016 MS and DC v1r6\GPOs\{5D6A8577-2553-49EE-87E7-87C7E3E537D8}\DomainSysvol\GPO\Machine\microsoft\windows nt\Audit\audit.csv" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Windows Server 2016 MS and DC v1r6\GPOs\{5D6A8577-2553-49EE-87E7-87C7E3E537D8}\DomainSysvol\GPO\Machine\registry.pol" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Windows Server 2016 MS and DC v1r6\GPOs\{FA52D4D4-5C62-4FE5-9D91-2DE0BD3D2DD9}\DomainSysvol\GPO\User\comment.cmtx" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Windows Server 2016 MS and DC v1r6\GPOs\{FA52D4D4-5C62-4FE5-9D91-2DE0BD3D2DD9}\DomainSysvol\GPO\User\registry.pol" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Windows Server 2016 MS and DC v1r6\Reports\DoD Windows Server 2016 DC Deltas.xlsx" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Windows Server 2016 MS and DC v1r6\WMI Filter\Windows Server 2016 Domain Controller.mof" />
+    <None Include="November 2018 DISA STIG GPO Package\DoD Windows Server 2016 MS and DC v1r6\WMI Filter\Windows Server 2016 Member Server.mof" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="LGPO.exe" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Adobe Acrobat Pro DC Classic v1r1\GPOs\manifest.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Adobe Acrobat Pro DC Classic v1r1\GPOs\{50E9FDAE-7AC9-4FD7-9B5C-C62E2A00E77B}\Backup.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Adobe Acrobat Pro DC Classic v1r1\GPOs\{50E9FDAE-7AC9-4FD7-9B5C-C62E2A00E77B}\bkupInfo.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Adobe Acrobat Pro DC Classic v1r1\GPOs\{50E9FDAE-7AC9-4FD7-9B5C-C62E2A00E77B}\gpreport.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Adobe Acrobat Pro DC Classic v1r1\GPOs\{8D1F29D5-FEB8-4856-90FB-DFA6FC639228}\Backup.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Adobe Acrobat Pro DC Classic v1r1\GPOs\{8D1F29D5-FEB8-4856-90FB-DFA6FC639228}\bkupInfo.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Adobe Acrobat Pro DC Classic v1r1\GPOs\{8D1F29D5-FEB8-4856-90FB-DFA6FC639228}\gpreport.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Adobe Acrobat Pro DC Classic v1r1\Reports\DoD Adobe Acrobat Pro DC Classic STIG Computer v1r1.html" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Adobe Acrobat Pro DC Classic v1r1\Reports\DoD Adobe Acrobat Pro DC Classic STIG User v1r1.html" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Adobe Acrobat Pro DC Continuous V1R1\GPOs\manifest.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Adobe Acrobat Pro DC Continuous V1R1\GPOs\{E3003C1B-88BA-459B-8EB9-29BB2CDDE9EE}\Backup.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Adobe Acrobat Pro DC Continuous V1R1\GPOs\{E3003C1B-88BA-459B-8EB9-29BB2CDDE9EE}\bkupInfo.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Adobe Acrobat Pro DC Continuous V1R1\GPOs\{E3003C1B-88BA-459B-8EB9-29BB2CDDE9EE}\gpreport.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Adobe Acrobat Pro DC Continuous V1R1\GPOs\{FDC970C1-39F1-43C3-9622-EA9A9D803BDB}\Backup.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Adobe Acrobat Pro DC Continuous V1R1\GPOs\{FDC970C1-39F1-43C3-9622-EA9A9D803BDB}\bkupInfo.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Adobe Acrobat Pro DC Continuous V1R1\GPOs\{FDC970C1-39F1-43C3-9622-EA9A9D803BDB}\gpreport.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Adobe Acrobat Pro DC Continuous V1R1\Reports\DoD Adobe Acrobat Pro DC Continuous STIG Computer v1r1.html" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Adobe Acrobat Pro DC Continuous V1R1\Reports\DoD Adobe Acrobat Pro DC Continuous STIG User v1r1.html" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Google Chrome v1r14\GPO\manifest.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Google Chrome v1r14\GPO\{1FB10FC8-55E7-4443-BDC2-9E9ADA43C07E}\Backup.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Google Chrome v1r14\GPO\{1FB10FC8-55E7-4443-BDC2-9E9ADA43C07E}\bkupInfo.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Google Chrome v1r14\GPO\{1FB10FC8-55E7-4443-BDC2-9E9ADA43C07E}\DomainSysvol\GPO\Machine\Microsoft\Windows NT\SecEdit\GptTmpl.inf" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Google Chrome v1r14\GPO\{1FB10FC8-55E7-4443-BDC2-9E9ADA43C07E}\gpreport.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Google Chrome v1r14\Report\DoD Google Chrome STIG Computer v1r14.htm" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Internet Explorer 11 v1r16\GPOs\manifest.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Internet Explorer 11 v1r16\GPOs\{C8671D92-73D3-47EA-9128-6F562EE2DB0B}\Backup.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Internet Explorer 11 v1r16\GPOs\{C8671D92-73D3-47EA-9128-6F562EE2DB0B}\bkupInfo.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Internet Explorer 11 v1r16\GPOs\{C8671D92-73D3-47EA-9128-6F562EE2DB0B}\DomainSysvol\GPO\Machine\Microsoft\Windows NT\SecEdit\GptTmpl.inf" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Internet Explorer 11 v1r16\GPOs\{C8671D92-73D3-47EA-9128-6F562EE2DB0B}\gpreport.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Internet Explorer 11 v1r16\GPOs\{EF166337-6ABD-49FC-B897-58A484870D1D}\Backup.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Internet Explorer 11 v1r16\GPOs\{EF166337-6ABD-49FC-B897-58A484870D1D}\bkupInfo.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Internet Explorer 11 v1r16\GPOs\{EF166337-6ABD-49FC-B897-58A484870D1D}\DomainSysvol\GPO\User\Preferences\Registry\Registry.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Internet Explorer 11 v1r16\GPOs\{EF166337-6ABD-49FC-B897-58A484870D1D}\gpreport.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Internet Explorer 11 v1r16\Report\DoD Internet Explorer 11 STIG Computer v1r16.html" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Internet Explorer 11 v1r16\Report\DoD Internet Explorer 11 STIG User v1r16.html" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Office System 2013 and Components\GPOs\manifest.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Office System 2013 and Components\GPOs\{01075AED-59DB-4038-A9E0-14C3035397EE}\Backup.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Office System 2013 and Components\GPOs\{01075AED-59DB-4038-A9E0-14C3035397EE}\bkupInfo.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Office System 2013 and Components\GPOs\{01075AED-59DB-4038-A9E0-14C3035397EE}\gpreport.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Office System 2013 and Components\GPOs\{064ADD40-EE60-45B1-8360-B1B571009ED5}\Backup.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Office System 2013 and Components\GPOs\{064ADD40-EE60-45B1-8360-B1B571009ED5}\bkupInfo.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Office System 2013 and Components\GPOs\{064ADD40-EE60-45B1-8360-B1B571009ED5}\gpreport.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Office System 2013 and Components\GPOs\{1EC59F61-2230-4D8C-BF66-FF371B3856F3}\Backup.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Office System 2013 and Components\GPOs\{1EC59F61-2230-4D8C-BF66-FF371B3856F3}\bkupInfo.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Office System 2013 and Components\GPOs\{1EC59F61-2230-4D8C-BF66-FF371B3856F3}\gpreport.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Office System 2013 and Components\GPOs\{3953F2DB-BDAF-4A79-AA00-295202AFCDF6}\Backup.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Office System 2013 and Components\GPOs\{3953F2DB-BDAF-4A79-AA00-295202AFCDF6}\bkupInfo.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Office System 2013 and Components\GPOs\{3953F2DB-BDAF-4A79-AA00-295202AFCDF6}\gpreport.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Office System 2013 and Components\GPOs\{55140CB1-DC6B-4446-B4C9-143B18CD169A}\Backup.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Office System 2013 and Components\GPOs\{55140CB1-DC6B-4446-B4C9-143B18CD169A}\bkupInfo.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Office System 2013 and Components\GPOs\{55140CB1-DC6B-4446-B4C9-143B18CD169A}\gpreport.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Office System 2013 and Components\GPOs\{585A3219-A613-4BE9-B625-5CC0D464EA07}\Backup.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Office System 2013 and Components\GPOs\{585A3219-A613-4BE9-B625-5CC0D464EA07}\bkupInfo.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Office System 2013 and Components\GPOs\{585A3219-A613-4BE9-B625-5CC0D464EA07}\gpreport.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Office System 2013 and Components\GPOs\{8D7C8677-1CBF-4E6D-9AB0-604987A15727}\Backup.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Office System 2013 and Components\GPOs\{8D7C8677-1CBF-4E6D-9AB0-604987A15727}\bkupInfo.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Office System 2013 and Components\GPOs\{8D7C8677-1CBF-4E6D-9AB0-604987A15727}\gpreport.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Office System 2013 and Components\GPOs\{8FC2FEC2-5C88-4AF9-97B9-3ABA89BBFB98}\Backup.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Office System 2013 and Components\GPOs\{8FC2FEC2-5C88-4AF9-97B9-3ABA89BBFB98}\bkupInfo.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Office System 2013 and Components\GPOs\{8FC2FEC2-5C88-4AF9-97B9-3ABA89BBFB98}\gpreport.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Office System 2013 and Components\GPOs\{A73DE41F-D939-4745-B367-E9B8565F3B72}\Backup.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Office System 2013 and Components\GPOs\{A73DE41F-D939-4745-B367-E9B8565F3B72}\bkupInfo.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Office System 2013 and Components\GPOs\{A73DE41F-D939-4745-B367-E9B8565F3B72}\gpreport.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Office System 2013 and Components\GPOs\{C0F3729A-76F4-4448-8E16-0DEABEFE201D}\Backup.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Office System 2013 and Components\GPOs\{C0F3729A-76F4-4448-8E16-0DEABEFE201D}\bkupInfo.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Office System 2013 and Components\GPOs\{C0F3729A-76F4-4448-8E16-0DEABEFE201D}\gpreport.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Office System 2013 and Components\GPOs\{C7602FD4-A36E-466F-997E-1AB944770CC7}\Backup.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Office System 2013 and Components\GPOs\{C7602FD4-A36E-466F-997E-1AB944770CC7}\bkupInfo.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Office System 2013 and Components\GPOs\{C7602FD4-A36E-466F-997E-1AB944770CC7}\gpreport.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Office System 2013 and Components\GPOs\{F0106EE7-98E3-4235-AEC7-5D03B455508F}\Backup.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Office System 2013 and Components\GPOs\{F0106EE7-98E3-4235-AEC7-5D03B455508F}\bkupInfo.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Office System 2013 and Components\GPOs\{F0106EE7-98E3-4235-AEC7-5D03B455508F}\gpreport.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Office System 2013 and Components\GPOs\{F2C43CE2-7224-4364-8945-F3B8AC0413E5}\Backup.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Office System 2013 and Components\GPOs\{F2C43CE2-7224-4364-8945-F3B8AC0413E5}\bkupInfo.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Office System 2013 and Components\GPOs\{F2C43CE2-7224-4364-8945-F3B8AC0413E5}\gpreport.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Office System 2013 and Components\Reports\DoD Access 2013 STIG User v1r6.html" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Office System 2013 and Components\Reports\DoD Excel 2013 STIG User v1r7.html" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Office System 2013 and Components\Reports\DoD Infopath 2013 STIG Computer v1r5.html" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Office System 2013 and Components\Reports\DoD Infopath 2013 STIG User v1r5.html" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Office System 2013 and Components\Reports\DoD Lync 2013 STIG Computer v1r4.html" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Office System 2013 and Components\Reports\DoD Office System 2013 STIG Computer v1r7.html" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Office System 2013 and Components\Reports\DoD Office System 2013 STIG User v1r7.html" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Office System 2013 and Components\Reports\DoD Outlook 2013 STIG User v1r13.html" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Office System 2013 and Components\Reports\DoD PowerPoint 2013 STIG User v1r6.html" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Office System 2013 and Components\Reports\DoD Project 2013 STIG User v1r4.html" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Office System 2013 and Components\Reports\DoD Publisher 2013 STIG User v1r5.html" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Office System 2013 and Components\Reports\DoD Visio 2013 STIG User v1r4.html" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Office System 2013 and Components\Reports\DoD Word 2013 STIG User v1r6.html" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Office System 2016 and Components\GPOs\manifest.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Office System 2016 and Components\GPOs\{16C8C3FE-5178-4477-97EB-66635C0AF317}\Backup.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Office System 2016 and Components\GPOs\{16C8C3FE-5178-4477-97EB-66635C0AF317}\bkupInfo.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Office System 2016 and Components\GPOs\{16C8C3FE-5178-4477-97EB-66635C0AF317}\gpreport.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Office System 2016 and Components\GPOs\{1F9FF067-F802-4113-A304-416F5F30C648}\Backup.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Office System 2016 and Components\GPOs\{1F9FF067-F802-4113-A304-416F5F30C648}\bkupInfo.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Office System 2016 and Components\GPOs\{1F9FF067-F802-4113-A304-416F5F30C648}\gpreport.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Office System 2016 and Components\GPOs\{560A259A-9112-439E-AAA1-E1B7CAA7B5FF}\Backup.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Office System 2016 and Components\GPOs\{560A259A-9112-439E-AAA1-E1B7CAA7B5FF}\bkupInfo.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Office System 2016 and Components\GPOs\{560A259A-9112-439E-AAA1-E1B7CAA7B5FF}\gpreport.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Office System 2016 and Components\GPOs\{7399DFF7-447B-4316-887A-22101FFB42BB}\Backup.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Office System 2016 and Components\GPOs\{7399DFF7-447B-4316-887A-22101FFB42BB}\bkupInfo.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Office System 2016 and Components\GPOs\{7399DFF7-447B-4316-887A-22101FFB42BB}\gpreport.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Office System 2016 and Components\GPOs\{8255547D-1FD8-4D82-BD26-FEA2F7252888}\Backup.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Office System 2016 and Components\GPOs\{8255547D-1FD8-4D82-BD26-FEA2F7252888}\bkupInfo.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Office System 2016 and Components\GPOs\{8255547D-1FD8-4D82-BD26-FEA2F7252888}\gpreport.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Office System 2016 and Components\GPOs\{9715CCE4-BD80-4DBA-B8F4-4A3DB1582A09}\Backup.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Office System 2016 and Components\GPOs\{9715CCE4-BD80-4DBA-B8F4-4A3DB1582A09}\bkupInfo.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Office System 2016 and Components\GPOs\{9715CCE4-BD80-4DBA-B8F4-4A3DB1582A09}\gpreport.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Office System 2016 and Components\GPOs\{A81D179E-B119-463F-B67A-772738B389FC}\Backup.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Office System 2016 and Components\GPOs\{A81D179E-B119-463F-B67A-772738B389FC}\bkupInfo.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Office System 2016 and Components\GPOs\{A81D179E-B119-463F-B67A-772738B389FC}\gpreport.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Office System 2016 and Components\GPOs\{AA368E8D-F981-40D9-9C53-7685CE5318BC}\Backup.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Office System 2016 and Components\GPOs\{AA368E8D-F981-40D9-9C53-7685CE5318BC}\bkupInfo.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Office System 2016 and Components\GPOs\{AA368E8D-F981-40D9-9C53-7685CE5318BC}\gpreport.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Office System 2016 and Components\GPOs\{BA0CE875-D1DB-41DF-A29D-44AC746165C2}\Backup.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Office System 2016 and Components\GPOs\{BA0CE875-D1DB-41DF-A29D-44AC746165C2}\bkupInfo.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Office System 2016 and Components\GPOs\{BA0CE875-D1DB-41DF-A29D-44AC746165C2}\gpreport.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Office System 2016 and Components\GPOs\{E497C6CE-F10F-44B1-A976-0019280C82D2}\Backup.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Office System 2016 and Components\GPOs\{E497C6CE-F10F-44B1-A976-0019280C82D2}\bkupInfo.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Office System 2016 and Components\GPOs\{E497C6CE-F10F-44B1-A976-0019280C82D2}\gpreport.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Office System 2016 and Components\GPOs\{E8400E34-D02C-4876-8D49-19F241C8206C}\Backup.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Office System 2016 and Components\GPOs\{E8400E34-D02C-4876-8D49-19F241C8206C}\bkupInfo.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Office System 2016 and Components\GPOs\{E8400E34-D02C-4876-8D49-19F241C8206C}\gpreport.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Office System 2016 and Components\GPOs\{F53005B5-CC31-4743-876E-FA0FA64862E3}\Backup.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Office System 2016 and Components\GPOs\{F53005B5-CC31-4743-876E-FA0FA64862E3}\bkupInfo.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Office System 2016 and Components\GPOs\{F53005B5-CC31-4743-876E-FA0FA64862E3}\gpreport.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Office System 2016 and Components\GPOs\{FC16FE3D-57D0-4D99-8AC5-A22D26D66BF7}\Backup.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Office System 2016 and Components\GPOs\{FC16FE3D-57D0-4D99-8AC5-A22D26D66BF7}\bkupInfo.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Office System 2016 and Components\GPOs\{FC16FE3D-57D0-4D99-8AC5-A22D26D66BF7}\gpreport.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Office System 2016 and Components\Reports\DoD Access 2016 STIG User v1r1.html" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Office System 2016 and Components\Reports\DoD Excel 2016 STIG User v1r2.html" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Office System 2016 and Components\Reports\DoD Office System 2016 STIG Computer v1r1.html" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Office System 2016 and Components\Reports\DoD Office System 2016 STIG User v1r1.html" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Office System 2016 and Components\Reports\DoD OneDrive for Business 2016 STIG Computer v1r2.html" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Office System 2016 and Components\Reports\DoD OneDrive for Business 2016 STIG User v1r2.html" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Office System 2016 and Components\Reports\DoD Outlook 2016 STIG User v1r2.html" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Office System 2016 and Components\Reports\DoD PowerPoint 2016 STIG User v1r1.html" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Office System 2016 and Components\Reports\DoD Project 2016 STIG User v1r1.html" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Office System 2016 and Components\Reports\DoD Publisher 2016 STIG User v1r3.html" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Office System 2016 and Components\Reports\DoD Skype for Business 2016 STIG Computer v1r1.html" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Office System 2016 and Components\Reports\DoD Visio 2016 STIG User v1r1.html" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Office System 2016 and Components\Reports\DoD Word 2016 STIG User v1r1.html" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Windows 10 v1r14\GPOs\manifest.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Windows 10 v1r14\GPOs\{AABF948A-F169-4112-A28D-F2C7378695B4}\Backup.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Windows 10 v1r14\GPOs\{AABF948A-F169-4112-A28D-F2C7378695B4}\bkupInfo.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Windows 10 v1r14\GPOs\{AABF948A-F169-4112-A28D-F2C7378695B4}\gpreport.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Windows 10 v1r14\GPOs\{F262651F-C861-4AED-B308-E8384674F81E}\Backup.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Windows 10 v1r14\GPOs\{F262651F-C861-4AED-B308-E8384674F81E}\bkupInfo.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Windows 10 v1r14\GPOs\{F262651F-C861-4AED-B308-E8384674F81E}\DomainSysvol\GPO\Machine\microsoft\windows nt\SecEdit\GptTmpl.inf" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Windows 10 v1r14\GPOs\{F262651F-C861-4AED-B308-E8384674F81E}\gpreport.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Windows 10 v1r14\Reports\DoD Windows 10 STIG Computer v1r14.html" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Windows 10 v1r14\Reports\DoD Windows 10 STIG User v1r14.html" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Windows 10 v1r14\Windows Defender Exploit Protection XML\EP.XML" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Windows 7 v1r30\GPOs\manifest.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Windows 7 v1r30\GPOs\{7238AD29-B0D6-4065-B6E6-17BE6281F3EF}\Backup.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Windows 7 v1r30\GPOs\{7238AD29-B0D6-4065-B6E6-17BE6281F3EF}\bkupInfo.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Windows 7 v1r30\GPOs\{7238AD29-B0D6-4065-B6E6-17BE6281F3EF}\gpreport.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Windows 7 v1r30\GPOs\{D68DB48F-11DE-48F8-80F3-5B2A0A33BD4F}\Backup.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Windows 7 v1r30\GPOs\{D68DB48F-11DE-48F8-80F3-5B2A0A33BD4F}\bkupInfo.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Windows 7 v1r30\GPOs\{D68DB48F-11DE-48F8-80F3-5B2A0A33BD4F}\DomainSysvol\GPO\Machine\microsoft\windows nt\SecEdit\GptTmpl.inf" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Windows 7 v1r30\GPOs\{D68DB48F-11DE-48F8-80F3-5B2A0A33BD4F}\gpreport.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Windows 7 v1r30\Reports\DoD Windows 7 STIG Computer v1r30.htm" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Windows 7 v1r30\Reports\DoD Windows 7 STIG User v1r30.htm" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Windows 8 and 8.1 v1r21\GPOs\manifest.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Windows 8 and 8.1 v1r21\GPOs\{3676F25C-F4ED-4F82-9608-FA3D2F2A7029}\Backup.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Windows 8 and 8.1 v1r21\GPOs\{3676F25C-F4ED-4F82-9608-FA3D2F2A7029}\bkupInfo.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Windows 8 and 8.1 v1r21\GPOs\{3676F25C-F4ED-4F82-9608-FA3D2F2A7029}\gpreport.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Windows 8 and 8.1 v1r21\GPOs\{C90F20B6-3C33-413F-AF81-50EE47D18F6C}\Backup.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Windows 8 and 8.1 v1r21\GPOs\{C90F20B6-3C33-413F-AF81-50EE47D18F6C}\bkupInfo.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Windows 8 and 8.1 v1r21\GPOs\{C90F20B6-3C33-413F-AF81-50EE47D18F6C}\DomainSysvol\GPO\Machine\microsoft\windows nt\SecEdit\GptTmpl.inf" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Windows 8 and 8.1 v1r21\GPOs\{C90F20B6-3C33-413F-AF81-50EE47D18F6C}\gpreport.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Windows 8 and 8.1 v1r21\Reports\DoD Windows 8 and 8.1 STIG Computer v1r21.htm" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Windows 8 and 8.1 v1r21\Reports\DoD Windows 8 and 8.1 STIG User v1r21.htm" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Windows Defender Antivirus STIG v1r4\GPO\manifest.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Windows Defender Antivirus STIG v1r4\GPO\{0AE33879-37EA-4108-8563-458A0E64B1CE}\Backup.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Windows Defender Antivirus STIG v1r4\GPO\{0AE33879-37EA-4108-8563-458A0E64B1CE}\bkupInfo.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Windows Defender Antivirus STIG v1r4\GPO\{0AE33879-37EA-4108-8563-458A0E64B1CE}\gpreport.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Windows Defender Antivirus STIG v1r4\Report\DoD Windows Defender Antivirus STIG Computer v1r4.html" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Windows Firewall v1r7\GPO\manifest.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Windows Firewall v1r7\GPO\{4C150323-AE6F-4899-B2C8-0FA639FBD94C}\Backup.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Windows Firewall v1r7\GPO\{4C150323-AE6F-4899-B2C8-0FA639FBD94C}\bkupInfo.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Windows Firewall v1r7\GPO\{4C150323-AE6F-4899-B2C8-0FA639FBD94C}\DomainSysvol\GPO\Machine\Microsoft\Windows NT\SecEdit\GptTmpl.inf" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Windows Firewall v1r7\GPO\{4C150323-AE6F-4899-B2C8-0FA639FBD94C}\gpreport.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Windows Firewall v1r7\Report\DoD Windows Firewall STIG v1r7.html" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Windows Server 2008 R2 MS and DC v1r28\GPOs\manifest.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Windows Server 2008 R2 MS and DC v1r28\GPOs\{355ECEC4-424C-45AD-9E24-6A1331A62214}\Backup.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Windows Server 2008 R2 MS and DC v1r28\GPOs\{355ECEC4-424C-45AD-9E24-6A1331A62214}\bkupInfo.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Windows Server 2008 R2 MS and DC v1r28\GPOs\{355ECEC4-424C-45AD-9E24-6A1331A62214}\gpreport.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Windows Server 2008 R2 MS and DC v1r28\GPOs\{C4D9C190-DD83-412F-A90F-74641928C914}\Backup.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Windows Server 2008 R2 MS and DC v1r28\GPOs\{C4D9C190-DD83-412F-A90F-74641928C914}\bkupInfo.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Windows Server 2008 R2 MS and DC v1r28\GPOs\{C4D9C190-DD83-412F-A90F-74641928C914}\DomainSysvol\GPO\Machine\microsoft\windows nt\SecEdit\GptTmpl.inf" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Windows Server 2008 R2 MS and DC v1r28\GPOs\{C4D9C190-DD83-412F-A90F-74641928C914}\gpreport.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Windows Server 2008 R2 MS and DC v1r28\GPOs\{C92DDE5D-E3A3-483D-A527-BE5707426B34}\Backup.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Windows Server 2008 R2 MS and DC v1r28\GPOs\{C92DDE5D-E3A3-483D-A527-BE5707426B34}\bkupInfo.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Windows Server 2008 R2 MS and DC v1r28\GPOs\{C92DDE5D-E3A3-483D-A527-BE5707426B34}\gpreport.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Windows Server 2008 R2 MS and DC v1r28\GPOs\{FDC3E033-142C-4AB6-A147-A1902E4E2407}\Backup.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Windows Server 2008 R2 MS and DC v1r28\GPOs\{FDC3E033-142C-4AB6-A147-A1902E4E2407}\bkupInfo.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Windows Server 2008 R2 MS and DC v1r28\GPOs\{FDC3E033-142C-4AB6-A147-A1902E4E2407}\DomainSysvol\GPO\Machine\microsoft\windows nt\SecEdit\GptTmpl.inf" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Windows Server 2008 R2 MS and DC v1r28\GPOs\{FDC3E033-142C-4AB6-A147-A1902E4E2407}\gpreport.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Windows Server 2008 R2 MS and DC v1r28\Reports\DoD Windows Server 2008 R2 Domain Controller STIG Computer v1r28.htm" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Windows Server 2008 R2 MS and DC v1r28\Reports\DoD Windows Server 2008 R2 Domain Controller STIG User v1r28.htm" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Windows Server 2008 R2 MS and DC v1r28\Reports\DoD Windows Server 2008 R2 Member Server STIG Computer v1r28.htm" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Windows Server 2008 R2 MS and DC v1r28\Reports\DoD Windows Server 2008 R2 Member Server STIG User v1r28.htm" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Windows Server 2012 R2 MS and DC v2r14\GPOs\manifest.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Windows Server 2012 R2 MS and DC v2r14\GPOs\{0537A302-FBC2-4C43-A0C3-045419A1F221}\Backup.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Windows Server 2012 R2 MS and DC v2r14\GPOs\{0537A302-FBC2-4C43-A0C3-045419A1F221}\bkupInfo.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Windows Server 2012 R2 MS and DC v2r14\GPOs\{0537A302-FBC2-4C43-A0C3-045419A1F221}\gpreport.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Windows Server 2012 R2 MS and DC v2r14\GPOs\{B9379DEB-619C-4313-A9EE-8F899928D4EF}\Backup.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Windows Server 2012 R2 MS and DC v2r14\GPOs\{B9379DEB-619C-4313-A9EE-8F899928D4EF}\bkupInfo.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Windows Server 2012 R2 MS and DC v2r14\GPOs\{B9379DEB-619C-4313-A9EE-8F899928D4EF}\gpreport.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Windows Server 2012 R2 MS and DC v2r14\GPOs\{DAF7CEC7-3321-4455-A007-A495EF54B03D}\Backup.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Windows Server 2012 R2 MS and DC v2r14\GPOs\{DAF7CEC7-3321-4455-A007-A495EF54B03D}\bkupInfo.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Windows Server 2012 R2 MS and DC v2r14\GPOs\{DAF7CEC7-3321-4455-A007-A495EF54B03D}\DomainSysvol\GPO\Machine\microsoft\windows nt\SecEdit\GptTmpl.inf" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Windows Server 2012 R2 MS and DC v2r14\GPOs\{DAF7CEC7-3321-4455-A007-A495EF54B03D}\gpreport.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Windows Server 2012 R2 MS and DC v2r14\GPOs\{E253CCCA-26B5-4CC7-8863-AC3AADBE5C31}\Backup.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Windows Server 2012 R2 MS and DC v2r14\GPOs\{E253CCCA-26B5-4CC7-8863-AC3AADBE5C31}\bkupInfo.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Windows Server 2012 R2 MS and DC v2r14\GPOs\{E253CCCA-26B5-4CC7-8863-AC3AADBE5C31}\DomainSysvol\GPO\Machine\microsoft\windows nt\SecEdit\GptTmpl.inf" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Windows Server 2012 R2 MS and DC v2r14\GPOs\{E253CCCA-26B5-4CC7-8863-AC3AADBE5C31}\gpreport.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Windows Server 2012 R2 MS and DC v2r14\Reports\DoD Windows Server 2012 R2 Domain Controller STIG Computer v2r14.html" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Windows Server 2012 R2 MS and DC v2r14\Reports\DoD Windows Server 2012 R2 Domain Controller STIG User v2r14.html" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Windows Server 2012 R2 MS and DC v2r14\Reports\DoD Windows Server 2012 R2 Member Server STIG Computer v2r14.html" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Windows Server 2012 R2 MS and DC v2r14\Reports\DoD Windows Server 2012 R2 Member Server STIG User v2r14.html" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Windows Server 2016 MS and DC v1r6\GPOs\manifest.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Windows Server 2016 MS and DC v1r6\GPOs\{29A63C78-F00E-45ED-AFA5-882E578BAA1B}\Backup.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Windows Server 2016 MS and DC v1r6\GPOs\{29A63C78-F00E-45ED-AFA5-882E578BAA1B}\bkupInfo.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Windows Server 2016 MS and DC v1r6\GPOs\{29A63C78-F00E-45ED-AFA5-882E578BAA1B}\gpreport.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Windows Server 2016 MS and DC v1r6\GPOs\{43FD046C-96DA-4AA6-86B1-DD9A1247E7B7}\Backup.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Windows Server 2016 MS and DC v1r6\GPOs\{43FD046C-96DA-4AA6-86B1-DD9A1247E7B7}\bkupInfo.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Windows Server 2016 MS and DC v1r6\GPOs\{43FD046C-96DA-4AA6-86B1-DD9A1247E7B7}\DomainSysvol\GPO\Machine\microsoft\windows nt\SecEdit\GptTmpl.inf" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Windows Server 2016 MS and DC v1r6\GPOs\{43FD046C-96DA-4AA6-86B1-DD9A1247E7B7}\gpreport.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Windows Server 2016 MS and DC v1r6\GPOs\{5D6A8577-2553-49EE-87E7-87C7E3E537D8}\Backup.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Windows Server 2016 MS and DC v1r6\GPOs\{5D6A8577-2553-49EE-87E7-87C7E3E537D8}\bkupInfo.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Windows Server 2016 MS and DC v1r6\GPOs\{5D6A8577-2553-49EE-87E7-87C7E3E537D8}\DomainSysvol\GPO\Machine\microsoft\windows nt\SecEdit\GptTmpl.inf" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Windows Server 2016 MS and DC v1r6\GPOs\{5D6A8577-2553-49EE-87E7-87C7E3E537D8}\gpreport.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Windows Server 2016 MS and DC v1r6\GPOs\{FA52D4D4-5C62-4FE5-9D91-2DE0BD3D2DD9}\Backup.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Windows Server 2016 MS and DC v1r6\GPOs\{FA52D4D4-5C62-4FE5-9D91-2DE0BD3D2DD9}\bkupInfo.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Windows Server 2016 MS and DC v1r6\GPOs\{FA52D4D4-5C62-4FE5-9D91-2DE0BD3D2DD9}\gpreport.xml" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Windows Server 2016 MS and DC v1r6\Reports\DoD Windows Server 2016 Domain Controller STIG Computer v1r6.html" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Windows Server 2016 MS and DC v1r6\Reports\DoD Windows Server 2016 Domain Controller STIG User v1r6.html" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Windows Server 2016 MS and DC v1r6\Reports\DoD Windows Server 2016 Member Server STIG Computer v1r6.html" />
+    <Content Include="November 2018 DISA STIG GPO Package\DoD Windows Server 2016 MS and DC v1r6\Reports\DoD Windows Server 2016 Member Server STIG User v1r6.html" />
+    <Content Include="November 2018 DISA STIG GPO Package\ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="November 2018 DISA STIG GPO Package\DoD Adobe Acrobat Pro DC Classic v1r1\GPOs\{50E9FDAE-7AC9-4FD7-9B5C-C62E2A00E77B}\DomainSysvol\GPO\User\" />
+    <Folder Include="November 2018 DISA STIG GPO Package\DoD Adobe Acrobat Pro DC Classic v1r1\GPOs\{8D1F29D5-FEB8-4856-90FB-DFA6FC639228}\DomainSysvol\GPO\Machine\" />
+    <Folder Include="November 2018 DISA STIG GPO Package\DoD Adobe Acrobat Pro DC Continuous V1R1\Checklist\" />
+    <Folder Include="November 2018 DISA STIG GPO Package\DoD Adobe Acrobat Pro DC Continuous V1R1\GPOs\{E3003C1B-88BA-459B-8EB9-29BB2CDDE9EE}\DomainSysvol\GPO\Machine\" />
+    <Folder Include="November 2018 DISA STIG GPO Package\DoD Adobe Acrobat Pro DC Continuous V1R1\GPOs\{FDC970C1-39F1-43C3-9622-EA9A9D803BDB}\DomainSysvol\GPO\User\" />
+    <Folder Include="November 2018 DISA STIG GPO Package\DoD Adobe Acrobat Pro DC Continuous V1R1\WMI Filter\" />
+    <Folder Include="November 2018 DISA STIG GPO Package\DoD Google Chrome v1r14\GPO\{1FB10FC8-55E7-4443-BDC2-9E9ADA43C07E}\DomainSysvol\GPO\Machine\Scripts\Shutdown\" />
+    <Folder Include="November 2018 DISA STIG GPO Package\DoD Google Chrome v1r14\GPO\{1FB10FC8-55E7-4443-BDC2-9E9ADA43C07E}\DomainSysvol\GPO\Machine\Scripts\Startup\" />
+    <Folder Include="November 2018 DISA STIG GPO Package\DoD Google Chrome v1r14\GPO\{1FB10FC8-55E7-4443-BDC2-9E9ADA43C07E}\DomainSysvol\GPO\User\" />
+    <Folder Include="November 2018 DISA STIG GPO Package\DoD Internet Explorer 11 v1r16\Checklist\" />
+    <Folder Include="November 2018 DISA STIG GPO Package\DoD Internet Explorer 11 v1r16\GPOs\{C8671D92-73D3-47EA-9128-6F562EE2DB0B}\DomainSysvol\GPO\Machine\Preferences\Registry\" />
+    <Folder Include="November 2018 DISA STIG GPO Package\DoD Internet Explorer 11 v1r16\GPOs\{C8671D92-73D3-47EA-9128-6F562EE2DB0B}\DomainSysvol\GPO\Machine\Scripts\Shutdown\" />
+    <Folder Include="November 2018 DISA STIG GPO Package\DoD Internet Explorer 11 v1r16\GPOs\{C8671D92-73D3-47EA-9128-6F562EE2DB0B}\DomainSysvol\GPO\Machine\Scripts\Startup\" />
+    <Folder Include="November 2018 DISA STIG GPO Package\DoD Internet Explorer 11 v1r16\GPOs\{C8671D92-73D3-47EA-9128-6F562EE2DB0B}\DomainSysvol\GPO\User\Preferences\Registry\" />
+    <Folder Include="November 2018 DISA STIG GPO Package\DoD Internet Explorer 11 v1r16\GPOs\{EF166337-6ABD-49FC-B897-58A484870D1D}\DomainSysvol\GPO\Machine\" />
+    <Folder Include="November 2018 DISA STIG GPO Package\DoD Office System 2013 and Components\GPOs\{01075AED-59DB-4038-A9E0-14C3035397EE}\DomainSysvol\GPO\Machine\" />
+    <Folder Include="November 2018 DISA STIG GPO Package\DoD Office System 2013 and Components\GPOs\{064ADD40-EE60-45B1-8360-B1B571009ED5}\DomainSysvol\GPO\Machine\" />
+    <Folder Include="November 2018 DISA STIG GPO Package\DoD Office System 2013 and Components\GPOs\{1EC59F61-2230-4D8C-BF66-FF371B3856F3}\DomainSysvol\GPO\Machine\" />
+    <Folder Include="November 2018 DISA STIG GPO Package\DoD Office System 2013 and Components\GPOs\{3953F2DB-BDAF-4A79-AA00-295202AFCDF6}\DomainSysvol\GPO\Machine\" />
+    <Folder Include="November 2018 DISA STIG GPO Package\DoD Office System 2013 and Components\GPOs\{55140CB1-DC6B-4446-B4C9-143B18CD169A}\DomainSysvol\GPO\Machine\" />
+    <Folder Include="November 2018 DISA STIG GPO Package\DoD Office System 2013 and Components\GPOs\{585A3219-A613-4BE9-B625-5CC0D464EA07}\DomainSysvol\GPO\Machine\" />
+    <Folder Include="November 2018 DISA STIG GPO Package\DoD Office System 2013 and Components\GPOs\{8D7C8677-1CBF-4E6D-9AB0-604987A15727}\DomainSysvol\GPO\Adm\" />
+    <Folder Include="November 2018 DISA STIG GPO Package\DoD Office System 2013 and Components\GPOs\{8D7C8677-1CBF-4E6D-9AB0-604987A15727}\DomainSysvol\GPO\Machine\Applications\" />
+    <Folder Include="November 2018 DISA STIG GPO Package\DoD Office System 2013 and Components\GPOs\{8D7C8677-1CBF-4E6D-9AB0-604987A15727}\DomainSysvol\GPO\Machine\Scripts\Shutdown\" />
+    <Folder Include="November 2018 DISA STIG GPO Package\DoD Office System 2013 and Components\GPOs\{8D7C8677-1CBF-4E6D-9AB0-604987A15727}\DomainSysvol\GPO\Machine\Scripts\Startup\" />
+    <Folder Include="November 2018 DISA STIG GPO Package\DoD Office System 2013 and Components\GPOs\{8FC2FEC2-5C88-4AF9-97B9-3ABA89BBFB98}\DomainSysvol\GPO\Adm\" />
+    <Folder Include="November 2018 DISA STIG GPO Package\DoD Office System 2013 and Components\GPOs\{8FC2FEC2-5C88-4AF9-97B9-3ABA89BBFB98}\DomainSysvol\GPO\Machine\Applications\" />
+    <Folder Include="November 2018 DISA STIG GPO Package\DoD Office System 2013 and Components\GPOs\{8FC2FEC2-5C88-4AF9-97B9-3ABA89BBFB98}\DomainSysvol\GPO\Machine\Scripts\Shutdown\" />
+    <Folder Include="November 2018 DISA STIG GPO Package\DoD Office System 2013 and Components\GPOs\{8FC2FEC2-5C88-4AF9-97B9-3ABA89BBFB98}\DomainSysvol\GPO\Machine\Scripts\Startup\" />
+    <Folder Include="November 2018 DISA STIG GPO Package\DoD Office System 2013 and Components\GPOs\{A73DE41F-D939-4745-B367-E9B8565F3B72}\DomainSysvol\GPO\Machine\" />
+    <Folder Include="November 2018 DISA STIG GPO Package\DoD Office System 2013 and Components\GPOs\{C0F3729A-76F4-4448-8E16-0DEABEFE201D}\DomainSysvol\GPO\Machine\" />
+    <Folder Include="November 2018 DISA STIG GPO Package\DoD Office System 2013 and Components\GPOs\{C7602FD4-A36E-466F-997E-1AB944770CC7}\DomainSysvol\GPO\Adm\" />
+    <Folder Include="November 2018 DISA STIG GPO Package\DoD Office System 2013 and Components\GPOs\{C7602FD4-A36E-466F-997E-1AB944770CC7}\DomainSysvol\GPO\Machine\Applications\" />
+    <Folder Include="November 2018 DISA STIG GPO Package\DoD Office System 2013 and Components\GPOs\{C7602FD4-A36E-466F-997E-1AB944770CC7}\DomainSysvol\GPO\Machine\Scripts\Shutdown\" />
+    <Folder Include="November 2018 DISA STIG GPO Package\DoD Office System 2013 and Components\GPOs\{C7602FD4-A36E-466F-997E-1AB944770CC7}\DomainSysvol\GPO\Machine\Scripts\Startup\" />
+    <Folder Include="November 2018 DISA STIG GPO Package\DoD Office System 2013 and Components\GPOs\{F0106EE7-98E3-4235-AEC7-5D03B455508F}\DomainSysvol\GPO\Machine\" />
+    <Folder Include="November 2018 DISA STIG GPO Package\DoD Office System 2013 and Components\GPOs\{F2C43CE2-7224-4364-8945-F3B8AC0413E5}\DomainSysvol\GPO\Machine\" />
+    <Folder Include="November 2018 DISA STIG GPO Package\DoD Office System 2016 and Components\GPOs\{16C8C3FE-5178-4477-97EB-66635C0AF317}\DomainSysvol\GPO\Machine\" />
+    <Folder Include="November 2018 DISA STIG GPO Package\DoD Office System 2016 and Components\GPOs\{1F9FF067-F802-4113-A304-416F5F30C648}\DomainSysvol\GPO\User\" />
+    <Folder Include="November 2018 DISA STIG GPO Package\DoD Office System 2016 and Components\GPOs\{560A259A-9112-439E-AAA1-E1B7CAA7B5FF}\DomainSysvol\GPO\Machine\" />
+    <Folder Include="November 2018 DISA STIG GPO Package\DoD Office System 2016 and Components\GPOs\{7399DFF7-447B-4316-887A-22101FFB42BB}\DomainSysvol\GPO\Machine\" />
+    <Folder Include="November 2018 DISA STIG GPO Package\DoD Office System 2016 and Components\GPOs\{8255547D-1FD8-4D82-BD26-FEA2F7252888}\DomainSysvol\GPO\Machine\" />
+    <Folder Include="November 2018 DISA STIG GPO Package\DoD Office System 2016 and Components\GPOs\{9715CCE4-BD80-4DBA-B8F4-4A3DB1582A09}\DomainSysvol\GPO\User\" />
+    <Folder Include="November 2018 DISA STIG GPO Package\DoD Office System 2016 and Components\GPOs\{A81D179E-B119-463F-B67A-772738B389FC}\DomainSysvol\GPO\Machine\" />
+    <Folder Include="November 2018 DISA STIG GPO Package\DoD Office System 2016 and Components\GPOs\{AA368E8D-F981-40D9-9C53-7685CE5318BC}\DomainSysvol\GPO\Machine\" />
+    <Folder Include="November 2018 DISA STIG GPO Package\DoD Office System 2016 and Components\GPOs\{BA0CE875-D1DB-41DF-A29D-44AC746165C2}\DomainSysvol\GPO\Machine\" />
+    <Folder Include="November 2018 DISA STIG GPO Package\DoD Office System 2016 and Components\GPOs\{E497C6CE-F10F-44B1-A976-0019280C82D2}\DomainSysvol\GPO\Machine\" />
+    <Folder Include="November 2018 DISA STIG GPO Package\DoD Office System 2016 and Components\GPOs\{E8400E34-D02C-4876-8D49-19F241C8206C}\DomainSysvol\GPO\Machine\" />
+    <Folder Include="November 2018 DISA STIG GPO Package\DoD Office System 2016 and Components\GPOs\{F53005B5-CC31-4743-876E-FA0FA64862E3}\DomainSysvol\GPO\Machine\Scripts\Shutdown\" />
+    <Folder Include="November 2018 DISA STIG GPO Package\DoD Office System 2016 and Components\GPOs\{F53005B5-CC31-4743-876E-FA0FA64862E3}\DomainSysvol\GPO\Machine\Scripts\Startup\" />
+    <Folder Include="November 2018 DISA STIG GPO Package\DoD Office System 2016 and Components\GPOs\{F53005B5-CC31-4743-876E-FA0FA64862E3}\DomainSysvol\GPO\User\" />
+    <Folder Include="November 2018 DISA STIG GPO Package\DoD Office System 2016 and Components\GPOs\{FC16FE3D-57D0-4D99-8AC5-A22D26D66BF7}\DomainSysvol\GPO\Machine\" />
+    <Folder Include="November 2018 DISA STIG GPO Package\DoD Windows 10 v1r14\Checklist\" />
+    <Folder Include="November 2018 DISA STIG GPO Package\DoD Windows 10 v1r14\GPOs\{AABF948A-F169-4112-A28D-F2C7378695B4}\DomainSysvol\GPO\Machine\Preferences\Registry\" />
+    <Folder Include="November 2018 DISA STIG GPO Package\DoD Windows 10 v1r14\GPOs\{AABF948A-F169-4112-A28D-F2C7378695B4}\DomainSysvol\GPO\Machine\Scripts\Shutdown\" />
+    <Folder Include="November 2018 DISA STIG GPO Package\DoD Windows 10 v1r14\GPOs\{AABF948A-F169-4112-A28D-F2C7378695B4}\DomainSysvol\GPO\Machine\Scripts\Startup\" />
+    <Folder Include="November 2018 DISA STIG GPO Package\DoD Windows 10 v1r14\GPOs\{AABF948A-F169-4112-A28D-F2C7378695B4}\DomainSysvol\GPO\User\Applications\" />
+    <Folder Include="November 2018 DISA STIG GPO Package\DoD Windows 10 v1r14\GPOs\{AABF948A-F169-4112-A28D-F2C7378695B4}\DomainSysvol\GPO\User\Documents &amp; Settings\" />
+    <Folder Include="November 2018 DISA STIG GPO Package\DoD Windows 10 v1r14\GPOs\{AABF948A-F169-4112-A28D-F2C7378695B4}\DomainSysvol\GPO\User\Scripts\Logoff\" />
+    <Folder Include="November 2018 DISA STIG GPO Package\DoD Windows 10 v1r14\GPOs\{AABF948A-F169-4112-A28D-F2C7378695B4}\DomainSysvol\GPO\User\Scripts\Logon\" />
+    <Folder Include="November 2018 DISA STIG GPO Package\DoD Windows 10 v1r14\GPOs\{F262651F-C861-4AED-B308-E8384674F81E}\DomainSysvol\GPO\Machine\Preferences\Registry\" />
+    <Folder Include="November 2018 DISA STIG GPO Package\DoD Windows 10 v1r14\GPOs\{F262651F-C861-4AED-B308-E8384674F81E}\DomainSysvol\GPO\Machine\Scripts\Shutdown\" />
+    <Folder Include="November 2018 DISA STIG GPO Package\DoD Windows 10 v1r14\GPOs\{F262651F-C861-4AED-B308-E8384674F81E}\DomainSysvol\GPO\Machine\Scripts\Startup\" />
+    <Folder Include="November 2018 DISA STIG GPO Package\DoD Windows 10 v1r14\GPOs\{F262651F-C861-4AED-B308-E8384674F81E}\DomainSysvol\GPO\User\" />
+    <Folder Include="November 2018 DISA STIG GPO Package\DoD Windows 7 v1r30\GPOs\{7238AD29-B0D6-4065-B6E6-17BE6281F3EF}\DomainSysvol\GPO\Machine\" />
+    <Folder Include="November 2018 DISA STIG GPO Package\DoD Windows 7 v1r30\GPOs\{D68DB48F-11DE-48F8-80F3-5B2A0A33BD4F}\DomainSysvol\GPO\Machine\Preferences\Groups\" />
+    <Folder Include="November 2018 DISA STIG GPO Package\DoD Windows 7 v1r30\GPOs\{D68DB48F-11DE-48F8-80F3-5B2A0A33BD4F}\DomainSysvol\GPO\Machine\Preferences\Registry\" />
+    <Folder Include="November 2018 DISA STIG GPO Package\DoD Windows 7 v1r30\GPOs\{D68DB48F-11DE-48F8-80F3-5B2A0A33BD4F}\DomainSysvol\GPO\Machine\Scripts\Shutdown\" />
+    <Folder Include="November 2018 DISA STIG GPO Package\DoD Windows 7 v1r30\GPOs\{D68DB48F-11DE-48F8-80F3-5B2A0A33BD4F}\DomainSysvol\GPO\Machine\Scripts\Startup\" />
+    <Folder Include="November 2018 DISA STIG GPO Package\DoD Windows 7 v1r30\GPOs\{D68DB48F-11DE-48F8-80F3-5B2A0A33BD4F}\DomainSysvol\GPO\User\" />
+    <Folder Include="November 2018 DISA STIG GPO Package\DoD Windows 8 and 8.1 v1r21\GPOs\{3676F25C-F4ED-4F82-9608-FA3D2F2A7029}\DomainSysvol\GPO\Machine\" />
+    <Folder Include="November 2018 DISA STIG GPO Package\DoD Windows 8 and 8.1 v1r21\GPOs\{C90F20B6-3C33-413F-AF81-50EE47D18F6C}\DomainSysvol\GPO\Machine\Preferences\Registry\" />
+    <Folder Include="November 2018 DISA STIG GPO Package\DoD Windows 8 and 8.1 v1r21\GPOs\{C90F20B6-3C33-413F-AF81-50EE47D18F6C}\DomainSysvol\GPO\Machine\Scripts\Shutdown\" />
+    <Folder Include="November 2018 DISA STIG GPO Package\DoD Windows 8 and 8.1 v1r21\GPOs\{C90F20B6-3C33-413F-AF81-50EE47D18F6C}\DomainSysvol\GPO\Machine\Scripts\Startup\" />
+    <Folder Include="November 2018 DISA STIG GPO Package\DoD Windows 8 and 8.1 v1r21\GPOs\{C90F20B6-3C33-413F-AF81-50EE47D18F6C}\DomainSysvol\GPO\User\" />
+    <Folder Include="November 2018 DISA STIG GPO Package\DoD Windows Defender Antivirus STIG v1r4\GPO\{0AE33879-37EA-4108-8563-458A0E64B1CE}\DomainSysvol\GPO\User\" />
+    <Folder Include="November 2018 DISA STIG GPO Package\DoD Windows Firewall v1r7\GPO\{4C150323-AE6F-4899-B2C8-0FA639FBD94C}\DomainSysvol\GPO\Machine\Applications\" />
+    <Folder Include="November 2018 DISA STIG GPO Package\DoD Windows Firewall v1r7\GPO\{4C150323-AE6F-4899-B2C8-0FA639FBD94C}\DomainSysvol\GPO\Machine\Scripts\Shutdown\" />
+    <Folder Include="November 2018 DISA STIG GPO Package\DoD Windows Firewall v1r7\GPO\{4C150323-AE6F-4899-B2C8-0FA639FBD94C}\DomainSysvol\GPO\Machine\Scripts\Startup\" />
+    <Folder Include="November 2018 DISA STIG GPO Package\DoD Windows Firewall v1r7\GPO\{4C150323-AE6F-4899-B2C8-0FA639FBD94C}\DomainSysvol\GPO\User\" />
+    <Folder Include="November 2018 DISA STIG GPO Package\DoD Windows Server 2008 R2 MS and DC v1r28\GPOs\{355ECEC4-424C-45AD-9E24-6A1331A62214}\DomainSysvol\GPO\Machine\" />
+    <Folder Include="November 2018 DISA STIG GPO Package\DoD Windows Server 2008 R2 MS and DC v1r28\GPOs\{C4D9C190-DD83-412F-A90F-74641928C914}\DomainSysvol\GPO\Machine\Preferences\Groups\" />
+    <Folder Include="November 2018 DISA STIG GPO Package\DoD Windows Server 2008 R2 MS and DC v1r28\GPOs\{C4D9C190-DD83-412F-A90F-74641928C914}\DomainSysvol\GPO\Machine\Preferences\Registry\" />
+    <Folder Include="November 2018 DISA STIG GPO Package\DoD Windows Server 2008 R2 MS and DC v1r28\GPOs\{C4D9C190-DD83-412F-A90F-74641928C914}\DomainSysvol\GPO\Machine\Scripts\Shutdown\" />
+    <Folder Include="November 2018 DISA STIG GPO Package\DoD Windows Server 2008 R2 MS and DC v1r28\GPOs\{C4D9C190-DD83-412F-A90F-74641928C914}\DomainSysvol\GPO\Machine\Scripts\Startup\" />
+    <Folder Include="November 2018 DISA STIG GPO Package\DoD Windows Server 2008 R2 MS and DC v1r28\GPOs\{C4D9C190-DD83-412F-A90F-74641928C914}\DomainSysvol\GPO\User\" />
+    <Folder Include="November 2018 DISA STIG GPO Package\DoD Windows Server 2008 R2 MS and DC v1r28\GPOs\{C92DDE5D-E3A3-483D-A527-BE5707426B34}\DomainSysvol\GPO\Machine\" />
+    <Folder Include="November 2018 DISA STIG GPO Package\DoD Windows Server 2008 R2 MS and DC v1r28\GPOs\{FDC3E033-142C-4AB6-A147-A1902E4E2407}\DomainSysvol\GPO\Machine\Preferences\Groups\" />
+    <Folder Include="November 2018 DISA STIG GPO Package\DoD Windows Server 2008 R2 MS and DC v1r28\GPOs\{FDC3E033-142C-4AB6-A147-A1902E4E2407}\DomainSysvol\GPO\Machine\Preferences\Registry\" />
+    <Folder Include="November 2018 DISA STIG GPO Package\DoD Windows Server 2008 R2 MS and DC v1r28\GPOs\{FDC3E033-142C-4AB6-A147-A1902E4E2407}\DomainSysvol\GPO\Machine\Scripts\Shutdown\" />
+    <Folder Include="November 2018 DISA STIG GPO Package\DoD Windows Server 2008 R2 MS and DC v1r28\GPOs\{FDC3E033-142C-4AB6-A147-A1902E4E2407}\DomainSysvol\GPO\Machine\Scripts\Startup\" />
+    <Folder Include="November 2018 DISA STIG GPO Package\DoD Windows Server 2008 R2 MS and DC v1r28\GPOs\{FDC3E033-142C-4AB6-A147-A1902E4E2407}\DomainSysvol\GPO\User\" />
+    <Folder Include="November 2018 DISA STIG GPO Package\DoD Windows Server 2012 R2 MS and DC v2r14\Checklist\" />
+    <Folder Include="November 2018 DISA STIG GPO Package\DoD Windows Server 2012 R2 MS and DC v2r14\GPOs\{0537A302-FBC2-4C43-A0C3-045419A1F221}\DomainSysvol\GPO\Machine\" />
+    <Folder Include="November 2018 DISA STIG GPO Package\DoD Windows Server 2012 R2 MS and DC v2r14\GPOs\{B9379DEB-619C-4313-A9EE-8F899928D4EF}\DomainSysvol\GPO\Machine\" />
+    <Folder Include="November 2018 DISA STIG GPO Package\DoD Windows Server 2012 R2 MS and DC v2r14\GPOs\{DAF7CEC7-3321-4455-A007-A495EF54B03D}\DomainSysvol\GPO\Machine\Preferences\Registry\" />
+    <Folder Include="November 2018 DISA STIG GPO Package\DoD Windows Server 2012 R2 MS and DC v2r14\GPOs\{DAF7CEC7-3321-4455-A007-A495EF54B03D}\DomainSysvol\GPO\Machine\Scripts\Shutdown\" />
+    <Folder Include="November 2018 DISA STIG GPO Package\DoD Windows Server 2012 R2 MS and DC v2r14\GPOs\{DAF7CEC7-3321-4455-A007-A495EF54B03D}\DomainSysvol\GPO\Machine\Scripts\Startup\" />
+    <Folder Include="November 2018 DISA STIG GPO Package\DoD Windows Server 2012 R2 MS and DC v2r14\GPOs\{DAF7CEC7-3321-4455-A007-A495EF54B03D}\DomainSysvol\GPO\User\" />
+    <Folder Include="November 2018 DISA STIG GPO Package\DoD Windows Server 2012 R2 MS and DC v2r14\GPOs\{E253CCCA-26B5-4CC7-8863-AC3AADBE5C31}\DomainSysvol\GPO\Machine\Preferences\Registry\" />
+    <Folder Include="November 2018 DISA STIG GPO Package\DoD Windows Server 2012 R2 MS and DC v2r14\GPOs\{E253CCCA-26B5-4CC7-8863-AC3AADBE5C31}\DomainSysvol\GPO\Machine\Scripts\Shutdown\" />
+    <Folder Include="November 2018 DISA STIG GPO Package\DoD Windows Server 2012 R2 MS and DC v2r14\GPOs\{E253CCCA-26B5-4CC7-8863-AC3AADBE5C31}\DomainSysvol\GPO\Machine\Scripts\Startup\" />
+    <Folder Include="November 2018 DISA STIG GPO Package\DoD Windows Server 2012 R2 MS and DC v2r14\GPOs\{E253CCCA-26B5-4CC7-8863-AC3AADBE5C31}\DomainSysvol\GPO\User\" />
+    <Folder Include="November 2018 DISA STIG GPO Package\DoD Windows Server 2016 MS and DC v1r6\Checklist\" />
+    <Folder Include="November 2018 DISA STIG GPO Package\DoD Windows Server 2016 MS and DC v1r6\GPOs\{29A63C78-F00E-45ED-AFA5-882E578BAA1B}\DomainSysvol\GPO\Machine\" />
+    <Folder Include="November 2018 DISA STIG GPO Package\DoD Windows Server 2016 MS and DC v1r6\GPOs\{43FD046C-96DA-4AA6-86B1-DD9A1247E7B7}\DomainSysvol\GPO\Machine\Preferences\Registry\" />
+    <Folder Include="November 2018 DISA STIG GPO Package\DoD Windows Server 2016 MS and DC v1r6\GPOs\{43FD046C-96DA-4AA6-86B1-DD9A1247E7B7}\DomainSysvol\GPO\Machine\Scripts\Shutdown\" />
+    <Folder Include="November 2018 DISA STIG GPO Package\DoD Windows Server 2016 MS and DC v1r6\GPOs\{43FD046C-96DA-4AA6-86B1-DD9A1247E7B7}\DomainSysvol\GPO\Machine\Scripts\Startup\" />
+    <Folder Include="November 2018 DISA STIG GPO Package\DoD Windows Server 2016 MS and DC v1r6\GPOs\{43FD046C-96DA-4AA6-86B1-DD9A1247E7B7}\DomainSysvol\GPO\User\" />
+    <Folder Include="November 2018 DISA STIG GPO Package\DoD Windows Server 2016 MS and DC v1r6\GPOs\{5D6A8577-2553-49EE-87E7-87C7E3E537D8}\DomainSysvol\GPO\Machine\Preferences\Registry\" />
+    <Folder Include="November 2018 DISA STIG GPO Package\DoD Windows Server 2016 MS and DC v1r6\GPOs\{5D6A8577-2553-49EE-87E7-87C7E3E537D8}\DomainSysvol\GPO\Machine\Scripts\Shutdown\" />
+    <Folder Include="November 2018 DISA STIG GPO Package\DoD Windows Server 2016 MS and DC v1r6\GPOs\{5D6A8577-2553-49EE-87E7-87C7E3E537D8}\DomainSysvol\GPO\Machine\Scripts\Startup\" />
+    <Folder Include="November 2018 DISA STIG GPO Package\DoD Windows Server 2016 MS and DC v1r6\GPOs\{5D6A8577-2553-49EE-87E7-87C7E3E537D8}\DomainSysvol\GPO\User\" />
+    <Folder Include="November 2018 DISA STIG GPO Package\DoD Windows Server 2016 MS and DC v1r6\GPOs\{FA52D4D4-5C62-4FE5-9D91-2DE0BD3D2DD9}\DomainSysvol\GPO\Machine\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
