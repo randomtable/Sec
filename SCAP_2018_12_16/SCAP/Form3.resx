@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="RichTextBox1.Text" xml:space="preserve">
+    <value>The Managed environment, also referred to as Enterprise, comprises centrally managed IT products,
+everything ranging from servers and printers to desktops, laptops, smartphones, and tablets. Managed
+checklists are intended for advanced end users and system administrators. The managed nature of typical
+Managed environments gives administrators centralized control over various settings on devices.
+Authentication, account, and policy management can also be administered centrally to maintain a
+consistent security posture across an organization.
+
+The Managed environment is more restrictive and provides less functionality than the Standalone
+environment. However, because of the supported and controlled8 nature of the Managed environment, it
+is typically easier to use more functionally restrictive settings in Managed environments than in
+Standalone environments. Managed environments also tend to implement several layers of defense (e.g.,
+firewalls, antivirus servers, IDSs, patch management systems, and email filtering), which provides greater
+protection for systems.</value>
+  </data>
+  <data name="RichTextBox2.Text" xml:space="preserve">
+    <value>A Custom environment contains systems in which the functionality and degree of security do not fit the
+other types of environments. Specialized Security-Limited Functionality (SSLF) is a typical Custom
+environment that is highly restrictive and secure; it is usually reserved for systems that have the highest
+threats and associated impacts. Typical examples of such systems are outward-facing web, email, and
+DNS servers, other publicly accessed systems, and firewalls. It also encompasses computers that contain
+confidential information (e.g., central repository of personnel records, medical records, and financial
+information) or that perform vital organizational functions (e.g., accounting, payroll processing, and air
+traffic control). These systems might be targeted by third parties for exploitation, but also might be
+targeted by trusted parties inside the organization. Because systems in an SSLF environment are at high
+risk of attack or data exposure, security takes precedence over functionality. The systems’ data content or
+mission purpose is of such value that aggressive tradeoffs in favor of security outweigh the potential
+negative consequences to other useful system attributes such as legacy applications or interoperability
+with other systems.
+An SSLF environment could be a subset of another environment. For example, three desktops in a
+Managed environment that hold the organization’s confidential employee data could be thought of as an
+SSLF environment within a Managed environment. In addition, a laptop used by a mobile worker (e.g.,
+organization management) might be an SSLF environment in a Standalone environment. An SSLF
+environment might also be a self-contained environment outside any other environment, such as a
+government security installation processing sensitive data.
+SSLF checklists are intended for experienced security specialists and seasoned system administrators who
+understand the impact of implementing strict technical security practices. If home users and other users
+who do not have security expertise attempt to apply SSLF checklists to their systems, they typically
+experience unwanted limitations on system functionality and cause possibly irreparable system damage</value>
+  </data>
+</root>

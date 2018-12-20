@@ -53,4 +53,10 @@ Public Class Form1
         MsgBox("DONE! Restart your computer for configurations take effects!")
 
     End Sub
+
+    Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
+        Form2.Activate()
+        Form2.Show()
+        Me.Close()
+    End Sub
 End Class

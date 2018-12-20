@@ -9,3 +9,14 @@ C:\Users\a\documents\visual studio 2010\Projects\SCAP\SCAP\obj\x86\Release\Gener
 C:\Users\a\documents\visual studio 2010\Projects\SCAP\SCAP\obj\x86\Release\SCAP.exe
 C:\Users\a\documents\visual studio 2010\Projects\SCAP\SCAP\obj\x86\Release\SCAP.xml
 C:\Users\a\documents\visual studio 2010\Projects\SCAP\SCAP\obj\x86\Release\SCAP.pdb
+C:\Users\a\Downloads\Sec\Sec-master\SCAP_2018_12_16\SCAP\obj\x86\Release\SCAP.exe
+C:\Users\a\Downloads\Sec\Sec-master\SCAP_2018_12_16\SCAP\obj\x86\Release\SCAP.xml
+C:\Users\a\Downloads\Sec\Sec-master\SCAP_2018_12_16\SCAP\obj\x86\Release\SCAP.pdb
+C:\Users\a\Downloads\Sec\Sec-master\SCAP_2018_12_16\SCAP\bin\Release\SCAP.exe
+C:\Users\a\Downloads\Sec\Sec-master\SCAP_2018_12_16\SCAP\bin\Release\SCAP.pdb
+C:\Users\a\Downloads\Sec\Sec-master\SCAP_2018_12_16\SCAP\bin\Release\SCAP.xml
+C:\Users\a\Downloads\Sec\Sec-master\SCAP_2018_12_16\SCAP\obj\x86\Release\SCAP.Form1.resources
+C:\Users\a\Downloads\Sec\Sec-master\SCAP_2018_12_16\SCAP\obj\x86\Release\SCAP.Resources.resources
+C:\Users\a\Downloads\Sec\Sec-master\SCAP_2018_12_16\SCAP\obj\x86\Release\SCAP.vbproj.GenerateResource.Cache
+C:\Users\a\Downloads\Sec\Sec-master\SCAP_2018_12_16\SCAP\obj\x86\Release\SCAP.Form2.resources
+C:\Users\a\Downloads\Sec\Sec-master\SCAP_2018_12_16\SCAP\obj\x86\Release\SCAP.Form3.resources

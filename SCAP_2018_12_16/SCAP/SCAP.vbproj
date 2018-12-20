@@ -82,6 +82,18 @@
       <DependentUpon>Form1.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Form2.Designer.vb">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.vb">
+      <DependentUpon>Form3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form3.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -101,6 +113,12 @@
   <ItemGroup>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
@@ -632,6 +650,8 @@
     <Content Include="November 2018 DISA STIG GPO Package\DoD Windows Server 2016 MS and DC v1r6\Reports\DoD Windows Server 2016 Member Server STIG Computer v1r6.html" />
     <Content Include="November 2018 DISA STIG GPO Package\DoD Windows Server 2016 MS and DC v1r6\Reports\DoD Windows Server 2016 Member Server STIG User v1r6.html" />
     <Content Include="November 2018 DISA STIG GPO Package\ReadMe.txt" />
+    <Content Include="ULTRA.inf" />
+    <Content Include="USGCB.inf" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="November 2018 DISA STIG GPO Package\DoD Adobe Acrobat Pro DC Classic v1r1\GPOs\{50E9FDAE-7AC9-4FD7-9B5C-C62E2A00E77B}\DomainSysvol\GPO\User\" />
