@@ -1,7 +1,7 @@
 # Project SCAP (all releases) - English Version
 I do not own the rules (released by NIST), nor the tool "LGPO.exe" (released by Microsoft)!
 
-UPDATE 20/12/2018 - Added a Wizard for help Users to configure their Systems
+### UPDATE 20/12/2018 - Added a Wizard for help Users to configure their Systems
 
 Welcome to my Repository!
 Below you can find old "Sec" Readme, useful if you want to apply USGCB rules.
@@ -48,7 +48,7 @@ Stay safe :)
 
 Non possiedo le regole (rilasciate da NIST), né lo strumento "LGPO.exe" (rilasciato da Microsoft)!
 
-UPDATE 20/12/2018 - Aggiunta una procedura guidata per aiutare gli utenti a configurare i loro sistemi
+### UPDATE 20/12/2018 - Aggiunta una procedura guidata per aiutare gli utenti a configurare i loro sistemi
 
 Benvenuto nel mio repository!
 Di seguito è possibile trovare il file Leggimi "Sec", utile se si desidera applicare le regole USGCB.
