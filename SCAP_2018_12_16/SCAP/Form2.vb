@@ -257,4 +257,18 @@ Public Class Form2
     Private Sub Button10_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button10.Click
         ProcessDirGPORESTORE()
     End Sub
+
+    Private Sub Button12_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button12.Click
+        MsgBox("This command will reset the GPOs installed in the system. Use with caution, and only if you really need it.")
+    End Sub
+
+    Private Sub Button11_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button11.Click
+        ProcessDirGPORESET()
+    End Sub
+
+    Public Sub ProcessDirGPORESET()
+
+        Process.Start("LGPORESET.bat").WaitForExit()
+
+    End Sub
 End Class
