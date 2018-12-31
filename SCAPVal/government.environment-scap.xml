@@ -1,0 +1,805 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data-stream-collection xmlns="http://scap.nist.gov/schema/scap/source/1.2" id="scap_xccdf_collection_government.environment_benchmark_generated-xccdf" schematron-version="1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://checklists.nist.gov/xccdf/1.2 http://scap.nist.gov/schema/xccdf/1.2/xccdf_1.2.xsd http://cpe.mitre.org/dictionary/2.0 http://scap.nist.gov/schema/cpe/2.3/cpe-dictionary_2.3.xsd http://oval.mitre.org/XMLSchema/oval-common-5 http://oval.mitre.org/language/download/schema/version5.10.1/ovaldefinition/complete/oval-common-schema.xsd http://oval.mitre.org/XMLSchema/oval-definitions-5 http://oval.mitre.org/language/download/schema/version5.10.1/ovaldefinition/complete/oval-definitions-schema.xsd http://oval.mitre.org/XMLSchema/oval-definitions-5#independent http://oval.mitre.org/language/download/schema/version5.10.1/ovaldefinition/complete/independent-definitions-schema.xsd http://oval.mitre.org/XMLSchema/oval-definitions-5#windows http://oval.mitre.org/language/download/schema/version5.10.1/ovaldefinition/complete/windows-definitions-schema.xsd http://scap.nist.gov/schema/scap/source/1.2 http://scap.nist.gov/schema/scap/1.2/scap-source-data-stream_1.2.xsd">
+  <data-stream id="scap_xccdf_datastream_government.environment_benchmark_generated-xccdf" use-case="CONFIGURATION" scap-version="1.2" timestamp="2018-12-29T13:41:00">
+    <checklists>
+      <component-ref id="scap_government_cref_environment-xccdf.xml" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#government.environment-xccdf.xml">
+        <cat:catalog xmlns:cat="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+          <cat:uri name="scap_government_cref_environment-oval.xml" uri="#government.environment-oval.xml" />
+        </cat:catalog>
+      </component-ref>
+    </checklists>
+    <checks>
+      <component-ref id="scap_government_cref_environment-oval.xml" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#government.environment-oval.xml" />
+    </checks>
+  </data-stream>
+  <component id="scap_government_comp_environment-xccdf.xml" timestamp="2018-12-29T13:41:00">
+  <Benchmark xmlns:dc="http://purl.org/dc/elements/1.1/" style="SCAP_1.2" xml:lang="en" xmlns="http://checklists.nist.gov/xccdf/1.2" resolved="1" id="xccdf_government.environment_benchmark_generated-xccdf">
+  <status date="2018-12-29">draft</status>
+  <title>government Environment Configuration</title>
+  <description>This file represent the configuration checklist for government Environment Devices.</description>
+  <version time="2018-12-29T01:26:49">v0.1</version>
+  <metadata>
+        <dc:creator>Alessandro Fiori</dc:creator>
+        <dc:publisher>Alessandro Fiori</dc:publisher>
+        <dc:contributor>Alessandro Fiori</dc:contributor>
+        <dc:source>alefiori3</dc:source>
+  </metadata>
+  <Profile id="xccdf_standalone_profile_standalone_environment">
+  <title>Standalone</title>
+  <description>Standalone Environment Checks</description>
+  <select idref="xccdf_government_rule_environment_1" selected="true" />
+  <select idref="xccdf_government_rule_environment_2" selected="true" />
+  <select idref="xccdf_government_rule_environment_3" selected="true" />
+  <select idref="xccdf_government_rule_environment_4" selected="true" />
+  <select idref="xccdf_government_rule_environment_5" selected="true" />
+  <select idref="xccdf_government_rule_environment_6" selected="true" />
+  </Profile>
+  <Profile id="xccdf_managed_profile_managed_environment">
+  <title>Managed</title>
+  <description>Managed Environment Checks</description>
+  <select idref="xccdf_government_rule_environment_1" selected="true" />
+  <select idref="xccdf_government_rule_environment_2" selected="true" />
+  <select idref="xccdf_government_rule_environment_3" selected="true" />
+  <select idref="xccdf_government_rule_environment_4" selected="true" />
+  <select idref="xccdf_government_rule_environment_5" selected="true" />
+  <select idref="xccdf_government_rule_environment_6" selected="true" />
+  <select idref="xccdf_government_rule_environment_7" selected="true" />
+  <select idref="xccdf_government_rule_environment_8" selected="true" />
+  <select idref="xccdf_government_rule_environment_9" selected="true" />
+  <select idref="xccdf_government_rule_environment_10" selected="true" />
+  <select idref="xccdf_government_rule_environment_11" selected="true" />
+  <select idref="xccdf_government_rule_environment_12" selected="true" />
+  <select idref="xccdf_government_rule_environment_13" selected="true" />
+  <select idref="xccdf_government_rule_environment_14" selected="true" />
+  <select idref="xccdf_government_rule_environment_15" selected="true" />
+  </Profile>
+  <Profile id="xccdf_sslf_profile_sslf_environment">
+  <title>SSLF</title>
+  <description>SSLF Environment Checks</description>
+  <select idref="xccdf_government_rule_environment_1" selected="true" />
+  <select idref="xccdf_government_rule_environment_2" selected="true" />
+  <select idref="xccdf_government_rule_environment_3" selected="true" />
+  <select idref="xccdf_government_rule_environment_4" selected="true" />
+  <select idref="xccdf_government_rule_environment_5" selected="true" />
+  <select idref="xccdf_government_rule_environment_6" selected="true" />
+  <select idref="xccdf_government_rule_environment_7" selected="true" />
+  <select idref="xccdf_government_rule_environment_8" selected="true" />
+  <select idref="xccdf_government_rule_environment_9" selected="true" />
+  <select idref="xccdf_government_rule_environment_10" selected="true" />
+  <select idref="xccdf_government_rule_environment_11" selected="true" />
+  <select idref="xccdf_government_rule_environment_12" selected="true" />
+  <select idref="xccdf_government_rule_environment_13" selected="true" />
+  <select idref="xccdf_government_rule_environment_14" selected="true" />
+  <select idref="xccdf_government_rule_environment_15" selected="true" />
+  <select idref="xccdf_government_rule_environment_16" selected="true" />
+  <select idref="xccdf_government_rule_environment_17" selected="true" />
+  <select idref="xccdf_government_rule_environment_18" selected="true" />
+  <select idref="xccdf_government_rule_environment_19" selected="true" />
+  <select idref="xccdf_government_rule_environment_20" selected="true" />
+  <select idref="xccdf_government_rule_environment_21" selected="true" />
+  <select idref="xccdf_government_rule_environment_22" selected="true" />
+  <select idref="xccdf_government_rule_environment_23" selected="true" />
+  <select idref="xccdf_government_rule_environment_24" selected="true" />
+  <select idref="xccdf_government_rule_environment_25" selected="true" />
+  <select idref="xccdf_government_rule_environment_26" selected="true" />
+  <select idref="xccdf_government_rule_environment_27" selected="true" />
+  <select idref="xccdf_government_rule_environment_28" selected="true" />
+  <select idref="xccdf_government_rule_environment_29" selected="true" />
+  <select idref="xccdf_government_rule_environment_30" selected="true" />
+  <select idref="xccdf_government_rule_environment_31" selected="true" />
+  <select idref="xccdf_government_rule_environment_32" selected="true" />
+  <select idref="xccdf_government_rule_environment_33" selected="true" />
+  <select idref="xccdf_government_rule_environment_34" selected="true" />
+  <select idref="xccdf_government_rule_environment_35" selected="true" />
+  <select idref="xccdf_government_rule_environment_36" selected="true" />
+  <select idref="xccdf_government_rule_environment_37" selected="true" />
+  <select idref="xccdf_government_rule_environment_38" selected="true" />
+  <select idref="xccdf_government_rule_environment_39" selected="true" />
+  <select idref="xccdf_government_rule_environment_40" selected="true" />
+  <select idref="xccdf_government_rule_environment_41" selected="true" />
+  <select idref="xccdf_government_rule_environment_42" selected="true" />
+  <select idref="xccdf_government_rule_environment_43" selected="true" />
+  <select idref="xccdf_government_rule_environment_44" selected="true" />
+  <select idref="xccdf_government_rule_environment_45" selected="true" />
+  <select idref="xccdf_government_rule_environment_46" selected="true" />
+  <select idref="xccdf_government_rule_environment_47" selected="true" />
+  <select idref="xccdf_government_rule_environment_48" selected="true" />
+  <select idref="xccdf_government_rule_environment_49" selected="true" />
+  <select idref="xccdf_government_rule_environment_50" selected="true" />
+  <select idref="xccdf_government_rule_environment_51" selected="true" />
+  <select idref="xccdf_government_rule_environment_52" selected="true" />
+  <select idref="xccdf_government_rule_environment_53" selected="true" />
+  <select idref="xccdf_government_rule_environment_54" selected="true" />
+  <select idref="xccdf_government_rule_environment_55" selected="true" />
+  <select idref="xccdf_government_rule_environment_56" selected="true" />
+  <select idref="xccdf_government_rule_environment_57" selected="true" />
+  <select idref="xccdf_government_rule_environment_58" selected="true" />
+  <select idref="xccdf_government_rule_environment_59" selected="true" />
+  </Profile>
+  <Profile id="xccdf_government_profile_government_environment">
+  <title>Government</title>
+  <description>Government Environment Checks</description>
+  <select idref="xccdf_government_rule_environment_1" selected="true" />
+  <select idref="xccdf_government_rule_environment_2" selected="true" />
+  <select idref="xccdf_government_rule_environment_3" selected="true" />
+  <select idref="xccdf_government_rule_environment_4" selected="true" />
+  <select idref="xccdf_government_rule_environment_5" selected="true" />
+  <select idref="xccdf_government_rule_environment_6" selected="true" />
+  <select idref="xccdf_government_rule_environment_7" selected="true" />
+  <select idref="xccdf_government_rule_environment_8" selected="true" />
+  <select idref="xccdf_government_rule_environment_9" selected="true" />
+  <select idref="xccdf_government_rule_environment_10" selected="true" />
+  <select idref="xccdf_government_rule_environment_11" selected="true" />
+  <select idref="xccdf_government_rule_environment_12" selected="true" />
+  <select idref="xccdf_government_rule_environment_13" selected="true" />
+  <select idref="xccdf_government_rule_environment_14" selected="true" />
+  <select idref="xccdf_government_rule_environment_15" selected="true" />
+  <select idref="xccdf_government_rule_environment_16" selected="true" />
+  <select idref="xccdf_government_rule_environment_17" selected="true" />
+  <select idref="xccdf_government_rule_environment_18" selected="true" />
+  <select idref="xccdf_government_rule_environment_19" selected="true" />
+  <select idref="xccdf_government_rule_environment_20" selected="true" />
+  <select idref="xccdf_government_rule_environment_21" selected="true" />
+  <select idref="xccdf_government_rule_environment_22" selected="true" />
+  <select idref="xccdf_government_rule_environment_23" selected="true" />
+  <select idref="xccdf_government_rule_environment_24" selected="true" />
+  <select idref="xccdf_government_rule_environment_25" selected="true" />
+  <select idref="xccdf_government_rule_environment_26" selected="true" />
+  <select idref="xccdf_government_rule_environment_27" selected="true" />
+  <select idref="xccdf_government_rule_environment_28" selected="true" />
+  <select idref="xccdf_government_rule_environment_29" selected="true" />
+  <select idref="xccdf_government_rule_environment_30" selected="true" />
+  <select idref="xccdf_government_rule_environment_31" selected="true" />
+  <select idref="xccdf_government_rule_environment_32" selected="true" />
+  <select idref="xccdf_government_rule_environment_33" selected="true" />
+  <select idref="xccdf_government_rule_environment_34" selected="true" />
+  <select idref="xccdf_government_rule_environment_35" selected="true" />
+  <select idref="xccdf_government_rule_environment_36" selected="true" />
+  <select idref="xccdf_government_rule_environment_37" selected="true" />
+  <select idref="xccdf_government_rule_environment_38" selected="true" />
+  <select idref="xccdf_government_rule_environment_39" selected="true" />
+  <select idref="xccdf_government_rule_environment_40" selected="true" />
+  <select idref="xccdf_government_rule_environment_41" selected="true" />
+  <select idref="xccdf_government_rule_environment_42" selected="true" />
+  <select idref="xccdf_government_rule_environment_43" selected="true" />
+  <select idref="xccdf_government_rule_environment_44" selected="true" />
+  <select idref="xccdf_government_rule_environment_45" selected="true" />
+  <select idref="xccdf_government_rule_environment_46" selected="true" />
+  <select idref="xccdf_government_rule_environment_47" selected="true" />
+  <select idref="xccdf_government_rule_environment_48" selected="true" />
+  <select idref="xccdf_government_rule_environment_49" selected="true" />
+  <select idref="xccdf_government_rule_environment_50" selected="true" />
+  <select idref="xccdf_government_rule_environment_51" selected="true" />
+  <select idref="xccdf_government_rule_environment_52" selected="true" />
+  <select idref="xccdf_government_rule_environment_53" selected="true" />
+  <select idref="xccdf_government_rule_environment_54" selected="true" />
+  <select idref="xccdf_government_rule_environment_55" selected="true" />
+  <select idref="xccdf_government_rule_environment_56" selected="true" />
+  <select idref="xccdf_government_rule_environment_57" selected="true" />
+  <select idref="xccdf_government_rule_environment_58" selected="true" />
+  <select idref="xccdf_government_rule_environment_59" selected="true" />
+  <select idref="xccdf_government_rule_environment_60" selected="true" />
+  <select idref="xccdf_government_rule_environment_61" selected="true" />
+  <select idref="xccdf_government_rule_environment_62" selected="true" />
+  <select idref="xccdf_government_rule_environment_63" selected="true" />
+  <select idref="xccdf_government_rule_environment_64" selected="true" />
+  <select idref="xccdf_government_rule_environment_65" selected="true" />
+  <select idref="xccdf_government_rule_environment_66" selected="true" />
+  <select idref="xccdf_government_rule_environment_67" selected="true" />
+  <select idref="xccdf_government_rule_environment_68" selected="true" />
+  <select idref="xccdf_government_rule_environment_69" selected="true" />
+  <select idref="xccdf_government_rule_environment_70" selected="true" />
+  <select idref="xccdf_government_rule_environment_71" selected="true" />
+  <select idref="xccdf_government_rule_environment_72" selected="true" />
+  <select idref="xccdf_government_rule_environment_73" selected="true" />
+  <select idref="xccdf_government_rule_environment_74" selected="true" />
+  <select idref="xccdf_government_rule_environment_75" selected="true" />
+  <select idref="xccdf_government_rule_environment_76" selected="true" />
+  <select idref="xccdf_government_rule_environment_77" selected="true" />
+  <select idref="xccdf_government_rule_environment_78" selected="true" />
+  <select idref="xccdf_government_rule_environment_79" selected="true" />
+  <select idref="xccdf_government_rule_environment_80" selected="true" />
+  <select idref="xccdf_government_rule_environment_81" selected="true" />
+  <select idref="xccdf_government_rule_environment_82" selected="true" />
+  <select idref="xccdf_government_rule_environment_83" selected="true" />
+  <select idref="xccdf_government_rule_environment_84" selected="true" />
+  <select idref="xccdf_government_rule_environment_85" selected="true" />
+  <select idref="xccdf_government_rule_environment_86" selected="true" />
+  <select idref="xccdf_government_rule_environment_87" selected="true" />
+  <select idref="xccdf_government_rule_environment_88" selected="true" />
+  <select idref="xccdf_government_rule_environment_89" selected="true" />
+  <select idref="xccdf_government_rule_environment_90" selected="true" />
+  <select idref="xccdf_government_rule_environment_91" selected="true" />
+  <select idref="xccdf_government_rule_environment_92" selected="true" />
+  <select idref="xccdf_government_rule_environment_93" selected="true" />
+  <select idref="xccdf_government_rule_environment_94" selected="true" />
+  <select idref="xccdf_government_rule_environment_95" selected="true" />
+  <select idref="xccdf_government_rule_environment_96" selected="true" />
+  <select idref="xccdf_government_rule_environment_97" selected="true" />
+  <select idref="xccdf_government_rule_environment_98" selected="true" />
+  <select idref="xccdf_government_rule_environment_99" selected="true" />
+  <select idref="xccdf_government_rule_environment_100" selected="true" />
+  <select idref="xccdf_government_rule_environment_101" selected="true" />
+  <select idref="xccdf_government_rule_environment_102" selected="true" />
+  <select idref="xccdf_government_rule_environment_103" selected="true" />
+  <select idref="xccdf_government_rule_environment_104" selected="true" />
+  <select idref="xccdf_government_rule_environment_105" selected="true" />
+  <select idref="xccdf_government_rule_environment_106" selected="true" />
+  <select idref="xccdf_government_rule_environment_107" selected="true" />
+  <select idref="xccdf_government_rule_environment_108" selected="true" />
+  <select idref="xccdf_government_rule_environment_109" selected="true" />
+  <select idref="xccdf_government_rule_environment_110" selected="true" />
+  <select idref="xccdf_government_rule_environment_111" selected="true" />
+  <select idref="xccdf_government_rule_environment_112" selected="true" />
+  <select idref="xccdf_government_rule_environment_113" selected="true" />
+  <select idref="xccdf_government_rule_environment_114" selected="true" />
+  <select idref="xccdf_government_rule_environment_115" selected="true" />
+  <select idref="xccdf_government_rule_environment_116" selected="true" />
+  <select idref="xccdf_government_rule_environment_117" selected="true" />
+  <select idref="xccdf_government_rule_environment_118" selected="true" />
+  <select idref="xccdf_government_rule_environment_119" selected="true" />
+  <select idref="xccdf_government_rule_environment_120" selected="true" />
+  <select idref="xccdf_government_rule_environment_121" selected="true" />
+  <select idref="xccdf_government_rule_environment_122" selected="true" />
+  <select idref="xccdf_government_rule_environment_123" selected="true" />
+  <select idref="xccdf_government_rule_environment_124" selected="true" />
+  <select idref="xccdf_government_rule_environment_125" selected="true" />
+  <select idref="xccdf_government_rule_environment_126" selected="true" />
+  <select idref="xccdf_government_rule_environment_127" selected="true" />
+  <select idref="xccdf_government_rule_environment_128" selected="true" />
+  <select idref="xccdf_government_rule_environment_129" selected="true" />
+  <select idref="xccdf_government_rule_environment_130" selected="true" />
+  <select idref="xccdf_government_rule_environment_131" selected="true" />
+  <select idref="xccdf_government_rule_environment_132" selected="true" />
+  <select idref="xccdf_government_rule_environment_133" selected="true" />
+  <select idref="xccdf_government_rule_environment_134" selected="true" />
+  </Profile>
+  <Rule selected="true" id="xccdf_government_rule_environment_1">
+    <title>secpol.msc - Account Policies - Password Policy - Enforce password history</title>
+    <description>Ensure the value for this parameter is set to "0"</description>
+  </Rule>
+  <Rule selected="true" id="xccdf_government_rule_environment_2">
+    <title>secpol.msc - Account Policies - Password Policy - Maximum password age</title>
+    <description>Ensure the value for this parameter is set to "28"</description>
+  </Rule>
+  <Rule selected="true" id="xccdf_government_rule_environment_3">
+    <title>secpol.msc - Account Policies - Password Policy - Minimum password age</title>
+    <description>Ensure the value for this parameter is set to "0"</description>
+  </Rule>
+  <Rule selected="true" id="xccdf_government_rule_environment_4">
+    <title>secpol.msc - Account Policies - Password Policy - Minimum password length</title>
+    <description>Ensure the value for this parameter is set to "1"</description>
+  </Rule>
+  <Rule selected="true" id="xccdf_government_rule_environment_5">
+    <title>secpol.msc - Account Policies - Password Policy - Password must meet complexity requirements</title>
+    <description>Ensure the value for this parameter is set to "Enabled"</description>
+  </Rule>
+  <Rule selected="true" id="xccdf_government_rule_environment_6">
+    <title>secpol.msc - Account Policies - Password Policy - Store passwords using reversible encryption</title>
+    <description>Ensure the value for this parameter is set to "Disabled"</description>
+  </Rule>
+  <Rule selected="true" id="xccdf_government_rule_environment_7">
+    <title>secpol.msc - Local Policies - Audit Policy - Audit account logon events</title>
+    <description>Enable the Audit Policy for "Success" and "Failure" attempts</description>
+  </Rule>
+  <Rule selected="true" id="xccdf_government_rule_environment_8">
+    <title>secpol.msc - Local Policies - Audit Policy - Audit account management</title>
+    <description>Enable the Audit Policy for "Success" and "Failure" attempts</description>
+  </Rule>
+  <Rule selected="true" id="xccdf_government_rule_environment_9">
+    <title>secpol.msc - Local Policies - Audit Policy - Audit directory service access</title>
+    <description>Enable the Audit Policy for "Success" and "Failure" attempts</description>
+  </Rule>
+  <Rule selected="true" id="xccdf_government_rule_environment_10">
+    <title>secpol.msc - Local Policies - Audit Policy - Audit logon events</title>
+    <description>Enable the Audit Policy for "Success" and "Failure" attempts</description>
+  </Rule>
+  <Rule selected="true" id="xccdf_government_rule_environment_11">
+    <title>secpol.msc - Local Policies - Audit Policy - Audit object access</title>
+    <description>Enable the Audit Policy for "Success" and "Failure" attempts</description>
+  </Rule>
+  <Rule selected="true" id="xccdf_government_rule_environment_12">
+    <title>secpol.msc - Local Policies - Audit Policy - Audit policy change</title>
+    <description>Enable the Audit Policy for "Success" and "Failure" attempts</description>
+  </Rule>
+  <Rule selected="true" id="xccdf_government_rule_environment_13">
+    <title>secpol.msc - Local Policies - Audit Policy - Audit privilege use</title>
+    <description>Enable the Audit Policy for "Success" and "Failure" attempts</description>
+  </Rule>
+  <Rule selected="true" id="xccdf_government_rule_environment_14">
+    <title>secpol.msc - Local Policies - Audit Policy - Audit process tracking</title>
+    <description>Enable the Audit Policy for "Success" and "Failure" attempts</description>
+  </Rule>
+  <Rule selected="true" id="xccdf_government_rule_environment_15">
+    <title>secpol.msc - Local Policies - Audit Policy - Audit system events</title>
+    <description>Enable the Audit Policy for "Success" and "Failure" attempts</description>
+  </Rule>
+  <Rule selected="true" id="xccdf_government_rule_environment_16">
+    <title>secpol.msc - Local Policies - User Right Assignment - Access Credential Manager as a trust caller</title>
+    <description>Ensure the value for this parameter is set to null</description>
+  </Rule>
+  <Rule selected="true" id="xccdf_government_rule_environment_17">
+    <title>secpol.msc - Local Policies - User Right Assignment - Access this computer from the network</title>
+    <description>Ensure the value for this parameter is set to null</description>
+  </Rule>
+  <Rule selected="true" id="xccdf_government_rule_environment_18">
+    <title>secpol.msc - Local Policies - User Right Assignment - Act as part of the operating system</title>
+    <description>Ensure the value for this parameter is set to null</description>
+  </Rule>
+  <Rule selected="true" id="xccdf_government_rule_environment_19">
+    <title>secpol.msc - Local Policies - User Right Assignment - Add workstations to domain</title>
+    <description>Ensure the value for this parameter is set to null</description>
+  </Rule>
+  <Rule selected="true" id="xccdf_government_rule_environment_20">
+    <title>secpol.msc - Local Policies - User Right Assignment - Adjust memory quotas for a process</title>
+    <description>Ensure the value for this parameter is set to null</description>
+  </Rule>
+  <Rule selected="true" id="xccdf_government_rule_environment_21">
+    <title>secpol.msc - Local Policies - User Right Assignment - Log on locally</title>
+    <description>Ensure the value for this parameter is set to this values (in order):
+    Administrators
+    Backup Operators
+    Guest
+    Users
+</description>
+  </Rule>
+  <Rule selected="true" id="xccdf_government_rule_environment_22">
+    <title>secpol.msc - Local Policies - User Right Assignment - Allow log on through Remote Desktop Services</title>
+    <description>Ensure the value for this parameter is set to null</description>
+  </Rule>
+  <Rule selected="true" id="xccdf_government_rule_environment_23">
+    <title>secpol.msc - Local Policies - User Right Assignment - Back up files and directories</title>
+    <description>Ensure the value for this parameter is set to null</description>
+  </Rule>
+  <Rule selected="true" id="xccdf_government_rule_environment_24">
+    <title>secpol.msc - Local Policies - User Right Assignment - Bypass traverse checking</title>
+    <description>Ensure the value for this parameter is set to null</description>
+  </Rule>
+  <Rule selected="true" id="xccdf_government_rule_environment_25">
+    <title>secpol.msc - Local Policies - User Right Assignment - Change the system time</title>
+    <description>Ensure the value for this parameter is set to null</description>
+  </Rule>
+  <Rule selected="true" id="xccdf_government_rule_environment_26">
+    <title>secpol.msc - Local Policies - User Right Assignment - Change the Time Zone</title>
+    <description>Ensure the value for this parameter is set to null</description>
+  </Rule>
+  <Rule selected="true" id="xccdf_government_rule_environment_27">
+    <title>secpol.msc - Local Policies - User Right Assignment - Create a pagefile</title>
+    <description>Ensure the value for this parameter is set to null</description>
+  </Rule>
+  <Rule selected="true" id="xccdf_government_rule_environment_28">
+    <title>secpol.msc - Local Policies - User Right Assignment - Create a token object</title>
+    <description>Ensure the value for this parameter is set to null</description>
+  </Rule>
+  <Rule selected="true" id="xccdf_government_rule_environment_29">
+    <title>secpol.msc - Local Policies - User Right Assignment - Create global objects</title>
+    <description>Ensure the value for this parameter is set to null</description>
+  </Rule>
+  <Rule selected="true" id="xccdf_government_rule_environment_30">
+    <title>secpol.msc - Local Policies - User Right Assignment - Create permanent shared objects</title>
+    <description>Ensure the value for this parameter is set to null</description>
+  </Rule>
+  <Rule selected="true" id="xccdf_government_rule_environment_31">
+    <title>secpol.msc - Local Policies - User Right Assignment - Create Symbolic Links</title>
+    <description>Ensure the value for this parameter is set to null</description>
+  </Rule>
+  <Rule selected="true" id="xccdf_government_rule_environment_32">
+    <title>secpol.msc - Local Policies - User Right Assignment - Debug programs</title>
+    <description>Ensure the value for this parameter is set to null</description>
+  </Rule>
+  <Rule selected="true" id="xccdf_government_rule_environment_33">
+    <title>secpol.msc - Local Policies - User Right Assignment - Deny access to this computer from the network</title>
+    <description>Ensure the value for this parameter is set to null</description>
+  </Rule>
+  <Rule selected="true" id="xccdf_government_rule_environment_34">
+    <title>secpol.msc - Local Policies - User Right Assignment - Deny log on as a batch job</title>
+    <description>Ensure the value for this parameter is set to null</description>
+  </Rule>
+  <Rule selected="true" id="xccdf_government_rule_environment_35">
+    <title>secpol.msc - Local Policies - User Right Assignment - Deny log on as a service</title>
+    <description>Ensure the value for this parameter is set to null</description>
+  </Rule>
+  <Rule selected="true" id="xccdf_government_rule_environment_36">
+    <title>secpol.msc - Local Policies - User Right Assignment - Deny log on locally</title>
+    <description>Ensure the value for this parameter is set to null</description>
+  </Rule>
+  <Rule selected="true" id="xccdf_government_rule_environment_37">
+    <title>secpol.msc - Local Policies - User Right Assignment - Deny log on through Remote Desktop Services</title>
+    <description>Ensure the value for this parameter is set to null</description>
+  </Rule>
+  <Rule selected="true" id="xccdf_government_rule_environment_38">
+    <title>secpol.msc - Local Policies - User Right Assignment - Enable computer and user accounts to be trusted for delegation</title>
+    <description>Ensure the value for this parameter is set to null</description>
+  </Rule>
+  <Rule selected="true" id="xccdf_government_rule_environment_39">
+    <title>secpol.msc - Local Policies - User Right Assignment - Force shutdown from a remote system</title>
+    <description>Ensure the value for this parameter is set to null</description>
+  </Rule>
+  <Rule selected="true" id="xccdf_government_rule_environment_40">
+    <title>secpol.msc - Local Policies - User Right Assignment - Generate security audits</title>
+    <description>Ensure the value for this parameter is set to null</description>
+  </Rule>
+  <Rule selected="true" id="xccdf_government_rule_environment_41">
+    <title>secpol.msc - Local Policies - User Right Assignment - Impersonate a client after authentication</title>
+    <description>Ensure the value for this parameter is set to this values (in order):
+    Administrators
+    LOCAL SERVICE
+    NETWORK SERVICE
+    SERVICE
+    </description>
+  </Rule>
+  <Rule selected="true" id="xccdf_government_rule_environment_42">
+    <title>secpol.msc - Local Policies - User Right Assignment - Increase a process working set</title>
+    <description>Ensure the value for this parameter is set to null</description>
+  </Rule>
+  <Rule selected="true" id="xccdf_government_rule_environment_43">
+    <title>secpol.msc - Local Policies - User Right Assignment - Increase scheduling priority</title>
+    <description>Ensure the value for this parameter is set to null</description>
+  </Rule>
+  <Rule selected="true" id="xccdf_government_rule_environment_44">
+    <title>secpol.msc - Local Policies - User Right Assignment - Load and unload device drivers</title>
+    <description>Ensure the value for this parameter is set to null</description>
+  </Rule>
+  <Rule selected="true" id="xccdf_government_rule_environment_45">
+    <title>secpol.msc - Local Policies - User Right Assignment - Lock pages in memory</title>
+    <description>Ensure the value for this parameter is set to null</description>
+  </Rule>
+  <Rule selected="true" id="xccdf_government_rule_environment_46">
+    <title>secpol.msc - Local Policies - User Right Assignment - Log on as a batch job</title>
+    <description>Ensure the value for this parameter is set to null</description>
+  </Rule>
+  <Rule selected="true" id="xccdf_government_rule_environment_47">
+    <title>secpol.msc - Local Policies - User Right Assignment - Log on as a service</title>
+    <description>Ensure the value for this parameter is set to null</description>
+  </Rule>
+  <Rule selected="true" id="xccdf_government_rule_environment_48">
+    <title>secpol.msc - Local Policies - User Right Assignment - Manage auditing and security log</title>
+    <description>Ensure the value for this parameter is set to null</description>
+  </Rule>
+  <Rule selected="true" id="xccdf_government_rule_environment_49">
+    <title>secpol.msc - Local Policies - User Right Assignment - Modify an object label</title>
+    <description>Ensure the value for this parameter is set to null</description>
+  </Rule>
+  <Rule selected="true" id="xccdf_government_rule_environment_50">
+    <title>secpol.msc - Local Policies - User Right Assignment - Modify firmware environment values</title>
+    <description>Ensure the value for this parameter is set to null</description>
+  </Rule>
+  <Rule selected="true" id="xccdf_government_rule_environment_51">
+    <title>secpol.msc - Local Policies - User Right Assignment - Perform volume maintenance tasks</title>
+    <description>Ensure the value for this parameter is set to null</description>
+  </Rule>
+  <Rule selected="true" id="xccdf_government_rule_environment_52">
+    <title>secpol.msc - Local Policies - User Right Assignment - Profile single process</title>
+    <description>Ensure the value for this parameter is set to null</description>
+  </Rule>
+  <Rule selected="true" id="xccdf_government_rule_environment_53">
+    <title>secpol.msc - Local Policies - User Right Assignment - Profile system performance</title>
+    <description>Ensure the value for this parameter is set to null</description>
+  </Rule>
+  <Rule selected="true" id="xccdf_government_rule_environment_54">
+    <title>secpol.msc - Local Policies - User Right Assignment - Remove computer from docking station</title>
+    <description>Ensure the value for this parameter is set to null</description>
+  </Rule>
+  <Rule selected="true" id="xccdf_government_rule_environment_55">
+    <title>secpol.msc - Local Policies - User Right Assignment - Replace a process level token</title>
+    <description>Ensure the value for this parameter is set to null</description>
+  </Rule>
+  <Rule selected="true" id="xccdf_government_rule_environment_56">
+    <title>secpol.msc - Local Policies - User Right Assignment - Restore files and directories</title>
+    <description>Ensure the value for this parameter is set to null</description>
+  </Rule>
+  <Rule selected="true" id="xccdf_government_rule_environment_57">
+    <title>secpol.msc - Local Policies - User Right Assignment - Shut down the system</title>
+    <description>Ensure the value for this parameter is set to null</description>
+  </Rule>
+  <Rule selected="true" id="xccdf_government_rule_environment_58">
+    <title>secpol.msc - Local Policies - User Right Assignment - Synchronize directory service data</title>
+    <description>Ensure the value for this parameter is set to null</description>
+  </Rule>
+  <Rule selected="true" id="xccdf_government_rule_environment_59">
+    <title>secpol.msc - Local Policies - User Right Assignment - Take ownership of files or other objects</title>
+    <description>Ensure the value for this parameter is set to null</description>
+  </Rule>
+  <Rule selected="true" id="xccdf_government_rule_environment_60">
+    <title>secpol.msc - Local Policies - Security Options - Accounts: Administrator account status</title>
+    <description>Ensure the value for this parameter is set to "Disabled"</description>
+  </Rule>
+  <Rule selected="true" id="xccdf_government_rule_environment_61">
+    <title>secpol.msc - Local Policies - Security Options - Accounts: Guest account status</title>
+    <description>Ensure the value for this parameter is set to "Disabled"</description>
+  </Rule>
+  <Rule selected="true" id="xccdf_government_rule_environment_62">
+    <title>secpol.msc - Local Policies - Security Options - Accounts: Limit local account use of blank passwords to console logon only</title>
+    <description>Ensure the value for this parameter is set to "Enabled"</description>
+  </Rule>
+  <Rule selected="true" id="xccdf_government_rule_environment_63">
+    <title>secpol.msc - Local Policies - Security Options - Accounts: Rename administrator account</title>
+    <description>Ensure the administrator account has been renamed</description>
+  </Rule>
+  <Rule selected="true" id="xccdf_government_rule_environment_64">
+    <title>secpol.msc - Local Policies - Security Options - Accounts: Rename guest account</title>
+    <description>Ensure the guest account has been renamed</description>
+  </Rule>
+  <Rule selected="true" id="xccdf_government_rule_environment_65">
+    <title>secpol.msc - Local Policies - Security Options - Audit: Audit the access of global system objects</title>
+    <description>Ensure the value for this parameter is set to "Enabled"</description>
+  </Rule>
+  <Rule selected="true" id="xccdf_government_rule_environment_66">
+    <title>secpol.msc - Local Policies - Security Options - Audit: Audit the use of Backup and Restore privilege</title>
+    <description>Ensure the value for this parameter is set to "Enabled"</description>
+  </Rule>
+  <Rule selected="true" id="xccdf_government_rule_environment_67">
+    <title>secpol.msc - Local Policies - Security Options - Audit: Force audit policy subcategory settings (Windows Vista or later) to override audit policy category settings.</title>
+    <description>Ensure the value for this parameter is set to "Enabled"</description>
+  </Rule>
+  <Rule selected="true" id="xccdf_government_rule_environment_68">
+    <title>secpol.msc - Local Policies - Security Options - Audit: Shut down system immediately if unable to log security audits</title>
+    <description>Ensure the value for this parameter is set to "Disabled"</description>
+  </Rule>
+  <Rule selected="true" id="xccdf_government_rule_environment_69">
+    <title>secpol.msc - Local Policies - Security Options - DCOM: Machine Access Restrictions in Security Descriptor Definition Language (SDDL) syntax</title>
+    <description>Ensure the value for this parameter is set to "null" or "Not Defined"</description>
+  </Rule>
+  <Rule selected="true" id="xccdf_government_rule_environment_70">
+    <title>secpol.msc - Local Policies - Security Options - DCOM: Machine Launch Restrictions in Security Descriptor Definition Language (SDDL) syntax</title>
+    <description>Ensure the value for this parameter is set to "null" or "Not Defined"</description>
+  </Rule>
+  <Rule selected="true" id="xccdf_government_rule_environment_71">
+    <title>secpol.msc - Local Policies - Security Options - Devices: Allow undock without having to log on</title>
+    <description>Ensure the value for this parameter is set to "Enabled"</description>
+  </Rule>
+  <Rule selected="true" id="xccdf_government_rule_environment_72">
+    <title>secpol.msc - Local Policies - Security Options - Devices: Allowed to format and eject removable media</title>
+    <description>Ensure the value for this parameter is set to "Not Defined" or "Administrators"</description>
+  </Rule>
+  <Rule selected="true" id="xccdf_government_rule_environment_73">
+    <title>secpol.msc - Local Policies - Security Options - Devices: Prevent users from installing printer drivers when connecting to shared printers</title>
+    <description>Ensure the value for this parameter is set to "Disabled"</description>
+  </Rule>
+  <Rule selected="true" id="xccdf_government_rule_environment_74">
+    <title>secpol.msc - Local Policies - Security Options - Devices: Restrict CD-ROM access to locally logged-on user only</title>
+    <description>Ensure the value for this parameter is set to "Disabled" or "Not Defined"</description>
+  </Rule>
+  <Rule selected="true" id="xccdf_government_rule_environment_75">
+    <title>secpol.msc - Local Policies - Security Options - Devices: Restrict floppy access to locally logged-on user only</title>
+    <description>Ensure the value for this parameter is set to "Disabled" or "Not Defined"</description>
+  </Rule>
+  <Rule selected="true" id="xccdf_government_rule_environment_76">
+    <title>secpol.msc - Local Policies - Security Options - Domain controller: Allow server operators to schedule tasks</title>
+    <description>Ensure the value for this parameter is set to "Disabled" or "Not Defined"</description>
+  </Rule>
+  <Rule selected="true" id="xccdf_government_rule_environment_77">
+    <title>secpol.msc - Local Policies - Security Options - Domain controller: LDAP server signing requirements</title>
+    <description>Ensure the value for this parameter is set to "Not Defined"</description>
+  </Rule>
+  <Rule selected="true" id="xccdf_government_rule_environment_78">
+    <title>secpol.msc - Local Policies - Security Options - Domain controller: Refuse machine account password changes</title>
+    <description>Ensure the value for this parameter is set to "Disabled" or "Not Defined"</description>
+  </Rule>
+  <Rule selected="true" id="xccdf_government_rule_environment_79">
+    <title>secpol.msc - Local Policies - Security Options - Domain member: Digitally encrypt or sign secure channel data (always)</title>
+    <description>Ensure the value for this parameter is set to "Enabled"</description>
+  </Rule>
+  <Rule selected="true" id="xccdf_government_rule_environment_80">
+    <title>secpol.msc - Local Policies - Security Options - Domain member: Digitally encrypt secure channel data (when possible)</title>
+    <description>Ensure the value for this parameter is set to "Enabled"</description>
+  </Rule>
+  <Rule selected="true" id="xccdf_government_rule_environment_81">
+    <title>secpol.msc - Local Policies - Security Options - Domain member: Digitally sign secure channel data (when possible)</title>
+    <description>Ensure the value for this parameter is set to "Enabled"</description>
+  </Rule>
+  <Rule selected="true" id="xccdf_government_rule_environment_82">
+    <title>secpol.msc - Local Policies - Security Options - Domain member: Disable machine account password changes</title>
+    <description>Ensure the value for this parameter is set to "Disabled"</description>
+  </Rule>
+  <Rule selected="true" id="xccdf_government_rule_environment_83">
+    <title>secpol.msc - Local Policies - Security Options - Domain member: Maximum machine account password age</title>
+    <description>Ensure the value for this parameter is set to "30"</description>
+  </Rule>
+  <Rule selected="true" id="xccdf_government_rule_environment_84">
+    <title>secpol.msc - Local Policies - Security Options - Domain member: Require strong (Windows 2000 or later) session key</title>
+    <description>Ensure the value for this parameter is set to "Enabled"</description>
+  </Rule>
+  <Rule selected="true" id="xccdf_government_rule_environment_85">
+    <title>secpol.msc - Local Policies - Security Options - Interactive logon: Display user information when the session is locked</title>
+    <description>Ensure the value for this parameter is set to "Do not display user information"</description>
+  </Rule>
+  <Rule selected="true" id="xccdf_government_rule_environment_86">
+    <title>secpol.msc - Local Policies - Security Options - Interactive logon: Do not display last user name</title>
+    <description>Ensure the value for this parameter is set to "Enabled"</description>
+  </Rule>
+  <Rule selected="true" id="xccdf_government_rule_environment_87">
+    <title>secpol.msc - Local Policies - Security Options - Interactive logon: Do not require CTRL+ALT+DEL</title>
+    <description>Ensure the value for this parameter is set to "Disabled"</description>
+  </Rule>
+  <Rule selected="true" id="xccdf_government_rule_environment_88">
+    <title>secpol.msc - Local Policies - Security Options - Interactive logon: Message text for users attempting to log on</title>
+    <description>Ensure the value for this parameter is not null</description>
+  </Rule>
+  <Rule selected="true" id="xccdf_government_rule_environment_89">
+    <title>secpol.msc - Local Policies - Security Options - Interactive logon: Message title for users attempting to log on</title>
+    <description>Ensure the value for this parameter is not null</description>
+  </Rule>
+  <Rule selected="true" id="xccdf_government_rule_environment_90">
+    <title>secpol.msc - Local Policies - Security Options - Interactive logon: Number of previous logons to cache (in case domain controller is not available)</title>
+    <description>Ensure the value for this parameter is set to "0"</description>
+  </Rule>
+  <Rule selected="true" id="xccdf_government_rule_environment_91">
+    <title>secpol.msc - Local Policies - Security Options - Interactive logon: Prompt user to change password before expiration</title>
+    <description>Ensure the value for this parameter is set to "5"</description>
+  </Rule>
+  <Rule selected="true" id="xccdf_government_rule_environment_92">
+    <title>secpol.msc - Local Policies - Security Options - Interactive logon: Require Domain Controller authentication to unlock</title>
+    <description>Ensure the value for this parameter is set to "Disabled"</description>
+  </Rule>
+  <Rule selected="true" id="xccdf_government_rule_environment_93">
+    <title>secpol.msc - Local Policies - Security Options - Interactive logon: Require smart card</title>
+    <description>Ensure the value for this parameter is set to "Disabled"</description>
+  </Rule>
+  <Rule selected="true" id="xccdf_government_rule_environment_94">
+    <title>secpol.msc - Local Policies - Security Options - Interactive logon: Smart card removal behavior</title>
+    <description>Ensure the value for this parameter is set to "No Action"</description>
+  </Rule>
+  <Rule selected="true" id="xccdf_government_rule_environment_95">
+    <title>secpol.msc - Local Policies - Security Options - Microsoft network client: Digitally sign communications (always)</title>
+    <description>Ensure the value for this parameter is set to "Disabled"</description>
+  </Rule>
+  <Rule selected="true" id="xccdf_government_rule_environment_96">
+    <title>secpol.msc - Local Policies - Security Options - Microsoft network client: Digitally sign communications (if server agrees)</title>
+    <description>Ensure the value for this parameter is set to "Enabled"</description>
+  </Rule>
+  <Rule selected="true" id="xccdf_government_rule_environment_97">
+    <title>secpol.msc - Local Policies - Security Options - Microsoft network client: Send unencrypted password to connect to third-party SMB servers</title>
+    <description>Ensure the value for this parameter is set to "Disabled"</description>
+  </Rule>
+  <Rule selected="true" id="xccdf_government_rule_environment_98">
+    <title>secpol.msc - Local Policies - Security Options - Microsoft network server: Amount of idle time required before suspending a session</title>
+    <description>Ensure the value for this parameter is set to "15"</description>
+  </Rule>
+  <Rule selected="true" id="xccdf_government_rule_environment_99">
+    <title>secpol.msc - Local Policies - Security Options - Microsoft network server: Digitally sign communications (always)</title>
+    <description>Ensure the value for this parameter is set to "Disabled"</description>
+  </Rule>
+  <Rule selected="true" id="xccdf_government_rule_environment_100">
+    <title>secpol.msc - Local Policies - Security Options - Microsoft network server: Digitally sign communications (if client agrees)</title>
+    <description>Ensure the value for this parameter is set to "Disabled"</description>
+  </Rule>
+  <Rule selected="true" id="xccdf_government_rule_environment_101">
+    <title>secpol.msc - Local Policies - Security Options - Microsoft network server: Server SPN target name validation level</title>
+    <description>Ensure the value for this parameter is set to "Off" or "Not Defined"</description>
+  </Rule>
+  <Rule selected="true" id="xccdf_government_rule_environment_102">
+    <title>secpol.msc - Local Policies - Security Options - Network access: Allow anonymous SID/name translation</title>
+    <description>Ensure the value for this parameter is set to "Disabled"</description>
+  </Rule>
+  <Rule selected="true" id="xccdf_government_rule_environment_103">
+    <title>secpol.msc - Local Policies - Security Options - Network access: Do not allow anonymous enumeration of SAM accounts</title>
+    <description>Ensure the value for this parameter is set to "Enabled"</description>
+  </Rule>
+  <Rule selected="true" id="xccdf_government_rule_environment_104">
+    <title>secpol.msc - Local Policies - Security Options - Network access: Do not allow anonymous enumeration of SAM accounts and shares</title>
+    <description>Ensure the value for this parameter is set to "Enabled"</description>
+  </Rule>
+  <Rule selected="true" id="xccdf_government_rule_environment_105">
+    <title>secpol.msc - Local Policies - Security Options - Network access: Do not allow storage of passwords and credentials for network authentication</title>
+    <description>Ensure the value for this parameter is set to "Enabled"</description>
+  </Rule>
+  <Rule selected="true" id="xccdf_government_rule_environment_106">
+    <title>secpol.msc - Local Policies - Security Options - Network access: Let Everyone permissions apply to anonymous users</title>
+    <description>Ensure the value for this parameter is set to "Disabled"</description>
+  </Rule>
+  <Rule selected="true" id="xccdf_government_rule_environment_107">
+    <title>secpol.msc - Local Policies - Security Options - Network access: Named pipes that can be accessed anonymously</title>
+    <description>Ensure the value for this parameter is set to null</description>
+  </Rule>
+  <Rule selected="true" id="xccdf_government_rule_environment_108">
+    <title>secpol.msc - Local Policies - Security Options - Network access: Remotely accessible registry paths</title>
+    <description>Ensure the value for this parameter is set to null</description>
+  </Rule>
+  <Rule selected="true" id="xccdf_government_rule_environment_109">
+    <title>secpol.msc - Local Policies - Security Options - Network access: Remotely accessible registry paths and subpaths</title>
+    <description>Ensure the value for this parameter is set to null</description>
+  </Rule>
+  <Rule selected="true" id="xccdf_government_rule_environment_110">
+    <title>secpol.msc - Local Policies - Security Options - Network access: Restrict anonymous access to Named Pipes and Shares</title>
+    <description>Ensure the value for this parameter is set to "Enabled"</description>
+  </Rule>
+  <Rule selected="true" id="xccdf_government_rule_environment_111">
+    <title>secpol.msc - Local Policies - Security Options - Network access: Shares that can be accessed anonymously</title>
+    <description>Ensure the value for this parameter is set to null or "Not Defined"</description>
+  </Rule>
+  <Rule selected="true" id="xccdf_government_rule_environment_112">
+    <title>secpol.msc - Local Policies - Security Options - Network access: Sharing and security model for local accounts</title>
+    <description>Ensure the value for this parameter is set to "Classic - local users authenticate as themselves"</description>
+  </Rule>
+  <Rule selected="true" id="xccdf_government_rule_environment_113">
+    <title>secpol.msc - Local Policies - Security Options - Network security: Allow Local System to use computer identity for NTLM</title>
+    <description>Ensure the value for this parameter is set to "Not Defined" or "Disabled"</description>
+  </Rule>
+  <Rule selected="true" id="xccdf_government_rule_environment_114">
+    <title>secpol.msc - Local Policies - Security Options - Network security: Allow LocalSystem NULL session fallback</title>
+    <description>Ensure the value for this parameter is set to "Not Defined" or "Disabled"</description>
+  </Rule>
+  <Rule selected="true" id="xccdf_government_rule_environment_115">
+    <title>secpol.msc - Local Policies - Security Options - Network security: Allow PKU2U authentication requests to this computer to use online identities.</title>
+    <description>Ensure the value for this parameter is set to "Not Defined" or "Disabled"</description>
+  </Rule>
+  <Rule selected="true" id="xccdf_government_rule_environment_116">
+    <title>secpol.msc - Local Policies - Security Options - Network security: Configure encryption types allowed for Kerberos</title>
+    <description>Ensure the value for this parameter is set to "Not Defined" or "No minimum"</description>
+  </Rule>
+  <Rule selected="true" id="xccdf_government_rule_environment_117">
+    <title>secpol.msc - Local Policies - Security Options - Network security: Do not store LAN Manager hash value on next password change</title>
+    <description>Ensure the value for this parameter is set to "Enabled"</description>
+  </Rule>
+  <Rule selected="true" id="xccdf_government_rule_environment_118">
+    <title>secpol.msc - Local Policies - Security Options - Network security: Force logoff when logon hours expire</title>
+    <description>Ensure the value for this parameter is set to "Disabled"</description>
+  </Rule>
+  <Rule selected="true" id="xccdf_government_rule_environment_119">
+    <title>secpol.msc - Local Policies - Security Options - Network security: LAN Manager authentication level</title>
+    <description>Ensure the value for this parameter is set to "Not Defined" or "Send LM NTLM responses"</description>
+  </Rule>
+  <Rule selected="true" id="xccdf_government_rule_environment_120">
+    <title>secpol.msc - Local Policies - Security Options - Network security: Minimum session security for NTLM SSP based (including secure RPC) clients</title>
+    <description>Ensure the value for this parameter is set to "Require 128-bit encryption"</description>
+  </Rule>
+  <Rule selected="true" id="xccdf_government_rule_environment_121">
+    <title>secpol.msc - Local Policies - Security Options - Network security: Minimum session security for NTLM SSP based (including secure RPC) servers</title>
+    <description>Ensure the value for this parameter is set to "Require 128-bit encryption"</description>
+  </Rule>
+  <Rule selected="true" id="xccdf_government_rule_environment_122">
+    <title>secpol.msc - Local Policies - Security Options - Network security: Restrict NTLM: Add remote server exceptions for NTLM authentication</title>
+    <description>Ensure the value for this parameter is set to null or "Not Defined"</description>
+  </Rule>
+  <Rule selected="true" id="xccdf_government_rule_environment_123">
+    <title>secpol.msc - Local Policies - Security Options - Network security: Restrict NTLM: Add server exceptions in this domain</title>
+    <description>Ensure the value for this parameter is set to null or "Not Defined"</description>
+  </Rule>
+  <Rule selected="true" id="xccdf_government_rule_environment_124">
+    <title>secpol.msc - Local Policies - Security Options - Network security: Restrict NTLM: Audit Incoming NTLM Traffic</title>
+    <description>Ensure the value for this parameter is set to "Disable" or "Not Defined"</description>
+  </Rule>
+  <Rule selected="true" id="xccdf_government_rule_environment_125">
+    <title>secpol.msc - Local Policies - Security Options - Network security: Restrict NTLM: Audit NTLM authentication in this domain</title>
+    <description>Ensure the value for this parameter is set to "Disable" or "Not Defined"</description>
+  </Rule>
+  <Rule selected="true" id="xccdf_government_rule_environment_126">
+    <title>secpol.msc - Local Policies - Security Options - Network security: Restrict NTLM: Incoming NTLM traffic</title>
+    <description>Ensure the value for this parameter is set to "Allow all" or "Not Defined"</description>
+  </Rule>
+  <Rule selected="true" id="xccdf_government_rule_environment_127">
+    <title>secpol.msc - Local Policies - Security Options - Network security: Restrict NTLM:  NTLM authentication in this domain</title>
+    <description>Ensure the value for this parameter is set to "Disable" or "Not Defined"</description>
+  </Rule>
+  <Rule selected="true" id="xccdf_government_rule_environment_128">
+    <title>secpol.msc - Local Policies - Security Options - Network security: Restrict NTLM: Outgoing NTLM traffic to remote servers</title>
+    <description>Ensure the value for this parameter is set to "Allow all" or "Not Defined"</description>
+  </Rule>
+  <Rule selected="true" id="xccdf_government_rule_environment_129">
+    <title>secpol.msc - Local Policies - Security Options - Recovery console: Allow automatic administrative logon</title>
+    <description>Ensure the value for this parameter is set to "Disabled"</description>
+  </Rule>
+  <Rule selected="true" id="xccdf_government_rule_environment_130">
+    <title>secpol.msc - Local Policies - Security Options - Recovery console: Allow floppy copy and access to all drives and all folders</title>
+    <description>Ensure the value for this parameter is set to "Disabled"</description>
+  </Rule>
+  <Rule selected="true" id="xccdf_government_rule_environment_131">
+    <title>secpol.msc - Local Policies - Security Options - Shutdown: Allow system to be shut down without having to log on</title>
+    <description>Ensure the value for this parameter is set to "Enabled"</description>
+  </Rule>
+  <Rule selected="true" id="xccdf_government_rule_environment_132">
+    <title>secpol.msc - Local Policies - Security Options - Shutdown: Clear virtual memory pagefile</title>
+    <description>Ensure the value for this parameter is set to "Enabled"</description>
+  </Rule>
+  <Rule selected="true" id="xccdf_government_rule_environment_133">
+    <title>secpol.msc - Local Policies - Security Options - System Cryptography: Force strong key protection for user keys stored on the computer</title>
+    <description>Ensure the value for this parameter is set to "User must enter a password each time they use a key"</description>
+  </Rule>
+  <Rule selected="true" id="xccdf_government_rule_environment_134">
+    <title>secpol.msc - Local Policies - Security Options - System cryptography: Use FIPS 140 compliant cryptographic algorithms, including encryption, hashing and signing algorithms</title>
+    <description>Ensure the value for this parameter is set to "Enabled"</description>
+  </Rule>
+  </Benchmark>
+  </component>
+</data-stream-collection>
