@@ -1,4 +1,4 @@
-# SCAP Content and Installation Tools:
+﻿# SCAP Content and Installation Tools:
 
 ### Important Update
 #### I'm performing continuous tests, and i have seen an anomaly on Windows 10 1809 if the "Bypass traverse checking" configuration is not set on "Everyone".
