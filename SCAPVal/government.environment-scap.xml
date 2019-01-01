@@ -353,7 +353,7 @@
   </Rule>
   <Rule selected="true" id="xccdf_government_rule_environment_24">
     <title>secpol.msc - Local Policies - User Right Assignment - Bypass traverse checking</title>
-    <description>Ensure the value for this parameter is set to null</description>
+    <description>Ensure the value for this parameter is set to Everyone</description>
   </Rule>
   <Rule selected="true" id="xccdf_government_rule_environment_25">
     <title>secpol.msc - Local Policies - User Right Assignment - Change the system time</title>
