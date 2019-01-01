@@ -1,5 +1,10 @@
 # SCAP Content and Installation Tools:
 
+### Important Update
+#### I'm performing continuous tests, and i have seen an anomaly on Windows 10 1809 if the "Bypass traverse checking" configuration is not set on "Everyone".
+#### For this reason, i have updated the configuration on all files.
+#### If you find a malfunction (the configs shall works from Windows 7 to Windows 10 - Including server editions), don't hesitate to open an issue.
+
 Use this Checklist for configure your Systems to a specific Environment setting.
 
 Environments are specified in NIST Special Publication " NIST SP 800-70 ":
