@@ -16,4 +16,8 @@ Some info:
 
 - All connections are redirected through Tor automatically
 
+To login in the system, enter the following credentials:
+Username: ubuntu
+Password: ubuntu
+
 I'm building a website for this Linux distro, so stay tuned...
