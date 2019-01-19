@@ -1,7 +1,7 @@
 # Red Team Operations:
 
 I have built a new Linux Distro downloadable here:
-https://drive.google.com/open?id=1HFQxVrMlwihJTmZq7MYWnIW-lBw8_I0v
+https://drive.google.com/open?id=1WZ5eEvfmfbZxihSY6icvdlWSdTDWLyjo
 
 The image was captured with dd, so use it or use Rufus (dd mode) to create a bootable media.
 
