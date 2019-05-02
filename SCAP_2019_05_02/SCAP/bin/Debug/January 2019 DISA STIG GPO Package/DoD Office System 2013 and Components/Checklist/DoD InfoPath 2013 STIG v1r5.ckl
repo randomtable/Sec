@@ -1,0 +1,2675 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<CHECKLIST>
+    <ASSET>
+        <ROLE>None</ROLE>
+        <ASSET_TYPE>Computing</ASSET_TYPE>
+        <HOST_NAME></HOST_NAME>
+        <HOST_IP></HOST_IP>
+        <HOST_MAC></HOST_MAC>
+        <HOST_GUID></HOST_GUID>
+        <HOST_FQDN></HOST_FQDN>
+        <TECH_AREA></TECH_AREA>
+        <TARGET_KEY></TARGET_KEY>
+        <WEB_OR_DATABASE>false</WEB_OR_DATABASE>
+        <WEB_DB_SITE></WEB_DB_SITE>
+        <WEB_DB_INSTANCE></WEB_DB_INSTANCE>
+    </ASSET>
+    <STIGS>
+        <iSTIG>
+            <STIG_INFO>
+                <SI_DATA>
+                    <SID_NAME>version</SID_NAME>
+                    <SID_DATA>1</SID_DATA>
+                </SI_DATA>
+                <SI_DATA>
+                    <SID_NAME>classification</SID_NAME>
+                    <SID_DATA>UNCLASSIFIED</SID_DATA>
+                </SI_DATA>
+                <SI_DATA>
+                    <SID_NAME>customname</SID_NAME>
+                </SI_DATA>
+                <SI_DATA>
+                    <SID_NAME>stigid</SID_NAME>
+                    <SID_DATA>Microsoft_InfoPath_2013</SID_DATA>
+                </SI_DATA>
+                <SI_DATA>
+                    <SID_NAME>description</SID_NAME>
+                    <SID_DATA>The Microsoft InfoPath 2013 Security Technical Implementation Guide (STIG) is published as a tool to improve the security of Department of Defense (DoD) information systems.  Comments or proposed revisions to this document should be sent via e-mail to the following address: disa.stig_spt@mail.mil.</SID_DATA>
+                </SI_DATA>
+                <SI_DATA>
+                    <SID_NAME>filename</SID_NAME>
+                    <SID_DATA>U_MS_InfoPath_2013_STIG_V1R5_Manual-xccdf.xml</SID_DATA>
+                </SI_DATA>
+                <SI_DATA>
+                    <SID_NAME>releaseinfo</SID_NAME>
+                    <SID_DATA>Release: 5 Benchmark Date: 27 Apr 2018</SID_DATA>
+                </SI_DATA>
+                <SI_DATA>
+                    <SID_NAME>title</SID_NAME>
+                    <SID_DATA>Microsoft InfoPath 2013 STIG</SID_DATA>
+                </SI_DATA>
+                <SI_DATA>
+                    <SID_NAME>uuid</SID_NAME>
+                    <SID_DATA>721d55da-c3f4-40c8-a72d-293787d41fc1</SID_DATA>
+                </SI_DATA>
+                <SI_DATA>
+                    <SID_NAME>notice</SID_NAME>
+                    <SID_DATA>terms-of-use</SID_DATA>
+                </SI_DATA>
+                <SI_DATA>
+                    <SID_NAME>source</SID_NAME>
+                    <SID_DATA></SID_DATA>
+                </SI_DATA>
+            </STIG_INFO>
+            <VULN>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Vuln_Num</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>V-17187</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Severity</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>medium</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Group_Title</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>DTOO131 - Trust Bar Notifications</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Rule_ID</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>SV-53331r1_rule</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Rule_Ver</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>DTOO131</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Rule_Title</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Trust Bar Notifications for unsigned application add-ins must be blocked.</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Vuln_Discuss</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>If an application is configured to require all add-ins to be signed by a trusted publisher, any unsigned add-ins the application loads will be disabled and the application will display the Trust Bar at the top of the active window. The Trust Bar contains a message informing users about the unsigned add-in. If a user is allowed to make the determination to allow an unsigned add-in, it increases the risk of malicious code being introduced onto the user's computer or the network.</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>IA_Controls</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Check_Content</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>The policy value for User Configuration -&gt; Administrative Templates -&gt; Microsoft InfoPath 2013 -&gt; Security -&gt; Trust Center "Disable Trust Bar Notification for unsigned application add-ins" must be "Enabled".
+
+Procedure: Use the Windows Registry Editor to navigate to the following key: 
+
+HKCU\Software\Policies\Microsoft\Office\15.0\InfoPath\security
+
+Criteria: If the value NoTBPromptUnsignedAddin is REG_DWORD = 1, this is not a finding.</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Fix_Text</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Set the policy value for User Configuration -&gt; Administrative Templates -&gt; Microsoft InfoPath 2013 -&gt; Security -&gt; Trust Center "Disable Trust Bar Notification for unsigned application add-ins" to "Enabled".</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>False_Positives</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>False_Negatives</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Documentable</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>false</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Mitigations</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Potential_Impact</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Third_Party_Tools</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Mitigation_Control</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Responsibility</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>System Administrator</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Security_Override_Guidance</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Check_Content_Ref</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>M</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Weight</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>10.0</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Class</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Unclass</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>STIGRef</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Microsoft InfoPath 2013 STIG :: Release: 5 Benchmark Date: 27 Apr 2018</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>TargetKey</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>CCI_REF</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>CCI-001749</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STATUS>NotAFinding</STATUS>
+                <FINDING_DETAILS></FINDING_DETAILS>
+                <COMMENTS></COMMENTS>
+                <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
+                <SEVERITY_JUSTIFICATION></SEVERITY_JUSTIFICATION>
+            </VULN>
+            <VULN>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Vuln_Num</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>V-17471</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Severity</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>medium</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Group_Title</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>DTOO133-Disable all trusted locations </ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Rule_ID</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>SV-53333r2_rule</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Rule_Ver</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>DTOO133</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Rule_Title</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>All automatic loading from Trusted Locations must be disabled.</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Vuln_Discuss</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Trusted locations specified in the Trust Center are used to define file locations assumed to be safe. Content, code, and add-ins are allowed to load from trusted locations with a minimal amount of security, without prompting the users for permission. If a dangerous file is opened from a trusted location, it will not be subject to standard security measures and could harm users' computers or data. By default, files located in trusted locations (those specified in the Trust Center) are assumed to be safe.</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>IA_Controls</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Check_Content</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>The policy value for User Configuration -&gt; Administrative Templates -&gt; Microsoft InfoPath 2013 -&gt; Security -&gt; Trust Center "Disable all trusted locations" must be set to "Enabled".
+
+Procedure: Use the Windows Registry Editor to navigate to the following key: 
+
+HKCU\Software\Policies\Microsoft\Office\15.0\InfoPath\security\trusted locations
+
+Criteria: If the value AllLocationsDisabled is REG_DWORD = 1, this is not a finding.</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Fix_Text</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Set the policy value for User Configuration -&gt; Administrative Templates -&gt; Microsoft InfoPath 2013 -&gt; Security -&gt; Trust Center "Disable all trusted locations" to "Enabled".</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>False_Positives</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>False_Negatives</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Documentable</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>false</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Mitigations</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Potential_Impact</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Third_Party_Tools</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Mitigation_Control</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Responsibility</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>System Administrator</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Security_Override_Guidance</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Check_Content_Ref</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>M</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Weight</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>10.0</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Class</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Unclass</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>STIGRef</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Microsoft InfoPath 2013 STIG :: Release: 5 Benchmark Date: 27 Apr 2018</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>TargetKey</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>CCI_REF</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>CCI-001170</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STATUS>NotAFinding</STATUS>
+                <FINDING_DETAILS></FINDING_DETAILS>
+                <COMMENTS></COMMENTS>
+                <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
+                <SEVERITY_JUSTIFICATION></SEVERITY_JUSTIFICATION>
+            </VULN>
+            <VULN>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Vuln_Num</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>V-17576</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Severity</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>medium</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Group_Title</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>DTOO157 - SharePoint Services Gradual Upgrade</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Rule_ID</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>SV-53337r1_rule</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Rule_Ver</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>DTOO157</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Rule_Title</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Redirection behavior for upgraded web sites by SharePoint must be blocked.</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Vuln_Discuss</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>InfoPath automatically redirects user requests for sites that have not been upgraded to the temporary URL if it is located on the local intranet, but blocks them if the temporary URL is located elsewhere. InfoPath will prompt users before redirecting forms or form templates to another intranet site.
+If this restriction is relaxed, all requests to sites that have not been upgraded will be redirected to their targets, regardless of location. This functionality could cause requests made to a secure site to be redirected to an unsecured one (for example, requests to an intranet site could be redirected to an unencrypted Internet site), causing sensitive information to be at risk.</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>IA_Controls</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Check_Content</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>The policy value for User Configuration -&gt; Administrative Templates -&gt; Microsoft InfoPath 2013 -&gt; Security -&gt; "Control behavior for Microsoft SharePoint Foundation gradual upgrade" must be set to "Enabled (Block all redirections)".
+
+Procedure: Use the Windows Registry Editor to navigate to the following key: 
+
+HKCU\Software\Policies\Microsoft\Office\15.0\InfoPath\security
+
+Criteria: If the value GradualUpgradeRedirection is REG_DWORD = 2, this is not a finding.</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Fix_Text</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Set the policy value for User Configuration -&gt; Administrative Templates -&gt; Microsoft InfoPath 2013 -&gt; Security -&gt; "Control behavior for Microsoft SharePoint Foundation gradual upgrade" to "Enabled (Block all redirections)".</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>False_Positives</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>False_Negatives</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Documentable</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>false</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Mitigations</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Potential_Impact</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Third_Party_Tools</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Mitigation_Control</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Responsibility</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>System Administrator</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Security_Override_Guidance</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Check_Content_Ref</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>M</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Weight</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>10.0</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Class</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Unclass</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>STIGRef</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Microsoft InfoPath 2013 STIG :: Release: 5 Benchmark Date: 27 Apr 2018</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>TargetKey</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>CCI_REF</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>CCI-001242</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STATUS>NotAFinding</STATUS>
+                <FINDING_DETAILS></FINDING_DETAILS>
+                <COMMENTS></COMMENTS>
+                <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
+                <SEVERITY_JUSTIFICATION></SEVERITY_JUSTIFICATION>
+            </VULN>
+            <VULN>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Vuln_Num</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>V-17580</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Severity</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>medium</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Group_Title</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>DTOO167 - Forms Opening behavior - EMail /w code </ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Rule_ID</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>SV-53362r1_rule</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Rule_Ver</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>DTOO167</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Rule_Title</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Opening behavior for Email forms containing code or scripts must be controlled.</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Vuln_Discuss</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>InfoPath notifies and prompts users before opening InfoPath email forms that contain code or script. If this restriction is relaxed, InfoPath will open email forms that contain code or script without prompting users, which could allow malicious code to run on the users' computers.</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>IA_Controls</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Check_Content</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>The policy value for User Configuration -&gt; Administrative Templates -&gt; Microsoft InfoPath 2013 -&gt; InfoPath e-mail forms "Control behavior when opening InfoPath e-mail forms containing code or script" must be set to "Enabled (Prompt before running)".
+
+Procedure: Use the Windows Registry Editor to navigate to the following key:
+
+HKCU\Software\Policies\Microsoft\Office\15.0\InfoPath\security
+
+Criteria: If the value EMailFormsRunCodeAndScript is REG_DWORD = 1, this is not a finding.</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Fix_Text</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Set the policy value for User Configuration -&gt; Administrative Templates -&gt; Microsoft InfoPath 2013 -&gt; InfoPath e-mail forms "Control behavior when opening InfoPath e-mail forms containing code or script" to "Enabled (Prompt before running)".</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>False_Positives</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>False_Negatives</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Documentable</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>false</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Mitigations</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Potential_Impact</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Third_Party_Tools</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Mitigation_Control</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Responsibility</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>System Administrator</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Security_Override_Guidance</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Check_Content_Ref</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>M</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Weight</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>10.0</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Class</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Unclass</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>STIGRef</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Microsoft InfoPath 2013 STIG :: Release: 5 Benchmark Date: 27 Apr 2018</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>TargetKey</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>CCI_REF</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>CCI-002460</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STATUS>NotAFinding</STATUS>
+                <FINDING_DETAILS></FINDING_DETAILS>
+                <COMMENTS></COMMENTS>
+                <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
+                <SEVERITY_JUSTIFICATION></SEVERITY_JUSTIFICATION>
+            </VULN>
+            <VULN>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Vuln_Num</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>V-17611</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Severity</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>medium</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Group_Title</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>DTOO176 - Email forms beaconing UI </ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Rule_ID</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>SV-53384r1_rule</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Rule_Ver</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>DTOO176</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Rule_Title</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Email with InfoPath forms must be configured to show UI to recipients.</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Vuln_Discuss</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Malicious users could send InfoPath email forms with embedded web beacons that can be used to track when recipients open the form and provide confirmation that recipients' email addresses are valid. Additional information gathered by the form or information entered by users could also be sent to an external server and leave the users vulnerable to additional attacks. By default, InfoPath users are only warned of a beaconing threat if the form originates from the Internet.</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>IA_Controls</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Check_Content</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>The policy value for User Configuration -&gt; Administrative Templates -&gt; Microsoft InfoPath 2013 -&gt; Miscellaneous "Email Forms Beaconing UI" must be set to "Enabled (Always show UI)".
+
+Procedure: Use the Windows Registry Editor to navigate to the following key:
+
+HKCU\Software\Policies\Microsoft\Office\15.0\InfoPath\security
+
+Criteria: If the value EmailFormsBeaconingUI is REG_DWORD = 1, this is not a finding.</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Fix_Text</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Set the policy value for User Configuration -&gt; Administrative Templates -&gt; Microsoft InfoPath 2013 -&gt; Miscellaneous "Email Forms Beaconing UI" to "Enabled (Always show UI)".</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>False_Positives</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>False_Negatives</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Documentable</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>false</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Mitigations</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Potential_Impact</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Third_Party_Tools</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Mitigation_Control</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Responsibility</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>System Administrator</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Security_Override_Guidance</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Check_Content_Ref</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>M</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Weight</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>10.0</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Class</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Unclass</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>STIGRef</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Microsoft InfoPath 2013 STIG :: Release: 5 Benchmark Date: 27 Apr 2018</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>TargetKey</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>CCI_REF</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>CCI-001170</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STATUS>NotAFinding</STATUS>
+                <FINDING_DETAILS></FINDING_DETAILS>
+                <COMMENTS></COMMENTS>
+                <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
+                <SEVERITY_JUSTIFICATION></SEVERITY_JUSTIFICATION>
+            </VULN>
+            <VULN>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Vuln_Num</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>V-17654</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Severity</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>medium</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Group_Title</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>DTOO169 - Disable dynamic caching / form template </ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Rule_ID</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>SV-53378r1_rule</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Rule_Ver</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>DTOO169</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Rule_Title</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Disable dynamic caching of the form template in InfoPath eMail forms.  </ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Vuln_Discuss</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>By default, InfoPath 2007 caches form templates when they are attached to a mail item that is recognized as an InfoPath e-mail form. When users fill out forms that open with a restricted security level, InfoPath uses the cached version of the mailed template, rather than any published version.
+To circumvent users filling out a published form, an attacker could e-mail an alternate version of the form, which would return the data to the sender as part of a phishing attack and could be used to gain access to confidential information.
+</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>IA_Controls</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Check_Content</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>The policy value for User Configuration -&gt; Administrative Templates -&gt; Microsoft InfoPath 2013 -&gt; InfoPath e-mail forms "Disable dynamic caching of the form template in InfoPath e-mail forms" must be set to "Enabled".
+
+Procedure: Use the Windows Registry Editor to navigate to the following key:
+
+HKCU\Software\Policies\Microsoft\Office\15.0\InfoPath\deployment
+
+Criteria: If the value CacheMailXSN is REG_DWORD = 0, this is not a finding.</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Fix_Text</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Set the policy value for User Configuration -&gt; Administrative Templates -&gt; Microsoft InfoPath 2013 -&gt; InfoPath e-mail forms "Disable dynamic caching of the form template in InfoPath e-mail forms" to "Enabled".</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>False_Positives</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>False_Negatives</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Documentable</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>false</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Mitigations</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Potential_Impact</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Third_Party_Tools</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Mitigation_Control</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Responsibility</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>System Administrator</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Security_Override_Guidance</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Check_Content_Ref</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>M</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Weight</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>10.0</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Class</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Unclass</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>STIGRef</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Microsoft InfoPath 2013 STIG :: Release: 5 Benchmark Date: 27 Apr 2018</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>TargetKey</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>CCI_REF</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>CCI-001170</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STATUS>NotAFinding</STATUS>
+                <FINDING_DETAILS></FINDING_DETAILS>
+                <COMMENTS></COMMENTS>
+                <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
+                <SEVERITY_JUSTIFICATION></SEVERITY_JUSTIFICATION>
+            </VULN>
+            <VULN>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Vuln_Num</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>V-17655</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Severity</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>medium</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Group_Title</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>DTOO173 - E-Mail forms from Full Trust Zone </ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Rule_ID</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>SV-53383r1_rule</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Rule_Ver</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>DTOO173</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Rule_Title</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Disabling of email forms from the Full Trust Security Zone must be configured.</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Vuln_Discuss</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>InfoPath provides three security levels for form templates: Restricted, Domain, and Full Trust. The security levels determine whether a form template can access data on other domains, or access files and settings on your computer. Fully trusted forms have a Full Trust security level, and can access files and settings on users' computers. The form template for these forms must be digitally signed with a trusted root certificate, or installed on users' computers.
+By default, InfoPath can open email forms with full trust. If an attacker designs and sends a dangerous fully trusted email form, it could affect users' computers or give the attacker access to sensitive information.</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>IA_Controls</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Check_Content</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>The policy value for User Configuration -&gt; Administrative Templates -&gt; Microsoft InfoPath 2013 -&gt; InfoPath e-mail forms "Disable e-mail forms from the Full Trust security zone" must be set to "Enabled".
+
+Procedure: Use the Windows Registry Editor to navigate to the following key:
+
+HKCU\Software\Policies\Microsoft\Office\15.0\InfoPath\security
+
+Criteria: If the value EnableFullTrustEmailForms is REG_DWORD = 0, this is not a finding.</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Fix_Text</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Set the policy value for User Configuration -&gt; Administrative Templates -&gt; Microsoft InfoPath 2013 -&gt; InfoPath e-mail forms "Disable e-mail forms from the Full Trust security zone" to "Enabled".</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>False_Positives</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>False_Negatives</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Documentable</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>false</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Mitigations</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Potential_Impact</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Third_Party_Tools</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Mitigation_Control</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Responsibility</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>System Administrator</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Security_Override_Guidance</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Check_Content_Ref</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>M</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Weight</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>10.0</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Class</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Unclass</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>STIGRef</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Microsoft InfoPath 2013 STIG :: Release: 5 Benchmark Date: 27 Apr 2018</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>TargetKey</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>CCI_REF</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>CCI-001170</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STATUS>NotAFinding</STATUS>
+                <FINDING_DETAILS></FINDING_DETAILS>
+                <COMMENTS></COMMENTS>
+                <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
+                <SEVERITY_JUSTIFICATION></SEVERITY_JUSTIFICATION>
+            </VULN>
+            <VULN>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Vuln_Num</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>V-17656</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Severity</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>medium</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Group_Title</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>DTOO172 - EMail forms from Internet Zone </ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Rule_ID</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>SV-53382r1_rule</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Rule_Ver</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>DTOO172</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Rule_Title</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Disabling email forms from the Internet Security Zone must be configured.</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Vuln_Discuss</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>InfoPath email forms can be designed by an external attacker and sent over the Internet as part of a phishing attempt. Users might fill out such forms and provide sensitive information to the attacker.
+By default, forms that originate from the Internet can be opened, although those forms cannot access content stored in a different domain.</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>IA_Controls</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Check_Content</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>The policy value for User Configuration -&gt; Administrative Templates -&gt; Microsoft InfoPath 2013 -&gt; InfoPath e-mail forms "Disable e-mail forms from the Internet security zone" must be set to "Enabled".
+
+Procedure: Use the Windows Registry Editor to navigate to the following key:
+
+HKCU\Software\Policies\Microsoft\Office\15.0\InfoPath\security
+
+Criteria: If the value EnableInternetEMailForms is REG_DWORD = 0, this is not a finding.</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Fix_Text</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Set the policy value for User Configuration -&gt; Administrative Templates -&gt; Microsoft InfoPath 2013 -&gt; InfoPath e-mail forms "Disable e-mail forms from the Internet security zone" to "Enabled".</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>False_Positives</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>False_Negatives</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Documentable</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>false</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Mitigations</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Potential_Impact</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Third_Party_Tools</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Mitigation_Control</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Responsibility</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>System Administrator</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Security_Override_Guidance</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Check_Content_Ref</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>M</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Weight</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>10.0</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Class</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Unclass</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>STIGRef</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Microsoft InfoPath 2013 STIG :: Release: 5 Benchmark Date: 27 Apr 2018</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>TargetKey</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>CCI_REF</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>CCI-001170</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STATUS>NotAFinding</STATUS>
+                <FINDING_DETAILS></FINDING_DETAILS>
+                <COMMENTS></COMMENTS>
+                <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
+                <SEVERITY_JUSTIFICATION></SEVERITY_JUSTIFICATION>
+            </VULN>
+            <VULN>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Vuln_Num</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>V-17657</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Severity</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>medium</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Group_Title</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>DTOO171 - EMail forms in Restricted Security</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Rule_ID</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>SV-53381r1_rule</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Rule_Ver</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>DTOO171</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Rule_Title</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Disabling email forms running in Restricted Security Level must be configured.</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Vuln_Discuss</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>InfoPath forms running with the restricted security level, can only access data stored on the forms. However, a malicious user could still send an email form running with the restricted security level, in an attempt to access sensitive information provided by users.
+By default InfoPath email forms running with the restricted security level can be opened.</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>IA_Controls</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Check_Content</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>The policy value for User Configuration -&gt; Administrative Templates -&gt; Microsoft InfoPath 2013 -&gt; InfoPath e-mail forms "Disable e-mail forms running in restricted security level" must be set to "Enabled".
+
+Procedure: Use the Windows Registry Editor to navigate to the following key:
+
+HKCU\Software\Policies\Microsoft\Office\15.0\InfoPath\security
+
+Criteria: If the value EnableRestrictedEMailForms is REG_DWORD = 0, this is not a finding.</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Fix_Text</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Set the policy value for User Configuration -&gt; Administrative Templates -&gt; Microsoft InfoPath 2013 -&gt; InfoPath e-mail forms "Disable e-mail forms running in restricted security level" to "Enabled".</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>False_Positives</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>False_Negatives</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Documentable</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>false</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Mitigations</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Potential_Impact</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Third_Party_Tools</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Mitigation_Control</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Responsibility</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>System Administrator</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Security_Override_Guidance</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Check_Content_Ref</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>M</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Weight</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>10.0</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Class</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Unclass</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>STIGRef</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Microsoft InfoPath 2013 STIG :: Release: 5 Benchmark Date: 27 Apr 2018</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>TargetKey</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>CCI_REF</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>CCI-001170</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STATUS>NotAFinding</STATUS>
+                <FINDING_DETAILS></FINDING_DETAILS>
+                <COMMENTS></COMMENTS>
+                <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
+                <SEVERITY_JUSTIFICATION></SEVERITY_JUSTIFICATION>
+            </VULN>
+            <VULN>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Vuln_Num</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>V-17658</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Severity</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>medium</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Group_Title</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>DTOO159 - Fully trusted solutions access</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Rule_ID</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>SV-53353r1_rule</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Rule_Ver</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>DTOO159</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Rule_Title</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Disabling of Fully Trusted Solutions access to computers must be configured.</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Vuln_Discuss</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>InfoPath users can choose whether to allow trusted forms to run on their computers. The Full Trust security level allows a form to access local system resources, such as COM components or files on users' computers, and suppresses certain security prompts. It can only be used with forms that are installed on users' computers or with forms using a form template that is digitally signed with a trusted root certificate.
+As with any security model that allows trusted entities to operate with fewer security controls, if a form with malicious content is marked as fully trusted it could be used to compromise information security or affect users' computers.</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>IA_Controls</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Check_Content</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>The policy value for User Configuration -&gt; Administrative Templates -&gt; Microsoft InfoPath 2013 -&gt; Security -&gt; "Disable fully trusted solutions full access to computer" must be set to "Enabled".
+
+Procedure: Use the Windows Registry Editor to navigate to the following key:
+
+HKCU\Software\Policies\Microsoft\Office\15.0\InfoPath\security
+
+Criteria: If the value RunFullTrustSolutions is REG_DWORD = 0, this is not a finding.</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Fix_Text</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Set the policy value for User Configuration -&gt; Administrative Templates -&gt; Microsoft InfoPath 2013 -&gt; Security -&gt; "Disable fully trusted solutions full access to computer" to "Enabled".</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>False_Positives</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>False_Negatives</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Documentable</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>false</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Mitigations</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Potential_Impact</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Third_Party_Tools</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Mitigation_Control</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Responsibility</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>System Administrator</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Security_Override_Guidance</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Check_Content_Ref</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>M</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Weight</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>10.0</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Class</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Unclass</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>STIGRef</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Microsoft InfoPath 2013 STIG :: Release: 5 Benchmark Date: 27 Apr 2018</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>TargetKey</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>CCI_REF</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>CCI-001749</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STATUS>NotAFinding</STATUS>
+                <FINDING_DETAILS></FINDING_DETAILS>
+                <COMMENTS></COMMENTS>
+                <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
+                <SEVERITY_JUSTIFICATION></SEVERITY_JUSTIFICATION>
+            </VULN>
+            <VULN>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Vuln_Num</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>V-17663</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Severity</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>medium</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Group_Title</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>DTOO158 - Solutions from the Internet Zone </ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Rule_ID</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>SV-53340r1_rule</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Rule_Ver</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>DTOO158</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Rule_Title</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Disabling the opening of solutions from the Internet Security Zone must be configured.</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Vuln_Discuss</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Attackers could use InfoPath solutions published to Internet Web sites to try to obtain sensitive information from users. By default, users can open InfoPath solutions that do not contain managed code from sources located in the Internet security zone as defined in the Internet Options dialog box in Internet Explorer.</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>IA_Controls</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Check_Content</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>The policy value for User Configuration -&gt; Administrative Templates -&gt; Microsoft InfoPath 2013 -&gt; Security -&gt; "Disable opening of solutions from the Internet security zone" must be set to "Enabled".
+
+Procedure: Use the Windows Registry Editor to navigate to the following key: 
+
+HKCU\Software\Policies\Microsoft\Office\15.0\InfoPath\security
+
+Criteria: If the value AllowInternetSolutions is REG_DWORD = 0, this is not a finding.</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Fix_Text</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Set the policy value for User Configuration -&gt; Administrative Templates -&gt; Microsoft InfoPath 2013 -&gt; Security -&gt; "Disable opening of solutions from the Internet security zone" to "Enabled".</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>False_Positives</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>False_Negatives</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Documentable</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>false</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Mitigations</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Potential_Impact</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Third_Party_Tools</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Mitigation_Control</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Responsibility</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>System Administrator</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Security_Override_Guidance</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Check_Content_Ref</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>M</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Weight</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>10.0</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Class</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Unclass</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>STIGRef</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Microsoft InfoPath 2013 STIG :: Release: 5 Benchmark Date: 27 Apr 2018</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>TargetKey</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>CCI_REF</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>CCI-001170</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STATUS>NotAFinding</STATUS>
+                <FINDING_DETAILS></FINDING_DETAILS>
+                <COMMENTS></COMMENTS>
+                <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
+                <SEVERITY_JUSTIFICATION></SEVERITY_JUSTIFICATION>
+            </VULN>
+            <VULN>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Vuln_Num</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>V-17667</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Severity</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>medium</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Group_Title</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>DTOO168 - Sending templates with email form</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Rule_ID</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>SV-53366r1_rule</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Rule_Ver</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>DTOO168</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Rule_Title</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Disabling sending form templates with the email forms must be configured.</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Vuln_Discuss</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>InfoPath allows users to attach form templates when sending email forms. If users are able to open form templates included with email forms, rather than using a cached version that is previously published, an attacker could send a malicious form template with the email form in an attempt to gain access to sensitive information.
+Note: The form template is only opened directly if the form opens with a restricted security level. Otherwise, the attachment is actually a link to the published location.</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>IA_Controls</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Check_Content</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>The policy value for User Configuration -&gt; Administrative Templates -&gt; Microsoft InfoPath 2013 -&gt; InfoPath e-mail forms "Disable sending form template with e-mail forms" must be set to "Enabled".
+
+Procedure: Use the Windows Registry Editor to navigate to the following key:
+
+HKCU\Software\Policies\Microsoft\Office\15.0\InfoPath\deployment
+
+Criteria: If the value MailXSNwithXML is REG_DWORD = 0, this is not a finding.</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Fix_Text</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Set the policy value for User Configuration -&gt; Administrative Templates -&gt; Microsoft InfoPath 2013 -&gt; InfoPath e-mail forms "Disable sending form template with e-mail forms" to "Enabled".</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>False_Positives</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>False_Negatives</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Documentable</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>false</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Mitigations</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Potential_Impact</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Third_Party_Tools</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Mitigation_Control</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Responsibility</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>System Administrator</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Security_Override_Guidance</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Check_Content_Ref</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>M</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Weight</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>10.0</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Class</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Unclass</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>STIGRef</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Microsoft InfoPath 2013 STIG :: Release: 5 Benchmark Date: 27 Apr 2018</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>TargetKey</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>CCI_REF</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>CCI-001170</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STATUS>NotAFinding</STATUS>
+                <FINDING_DETAILS></FINDING_DETAILS>
+                <COMMENTS></COMMENTS>
+                <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
+                <SEVERITY_JUSTIFICATION></SEVERITY_JUSTIFICATION>
+            </VULN>
+            <VULN>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Vuln_Num</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>V-17668</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Severity</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>medium</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Group_Title</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>DTOO170 - 2003 forms as email </ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Rule_ID</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>SV-53379r1_rule</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Rule_Ver</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>DTOO170</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Rule_Title</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>InfoPath 2003 forms as email forms in InfoPath 2013 must be disallowed.</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Vuln_Discuss</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>An attacker might target InfoPath 2003 forms to try and compromise an organization's security. InfoPath 2003 did not write a published location for email forms, which means forms could open without a corresponding published location.
+By default, InfoPath sends all forms via email using InfoPath email forms integration, including forms created using the InfoPath 2003 file format.</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>IA_Controls</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Check_Content</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>The policy value for User Configuration -&gt; Administrative Templates -&gt; Microsoft InfoPath 2013 -&gt; InfoPath e-mail forms "Disable sending InfoPath 2003 Forms as e-mail forms" must be set to "Enabled".
+
+Procedure: Use the Windows Registry Editor to navigate to the following key:
+
+HKCU\Software\Policies\Microsoft\Office\15.0\InfoPath
+
+Criteria: If the value DisableInfoPath2003EmailForms is REG_DWORD = 1, this is not a finding.</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Fix_Text</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Set the policy value for User Configuration -&gt; Administrative Templates -&gt; Microsoft InfoPath 2013 -&gt; InfoPath e-mail forms "Disable sending InfoPath 2003 Forms as e-mail forms" to "Enabled".</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>False_Positives</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>False_Negatives</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Documentable</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>false</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Mitigations</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Potential_Impact</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Third_Party_Tools</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Mitigation_Control</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Responsibility</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>System Administrator</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Security_Override_Guidance</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Check_Content_Ref</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>M</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Weight</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>10.0</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Class</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Unclass</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>STIGRef</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Microsoft InfoPath 2013 STIG :: Release: 5 Benchmark Date: 27 Apr 2018</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>TargetKey</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>CCI_REF</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>CCI-001170</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STATUS>NotAFinding</STATUS>
+                <FINDING_DETAILS></FINDING_DETAILS>
+                <COMMENTS></COMMENTS>
+                <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
+                <SEVERITY_JUSTIFICATION></SEVERITY_JUSTIFICATION>
+            </VULN>
+            <VULN>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Vuln_Num</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>V-17745</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Severity</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>medium</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Group_Title</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>DTOO164 - Beaconing UI / forms opening </ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Rule_ID</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>SV-53357r1_rule</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Rule_Ver</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>DTOO164</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Rule_Title</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Beaconing UI shown for opened forms must be configured.</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Vuln_Discuss</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Malicious users can create InfoPath forms with embedded Web beacons that can be used to contact an external server when the user opens the form. Information could be gathered by the form, or information entered by users could be sent to an external server and cause them to be vulnerable to additional attacks. By default, InfoPath warns users about potential Web beaconing threats.</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>IA_Controls</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Check_Content</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>The policy value for User Configuration -&gt; Administrative Templates -&gt; Microsoft InfoPath 2013 -&gt; Security -&gt; "Beaconing UI for forms opened in InfoPath" must be set to "Enabled (Always show beaconing UI)".
+
+Procedure: Use the Windows Registry Editor to navigate to the following key:
+
+HKCU\Software\Policies\Microsoft\Office\15.0\InfoPath\security
+
+Criteria: If the value InfoPathBeaconingUI is REG_DWORD = 1, this is not a finding.</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Fix_Text</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Set the policy value for User Configuration -&gt; Administrative Templates -&gt; Microsoft InfoPath 2013 -&gt; Security -&gt; "Beaconing UI for forms opened in InfoPath" to "Enabled (Always show beaconing UI)".</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>False_Positives</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>False_Negatives</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Documentable</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>false</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Mitigations</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Potential_Impact</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Third_Party_Tools</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Mitigation_Control</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Responsibility</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>System Administrator</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Security_Override_Guidance</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Check_Content_Ref</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>M</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Weight</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>10.0</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Class</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Unclass</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>STIGRef</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Microsoft InfoPath 2013 STIG :: Release: 5 Benchmark Date: 27 Apr 2018</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>TargetKey</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>CCI_REF</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>CCI-002460</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STATUS>NotAFinding</STATUS>
+                <FINDING_DETAILS></FINDING_DETAILS>
+                <COMMENTS></COMMENTS>
+                <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
+                <SEVERITY_JUSTIFICATION></SEVERITY_JUSTIFICATION>
+            </VULN>
+            <VULN>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Vuln_Num</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>V-17746</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Severity</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>medium</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Group_Title</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>DTOO165 - Beaconing UI /forms opened Activex</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Rule_ID</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>SV-53359r1_rule</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Rule_Ver</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>DTOO165</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Rule_Title</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Beaconing of UI forms  with ActiveX controls must be enforced.</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Vuln_Discuss</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>InfoPath makes it possible to host InfoPath forms in other applications as ActiveX controls. Such controls are known as InfoPath form controls. A malicious user could insert a web beacon into one of these controls which could be used to contact an external server when the user opens the form. Information could be gathered by the form, or information entered by users could be sent to an external server and expose the internal systems to additional attacks. By default, InfoPath form controls warn users about potential web beaconing threats.</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>IA_Controls</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Check_Content</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>The policy value for User Configuration -&gt; Administrative Templates -&gt; Microsoft InfoPath 2013 -&gt; Security -&gt; "Beaconing UI for forms opened in InfoPath Filler ActiveX" must be set to "Enabled (Always show beaconing UI)".
+
+Procedure: Use the Windows Registry Editor to navigate to the following key:
+
+HKCU\Software\Policies\Microsoft\Office\15.0\InfoPath\security
+
+Criteria: If the value EditorActiveXBeaconingUI is REG_DWORD = 1, this is not a finding.</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Fix_Text</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Set the policy value for User Configuration -&gt; Administrative Templates -&gt; Microsoft InfoPath 2013 -&gt; Security -&gt; "Beaconing UI for forms opened in InfoPath Filler ActiveX" to "Enabled (Always show beaconing UI)".</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>False_Positives</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>False_Negatives</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Documentable</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>false</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Mitigations</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Potential_Impact</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Third_Party_Tools</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Mitigation_Control</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Responsibility</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>System Administrator</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Security_Override_Guidance</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Check_Content_Ref</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>M</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Weight</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>10.0</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Class</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Unclass</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>STIGRef</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Microsoft InfoPath 2013 STIG :: Release: 5 Benchmark Date: 27 Apr 2018</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>TargetKey</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>CCI_REF</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>CCI-002460</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STATUS>NotAFinding</STATUS>
+                <FINDING_DETAILS></FINDING_DETAILS>
+                <COMMENTS></COMMENTS>
+                <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
+                <SEVERITY_JUSTIFICATION></SEVERITY_JUSTIFICATION>
+            </VULN>
+            <VULN>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Vuln_Num</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>V-17758</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Severity</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>medium</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Group_Title</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>DTOO156 - Offline Mode Cache</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Rule_ID</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>SV-53335r2_rule</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Rule_Ver</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>DTOO156</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Rule_Title</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Offline Mode capability to cache queries for offline mode must be configured.</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Vuln_Discuss</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>InfoPath can function in online mode or offline mode. It can also cache queries for use in offline mode. If offline mode is used and cached queries are enabled, sensitive information contained in the cache could be at risk. By default, InfoPath is in online mode, but offline mode is available to users. Users can also cache queries for use in offline mode.</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>IA_Controls</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Check_Content</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Verify the policy value for User Configuration -&gt; Administrative Templates -&gt; Microsoft InfoPath 2013 -&gt; InfoPath Options -&gt; Advanced -&gt; Offline "Offline Mode status" is set to "Enabled (Enabled, InfoPath not in Offline Mode)".
+
+Procedure: Use the Windows Registry Editor to navigate to the following key: 
+
+HKCU\Software\Policies\Microsoft\Office\15.0\InfoPath\editor\offline
+
+Criteria: If the value CachedModeStatus is REG_DWORD = 2, this is not a finding.</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Fix_Text</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Set the policy value for User Configuration -&gt; Administrative Templates -&gt; Microsoft InfoPath 2013 -&gt; InfoPath Options -&gt; Advanced -&gt; Offline "Offline Mode status" to "Enabled (Enabled, InfoPath not in Offline Mode)".</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>False_Positives</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>False_Negatives</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Documentable</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>false</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Mitigations</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Potential_Impact</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Third_Party_Tools</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Mitigation_Control</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Responsibility</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>System Administrator</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Security_Override_Guidance</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Check_Content_Ref</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>M</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Weight</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>10.0</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Class</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Unclass</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>STIGRef</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Microsoft InfoPath 2013 STIG :: Release: 5 Benchmark Date: 27 Apr 2018</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>TargetKey</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>CCI_REF</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>CCI-000366</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STATUS>NotAFinding</STATUS>
+                <FINDING_DETAILS></FINDING_DETAILS>
+                <COMMENTS></COMMENTS>
+                <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
+                <SEVERITY_JUSTIFICATION></SEVERITY_JUSTIFICATION>
+            </VULN>
+            <VULN>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Vuln_Num</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>V-17764</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Severity</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>medium</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Group_Title</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>DTOO160 - Unsafe File Attachments in InfoPath</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Rule_ID</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>SV-53355r1_rule</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Rule_Ver</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>DTOO160</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Rule_Title</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Unsafe file types must be prevented from being attached to InfoPath forms.</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Vuln_Discuss</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Users can attach any type of file to forms except potentially unsafe files that might contain viruses, such as .bat or .exe files. For the full list of file types that InfoPath disallows by default, see "Security Details" in Insert a file attachment control on the Microsoft Office Online website.
+If unsafe file types are added to InfoPath forms, they might be used as a means of attacking the computer on which the form is opened. These unsafe file types may include active content, or may introduce other vulnerabilities that an attacker can exploit.</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>IA_Controls</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Check_Content</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>The policy value for User Configuration -&gt; Administrative Templates -&gt; Microsoft InfoPath 2013 -&gt; Security -&gt; "Prevent users from allowing unsafe file types to be attached to forms" must be set to "Enabled".
+
+Procedure: Use the Windows Registry Editor to navigate to the following key:
+
+HKCU\Software\Policies\Microsoft\Office\15.0\InfoPath\security
+
+Criteria: If the value DisallowAttachmentCustomization is REG_DWORD = 1, this is not a finding.</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Fix_Text</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Set the policy value for User Configuration -&gt; Administrative Templates -&gt; Microsoft InfoPath 2013 -&gt; Security -&gt; "Prevent users from allowing unsafe file types to be attached to forms" to "Enabled".</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>False_Positives</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>False_Negatives</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Documentable</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>false</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Mitigations</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Potential_Impact</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Third_Party_Tools</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Mitigation_Control</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Responsibility</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>System Administrator</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Security_Override_Guidance</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Check_Content_Ref</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>M</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Weight</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>10.0</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Class</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Unclass</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>STIGRef</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Microsoft InfoPath 2013 STIG :: Release: 5 Benchmark Date: 27 Apr 2018</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>TargetKey</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>CCI_REF</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>CCI-001170</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STATUS>NotAFinding</STATUS>
+                <FINDING_DETAILS></FINDING_DETAILS>
+                <COMMENTS></COMMENTS>
+                <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
+                <SEVERITY_JUSTIFICATION></SEVERITY_JUSTIFICATION>
+            </VULN>
+            <VULN>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Vuln_Num</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>V-26589</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Severity</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>medium</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Group_Title</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>DTOO127 - Add-ins are signed by Trusted Publisher</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Rule_ID</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>SV-53328r1_rule</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Rule_Ver</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>DTOO127</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Rule_Title</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Add-ins to Office applications must be signed by a Trusted Publisher.</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Vuln_Discuss</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Office 2013 applications do not check the digital signature on application add-ins before opening them.  Disabling or not configuring this setting may allow an application to load a dangerous add-in.  As a result, malicious code could become active on user computers or the network.</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>IA_Controls</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Check_Content</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>The policy value for User Configuration -&gt; Administrative Templates -&gt; Microsoft InfoPath 2013 -&gt; Security -&gt; Trust Center "Require that application add-ins are signed by Trusted Publisher" must be set to "Enabled".
+
+Procedure: Use the Windows Registry Editor to navigate to the following key: 
+
+HKCU\Software\Policies\Microsoft\Office\15.0\InfoPath\security
+
+Criteria: If the value RequireAddinSig is REG_DWORD = 1, this is not a finding.</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Fix_Text</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Set the policy value for User Configuration -&gt; Administrative Templates -&gt; Microsoft InfoPath 2013 -&gt; Security -&gt; Trust Center "Require that application add-ins are signed by Trusted Publisher" to "Enabled".</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>False_Positives</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>False_Negatives</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Documentable</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>false</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Mitigations</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Potential_Impact</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Third_Party_Tools</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Mitigation_Control</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Responsibility</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>System Administrator</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Security_Override_Guidance</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Check_Content_Ref</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>M</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Weight</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>10.0</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Class</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Unclass</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>STIGRef</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Microsoft InfoPath 2013 STIG :: Release: 5 Benchmark Date: 27 Apr 2018</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>TargetKey</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>CCI_REF</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>CCI-001749</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STATUS>NotAFinding</STATUS>
+                <FINDING_DETAILS></FINDING_DETAILS>
+                <COMMENTS></COMMENTS>
+                <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
+                <SEVERITY_JUSTIFICATION></SEVERITY_JUSTIFICATION>
+            </VULN>
+            <VULN>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Vuln_Num</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>V-26618</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Severity</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>medium</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Group_Title</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>DTOO294 - E-mail forms from the Intranet</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Rule_ID</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>SV-53385r1_rule</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Rule_Ver</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>DTOO294</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Rule_Title</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>InfoPath must be enforced to not use email forms from the Intranet security zone.</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Vuln_Discuss</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>InfoPath email forms can be designed by an internal attacker and sent over the local intranet, and users might fill out such forms and provide sensitive information to the attacker. By default, forms that originate from the local intranet can be opened.</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>IA_Controls</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Check_Content</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>The policy value for User Configuration -&gt; Administrative Templates -&gt; Microsoft InfoPath 2013 -&gt; InfoPath e-mail forms "Disable e-mail forms from the Intranet security zone" must be set to "Enabled".
+
+Procedure: Use the Windows Registry Editor to navigate to the following key:
+
+HKCU\Software\Policies\Microsoft\Office\15.0\InfoPath\security
+
+Criteria: If the value EnableIntranetEMailForms is REG_DWORD = 0, this is not a finding.</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Fix_Text</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Set the policy value for User Configuration -&gt; Administrative Templates -&gt; Microsoft InfoPath 2013 -&gt; InfoPath e-mail forms "Disable e-mail forms from the Intranet security zone" to "Enabled".</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>False_Positives</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>False_Negatives</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Documentable</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>false</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Mitigations</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Potential_Impact</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Third_Party_Tools</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Mitigation_Control</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Responsibility</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>System Administrator</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Security_Override_Guidance</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Check_Content_Ref</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>M</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Weight</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>10.0</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Class</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Unclass</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>STIGRef</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Microsoft InfoPath 2013 STIG :: Release: 5 Benchmark Date: 27 Apr 2018</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>TargetKey</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>CCI_REF</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>CCI-001170</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STATUS>NotAFinding</STATUS>
+                <FINDING_DETAILS></FINDING_DETAILS>
+                <COMMENTS></COMMENTS>
+                <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
+                <SEVERITY_JUSTIFICATION></SEVERITY_JUSTIFICATION>
+            </VULN>
+            <VULN>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Vuln_Num</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>V-26619</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Severity</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>medium</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Group_Title</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>DTOO295 - InfoPath e-mail forms in Outlook</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Rule_ID</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>SV-53389r1_rule</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Rule_Ver</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>DTOO295</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Rule_Title</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>InfoPath email forms in Outlook must be disallowed.</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Vuln_Discuss</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Attackers can send users InfoPath email forms in an attempt to gain access to confidential information. Depending on the level of trust of the forms, it might also be possible to gain access to other data automatically. By default, Outlook 2013 uses the InfoPath email forms feature to render forms in Outlook and allows users to fill them out in place.</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>IA_Controls</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Check_Content</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>The policy value for User Configuration -&gt; Administrative Templates -&gt; Microsoft InfoPath 2013 -&gt; InfoPath e-mail forms "Disable InfoPath e-mail forms in Outlook" must be set to "Enabled".
+
+Procedure: Use the Windows Registry Editor to navigate to the following key:
+
+HKCU\Software\Policies\Microsoft\Office\15.0\outlook\options\mail
+
+Criteria: If the value DisableInfopathForms is REG_DWORD = 1, this is not a finding.</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Fix_Text</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Set the policy value for User Configuration -&gt; Administrative Templates -&gt; Microsoft InfoPath 2013 -&gt; InfoPath e-mail forms "Disable InfoPath e-mail forms in Outlook" to "Enabled".</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>False_Positives</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>False_Negatives</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Documentable</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>false</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Mitigations</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Potential_Impact</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Third_Party_Tools</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Mitigation_Control</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Responsibility</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>System Administrator</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Security_Override_Guidance</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Check_Content_Ref</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>M</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Weight</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>10.0</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Class</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Unclass</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>STIGRef</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Microsoft InfoPath 2013 STIG :: Release: 5 Benchmark Date: 27 Apr 2018</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>TargetKey</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>CCI_REF</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>CCI-001170</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STATUS>NotAFinding</STATUS>
+                <FINDING_DETAILS></FINDING_DETAILS>
+                <COMMENTS></COMMENTS>
+                <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
+                <SEVERITY_JUSTIFICATION></SEVERITY_JUSTIFICATION>
+            </VULN>
+            <VULN>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Vuln_Num</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>V-26620</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Severity</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>medium</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Group_Title</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>DTOO296 - Managed code from the Internet </ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Rule_ID</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>SV-53392r1_rule</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Rule_Ver</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>DTOO296</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Rule_Title</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Disabling opening forms with managed code from the Internet security zone must be configured.</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Vuln_Discuss</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>When InfoPath solutions are opened locally, the location of the form is checked so that updates to the form can be downloaded. If a user saves a form locally from a location on the Internet and then opens the same form from another location on the Internet, the cache will be updated with the new location information. If the user then opens the first form from its saved location, there will be a mismatch between the locally saved form and the locally cached form. This situation would typically happen when developers move forms to a new location, but if there is no warning when the cached location is used, it could be misused by an attacker attempting to redirect the forms to a new location. This type of attack is a form of beaconing. By default, if the location information in the cached form and the saved form to not match, the form cannot be opened without prompting the user for consent.</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>IA_Controls</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Check_Content</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>The policy value for User Configuration -&gt; Administrative Templates -&gt; Microsoft InfoPath 2013 -&gt; Security "Disable opening forms with managed code from the Internet security zone" must be set to "Enabled".
+
+Procedure: Use the Windows Registry Editor to navigate to the following key:
+
+HKCU\Software\Policies\Microsoft\Office\15.0\InfoPath\security
+
+Criteria: If the value RunManagedCodeFromInternet is REG_DWORD = 1, this is not a finding.</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Fix_Text</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Set the policy value for User Configuration -&gt; Administrative Templates -&gt; Microsoft InfoPath 2013 -&gt; Security "Disable opening forms with managed code from the Internet security zone" to "Enabled".</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>False_Positives</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>False_Negatives</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Documentable</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>false</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Mitigations</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Potential_Impact</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Third_Party_Tools</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Mitigation_Control</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Responsibility</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>System Administrator</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Security_Override_Guidance</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Check_Content_Ref</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>M</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Weight</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>10.0</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Class</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Unclass</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>STIGRef</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Microsoft InfoPath 2013 STIG :: Release: 5 Benchmark Date: 27 Apr 2018</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>TargetKey</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>CCI_REF</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>CCI-001170</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STATUS>NotAFinding</STATUS>
+                <FINDING_DETAILS></FINDING_DETAILS>
+                <COMMENTS></COMMENTS>
+                <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
+                <SEVERITY_JUSTIFICATION></SEVERITY_JUSTIFICATION>
+            </VULN>
+            <VULN>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Vuln_Num</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>V-26621</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Severity</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>medium</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Group_Title</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>DTOO297 - A form is digitally signed</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Rule_ID</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>SV-53432r1_rule</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Rule_Ver</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>DTOO297</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Rule_Title</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>A form that is digitally signed must be displayed with a warning.</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Vuln_Discuss</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>This setting controls whether or not the user sees a dialog box when opening Microsoft InfoPath forms containing digitally signed content. By default, InfoPath shows the user a warning message when the form contains a digital signature. By being aware of a digitally signed form, the user will be able to check the validity of the signature. Otherwise, the forms may have been maliciously modified and will be invalidated.</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>IA_Controls</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Check_Content</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>The policy value for User Configuration -&gt; Administrative Templates -&gt; Microsoft InfoPath 2013 -&gt; Security "Display a warning that a form is digitally signed" must be set to "Enabled".
+
+Procedure: Use the Windows Registry Editor to navigate to the following key:
+
+HKCU\Software\Policies\Microsoft\Office\15.0\InfoPath\security
+
+Criteria: If the value SignatureWarning is REG_DWORD = 1, this is not a finding.</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Fix_Text</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Set the policy value for User Configuration -&gt; Administrative Templates -&gt; Microsoft InfoPath 2013 -&gt; Security "Display a warning that a form is digitally signed" to "Enabled".</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>False_Positives</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>False_Negatives</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Documentable</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>false</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Mitigations</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Potential_Impact</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Third_Party_Tools</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Mitigation_Control</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Responsibility</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>System Administrator</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Security_Override_Guidance</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Check_Content_Ref</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>M</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Weight</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>10.0</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Class</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Unclass</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>STIGRef</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Microsoft InfoPath 2013 STIG :: Release: 5 Benchmark Date: 27 Apr 2018</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>TargetKey</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>CCI_REF</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>CCI-001749</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STATUS>NotAFinding</STATUS>
+                <FINDING_DETAILS></FINDING_DETAILS>
+                <COMMENTS></COMMENTS>
+                <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
+                <SEVERITY_JUSTIFICATION></SEVERITY_JUSTIFICATION>
+            </VULN>
+            <VULN>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Vuln_Num</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>V-26697</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Severity</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>medium</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Group_Title</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>DTOO309 - APTCA Assembly Allow List Enforcement</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Rule_ID</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>SV-53452r1_rule</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Rule_Ver</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>DTOO309</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Rule_Title</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>The InfoPath APTCA Assembly Allowable List must be enforced.</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Vuln_Discuss</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>InfoPath 2013 forms' business logic can only call into Global Assembly Cache (GAC) assemblies listed in the APTCA Assembly Allowable List. If this configuration is changed, forms can call into any assembly in the GAC where the Allow Partially Trusted Callers Attribute (APTCA) is set. This configuration could allow malicious developers to access assemblies in the GAC not intended to be used by InfoPath forms.</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>IA_Controls</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Check_Content</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>The policy value for Computer Configuration -&gt; Administrative Templates -&gt; Microsoft InfoPath 2013 (Machine) -&gt; Security "InfoPath APTCA Assembly Allowable List Enforcement" must be set to "Enabled".
+
+Procedure: Use the Windows Registry Editor to navigate to the following key:
+
+HKLM\Software\Policies\Microsoft\office\15.0\InfoPath\security
+
+Criteria: If the value APTCA_AllowList is REG_DWORD = 1, this is not a finding.</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Fix_Text</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Set the policy value for Computer Configuration -&gt; Administrative Templates -&gt; Microsoft InfoPath 2013 (Machine) -&gt; Security "InfoPath APTCA Assembly Allowable List Enforcement" to "Enabled".</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>False_Positives</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>False_Negatives</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Documentable</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>false</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Mitigations</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Potential_Impact</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Third_Party_Tools</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Mitigation_Control</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Responsibility</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>System Administrator</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Security_Override_Guidance</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Check_Content_Ref</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>M</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Weight</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>10.0</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Class</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Unclass</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>STIGRef</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Microsoft InfoPath 2013 STIG :: Release: 5 Benchmark Date: 27 Apr 2018</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>TargetKey</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>CCI_REF</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>CCI-000366</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STATUS>NotAFinding</STATUS>
+                <FINDING_DETAILS></FINDING_DETAILS>
+                <COMMENTS></COMMENTS>
+                <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
+                <SEVERITY_JUSTIFICATION></SEVERITY_JUSTIFICATION>
+            </VULN>
+        </iSTIG>
+    </STIGS>
+</CHECKLIST>

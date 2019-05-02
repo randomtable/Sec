@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<CHECKLIST>
+    <ASSET>
+        <ROLE>None</ROLE>
+        <ASSET_TYPE>Computing</ASSET_TYPE>
+        <HOST_NAME></HOST_NAME>
+        <HOST_IP></HOST_IP>
+        <HOST_MAC></HOST_MAC>
+        <HOST_GUID></HOST_GUID>
+        <HOST_FQDN></HOST_FQDN>
+        <TECH_AREA></TECH_AREA>
+        <TARGET_KEY></TARGET_KEY>
+        <WEB_OR_DATABASE>false</WEB_OR_DATABASE>
+        <WEB_DB_SITE></WEB_DB_SITE>
+        <WEB_DB_INSTANCE></WEB_DB_INSTANCE>
+    </ASSET>
+    <STIGS>
+        <iSTIG>
+            <STIG_INFO>
+                <SI_DATA>
+                    <SID_NAME>version</SID_NAME>
+                    <SID_DATA>1</SID_DATA>
+                </SI_DATA>
+                <SI_DATA>
+                    <SID_NAME>classification</SID_NAME>
+                    <SID_DATA>UNCLASSIFIED</SID_DATA>
+                </SI_DATA>
+                <SI_DATA>
+                    <SID_NAME>customname</SID_NAME>
+                </SI_DATA>
+                <SI_DATA>
+                    <SID_NAME>stigid</SID_NAME>
+                    <SID_DATA>Microsoft_Skype_for_Business_2016</SID_DATA>
+                </SI_DATA>
+                <SI_DATA>
+                    <SID_NAME>description</SID_NAME>
+                    <SID_DATA>The Microsoft Skype for Business 2016 Security Technical Implementation Guide (STIG) is published as a tool to improve the security of Department of Defense (DoD) information systems.  Comments or proposed revisions to this document should be sent via e-mail to the following address: disa.stig_spt@mail.mil.</SID_DATA>
+                </SI_DATA>
+                <SI_DATA>
+                    <SID_NAME>filename</SID_NAME>
+                    <SID_DATA>U_Microsoft_Skype_for_Business_2016_STIG_V1R1_Manual-xccdf.xml</SID_DATA>
+                </SI_DATA>
+                <SI_DATA>
+                    <SID_NAME>releaseinfo</SID_NAME>
+                    <SID_DATA>Release: 1 Benchmark Date: 14 Nov 2016</SID_DATA>
+                </SI_DATA>
+                <SI_DATA>
+                    <SID_NAME>title</SID_NAME>
+                    <SID_DATA>Microsoft Skype for Business 2016 Security Technical Implementation Guide</SID_DATA>
+                </SI_DATA>
+                <SI_DATA>
+                    <SID_NAME>uuid</SID_NAME>
+                    <SID_DATA>846f008e-7879-48cf-ad68-2aeb782b0191</SID_DATA>
+                </SI_DATA>
+                <SI_DATA>
+                    <SID_NAME>notice</SID_NAME>
+                    <SID_DATA>terms-of-use</SID_DATA>
+                </SI_DATA>
+                <SI_DATA>
+                    <SID_NAME>source</SID_NAME>
+                    <SID_DATA>STIG.DOD.MIL</SID_DATA>
+                </SI_DATA>
+            </STIG_INFO>
+            <VULN>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Vuln_Num</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>V-70901</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Severity</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>medium</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Group_Title</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>SRG-APP-000516</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Rule_ID</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>SV-85525r1_rule</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Rule_Ver</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>DTOO420</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Rule_Title</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>The ability to store user passwords in Skype must be disabled.
+</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Vuln_Discuss</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Allows Microsoft Lync to store user passwords. If you enable this policy setting, Microsoft Lync can store a password on request from the user. If you disable this policy setting, Microsoft Lync cannot store a password. If you do not configure this policy setting and the user logs on to a domain, Microsoft Lync does not store the password. If you do not configure this policy setting and the user does not log on to a domain (for example, if the user logs on to a workgroup), Microsoft Lync can store the password. Note: You can configure this policy setting under both Computer Configuration and User Configuration, but the policy setting under Computer Configuration takes precedence.      
+</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>IA_Controls</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Check_Content</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Verify the policy value for Computer Configuration -&gt; Administrative Templates -&gt; Skype for Business 2016 -&gt; Microsoft Lync Feature Policies "Allow storage of user passwords" is set to "Disabled".
+
+Procedure: Use the Windows Registry Editor to navigate to the following key: 
+
+HKLM\Software\Policies\Microsoft\office\16.0\lync
+
+Criteria: If the value savepassword is REG_DWORD = 0, this is not a finding.</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Fix_Text</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Set the policy value for Computer Configuration -&gt; Administrative Templates -&gt; Skype for Business 2016 -&gt; Microsoft Lync Feature Policies "Allow storage of user passwords" to "Disabled".
+</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>False_Positives</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>False_Negatives</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Documentable</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>false</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Mitigations</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Potential_Impact</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Third_Party_Tools</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Mitigation_Control</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Responsibility</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Security_Override_Guidance</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Check_Content_Ref</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Class</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Unclass</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>STIGRef</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Microsoft Skype for Business 2016 Security Technical Implementation Guide :: Release: 1 Benchmark Date: 14 Nov 2016</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>TargetKey</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>3123</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>CCI_REF</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>CCI-000366</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STATUS>NotAFinding</STATUS>
+                <FINDING_DETAILS></FINDING_DETAILS>
+                <COMMENTS></COMMENTS>
+                <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
+                <SEVERITY_JUSTIFICATION></SEVERITY_JUSTIFICATION>
+            </VULN>
+            <VULN>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Vuln_Num</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>V-70903</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Severity</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>medium</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Group_Title</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>SRG-APP-000219</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Rule_ID</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>SV-85527r1_rule</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Rule_Ver</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>DTOO421</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Rule_Title</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Session Initiation Protocol (SIP) security mode must be configured.
+</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Vuln_Discuss</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>When Lync connects to the server, it supports various authentication mechanisms.  This policy allows the user to specify whether Digest and Basic authentication are supported.  Disabled (default):  NTLM/Kerberos/TLS-DSK/Digest/Basic     Enabled:  Authentication mechanisms:  NTLM/Kerberos/TLS-DSK  Gal Download: Requires HTTPS if user is not logged in as an internal user.      
+</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>IA_Controls</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Check_Content</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Verify the policy value for Computer Configuration -&gt; Administrative Templates -&gt; Skype for Business 2016 -&gt; Microsoft Lync Feature Policies "Configure SIP security mode" is set to "Enabled".
+
+Procedure: Use the Windows Registry Editor to navigate to the following key: 
+
+HKLM\Software\Policies\Microsoft\office\16.0\lync
+
+Criteria: If the value enablesiphighsecuritymode is REG_DWORD = 1, this is not a finding.</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Fix_Text</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Set the policy value for Computer Configuration -&gt; Administrative Templates -&gt; Skype for Business 2016 -&gt; Microsoft Lync Feature Policies "Configure SIP security mode" to "Enabled".
+</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>False_Positives</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>False_Negatives</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Documentable</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>false</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Mitigations</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Potential_Impact</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Third_Party_Tools</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Mitigation_Control</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Responsibility</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Security_Override_Guidance</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Check_Content_Ref</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Class</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Unclass</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>STIGRef</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Microsoft Skype for Business 2016 Security Technical Implementation Guide :: Release: 1 Benchmark Date: 14 Nov 2016</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>TargetKey</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>3123</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>CCI_REF</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>CCI-001184</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STATUS>NotAFinding</STATUS>
+                <FINDING_DETAILS></FINDING_DETAILS>
+                <COMMENTS></COMMENTS>
+                <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
+                <SEVERITY_JUSTIFICATION></SEVERITY_JUSTIFICATION>
+            </VULN>
+            <VULN>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Vuln_Num</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>V-70905</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Severity</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>medium</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Group_Title</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>SRG-APP-000219</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Rule_ID</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>SV-85529r1_rule</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Rule_Ver</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>DTOO422</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Rule_Title</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>In the event a secure Session Initiation Protocol (SIP) connection fails, the connection must be restricted from resorting to the unencrypted HTTP.
+</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Vuln_Discuss</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Prevents from HTTP being used for SIP connection in case TLS or TCP fail.
+</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>IA_Controls</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Check_Content</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Verify the policy value for Computer Configuration -&gt; Administrative Templates -&gt; Skype for Business 2016 -&gt; Microsoft Lync Feature Policies "Disable HTTP fallback for SIP connection" is set to "Enabled".
+
+Procedure: Use the Windows Registry Editor to navigate to the following key: 
+
+HKLM\Software\Policies\Microsoft\office\16.0\lync
+
+Criteria: If the value disablehttpconnect is REG_DWORD = 1, this is not a finding.</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Fix_Text</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Set the policy value for Computer Configuration -&gt; Administrative Templates -&gt; Skype for Business 2016 -&gt; Microsoft Lync Feature Policies "Disable HTTP fallback for SIP connection" to "Enabled".
+</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>False_Positives</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>False_Negatives</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Documentable</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>false</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Mitigations</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Potential_Impact</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Third_Party_Tools</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Mitigation_Control</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Responsibility</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Security_Override_Guidance</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Check_Content_Ref</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA></ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>Class</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Unclass</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>STIGRef</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>Microsoft Skype for Business 2016 Security Technical Implementation Guide :: Release: 1 Benchmark Date: 14 Nov 2016</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>TargetKey</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>3123</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STIG_DATA>
+                    <VULN_ATTRIBUTE>CCI_REF</VULN_ATTRIBUTE>
+                    <ATTRIBUTE_DATA>CCI-001184</ATTRIBUTE_DATA>
+                </STIG_DATA>
+                <STATUS>NotAFinding</STATUS>
+                <FINDING_DETAILS></FINDING_DETAILS>
+                <COMMENTS></COMMENTS>
+                <SEVERITY_OVERRIDE></SEVERITY_OVERRIDE>
+                <SEVERITY_JUSTIFICATION></SEVERITY_JUSTIFICATION>
+            </VULN>
+        </iSTIG>
+    </STIGS>
+</CHECKLIST>

@@ -1,0 +1,1 @@
+LGPO.exe /g "November 2018 DISA STIG GPO Package"
