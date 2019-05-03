@@ -1,1 +1,1 @@
-LGPO.exe /g "November 2018 DISA STIG GPO Package"
+LGPO.exe /g "January 2019 DISA STIG GPO Package"
