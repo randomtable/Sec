@@ -1,5 +1,5 @@
 # Important
 
-Disable WordPress Search Feature
+Disable WordPress Search Feature adding the snippet in the "functions.php" file in theme folder
 
 Insert htaccess template in the WP htaccess
