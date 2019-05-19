@@ -34,6 +34,7 @@ Deny from all
     Header set Content-Security-Policy "default-src 'self'"
 </IfModule>
 
+# Deny insecure TRACE HTTP method
 RewriteEngine On
 RewriteCond %{REQUEST_METHOD} ^TRACE
 RewriteRule ^ - [F]
