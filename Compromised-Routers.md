@@ -32,3 +32,5 @@ Il Firewall di Windows ha tutte le potenzialità per il raggiungimento dello sco
 
 Cominciamo, quindi, con impostare su secpol.msc solo le porte necessarie alla navigazione:
 
+Andiamo su "Start", digitiamo "secpol.msc" ed entriamo sul pannello:
+
