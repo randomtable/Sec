@@ -12,5 +12,6 @@ Il contenuto del bundle:
 
 Perchè questi componenti:
 
-Prendiamo in considerazione una macchina su una rete non sicura, dove il router è compromesso, i pacchetti "sniffati" e degli script attivi tentano di compromettere nuove macchine client.
+Prendiamo in considerazione una macchina su una rete non sicura, dove il router è compromesso, i pacchetti vengono "sniffati" durante il transito e degli script attivi tentano di compromettere nuove macchine client.
 
+Per garantire una protezione in uno scenario simile, ho scelto di operare tramite uno script che attiva i software necessari.
