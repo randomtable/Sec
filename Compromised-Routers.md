@@ -34,3 +34,4 @@ Cominciamo, quindi, con impostare su secpol.msc solo le porte necessarie alla na
 
 Andiamo su "Start", digitiamo "secpol.msc" ed entriamo sul pannello:
 
+![Alt text](https://github.com/randomtable/Sec/blob/master/Compromised-Routers/imgs/1.png)
