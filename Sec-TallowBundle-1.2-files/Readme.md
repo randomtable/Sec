@@ -62,3 +62,4 @@ Su Windows 7:
 
 Su Windows 10:
 
+![Alt text](https://github.com/randomtable/Sec/blob/master/win10.png)
