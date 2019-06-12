@@ -27,3 +27,5 @@ Per farlo possiamo utilizzare sia il firewall di windows, sia gli strumenti mess
 In questa guida utilizzerò secpol.msc
 
 Perchè secpol:
+
+Il Firewall di Windows ha tutte le potenzialità per il raggiungimento dello scopo, 
