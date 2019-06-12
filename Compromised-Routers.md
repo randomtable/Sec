@@ -10,5 +10,5 @@ Una rete che vi serve è stata compromessa, il router è in grado di "sniffare" 
 
 ## Risoluzione
 
-Purtroppo la situazione presentata non è affatto "semplice" o "comoda", in quanto per rimanere sicuri dobbiamo considerare molto variabili.
+Purtroppo la situazione presentata non è affatto "semplice" o "comoda", in quanto per rimanere sicuri dobbiamo considerare molte variabili.
 
