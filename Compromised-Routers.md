@@ -28,4 +28,7 @@ In questa guida utilizzerò secpol.msc
 
 Perchè secpol:
 
-Il Firewall di Windows ha tutte le potenzialità per il raggiungimento dello scopo, 
+Il Firewall di Windows ha tutte le potenzialità per il raggiungimento dello scopo, ma data la "dinamicità" di alcuni software, e data anche la possibilità maggiore di errore da parte dell'utente, preferisco utilizzare delle regole più "rigide" rispetto al firewall di windows.
+
+Cominciamo, quindi, con impostare su secpol.msc solo le porte necessarie alla navigazione:
+
