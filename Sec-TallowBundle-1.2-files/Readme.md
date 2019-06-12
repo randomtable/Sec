@@ -56,4 +56,9 @@ Durante il bootstrap di Tor, potrebbe essere richiesto da Windows di consentire 
 
 A bootstrap terminato, cliccando sull'apposito pulsante, viene attivata la WinDivert a livello di sistema, e tutta la connessione verrà redirezionata su Tor.
 
+Su Windows 7:
+
 ![Alt text](https://github.com/randomtable/Sec/blob/master/win7.png)
+
+Su Windows 10:
+
