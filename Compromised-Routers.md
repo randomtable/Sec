@@ -10,5 +10,20 @@ Una rete che vi serve è stata compromessa, il router è in grado di "sniffare" 
 
 ## Risoluzione
 
-Purtroppo la situazione presentata non è affatto "semplice" o "comoda", in quanto per rimanere sicuri dobbiamo considerare molte variabili.
+Purtroppo la situazione presentata non è affatto "semplice" o "comoda", in quanto per rimanere sicuri dobbiamo considerare sia una protezione della macchina, per evitare possibili intrusioni, sia difendere la comunicazione che altrimenti verrebbe intercettata.
 
+Quindi il tutto si traduce in:
+
+- Sicurezza del sistema: bloccheremo le porte non necessarie al funzionamento della macchina come client.
+
+- Sicurezza delle applicazioni: dobbiamo prevedere un possibile script attivo che cercherà applicazioni e protocolli vulnerabili.
+
+- Sicurezza del trasporto: dobbiamo evitare che la connessione possa essere intercettata.
+
+Cominciamo quindi a "mettere in sicurezza" il sistema.
+
+Per farlo possiamo utilizzare sia il firewall di windows, sia gli strumenti messi a disposizione da "Security Policies" (secpol.msc).
+
+In questa guida utilizzerò secpol.msc
+
+Perchè secpol:
