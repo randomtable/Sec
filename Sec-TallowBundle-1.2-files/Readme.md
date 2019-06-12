@@ -54,7 +54,7 @@ Lo script abilita Tallow, il quale avvia Tor e attende che il bootstrap di Tor s
 
 Durante il bootstrap di Tor, potrebbe essere richiesto da Windows di consentire Tor. Per un corretto funzionamento, daremo il consenso a Tor.
 
-A bootstrap terminato, cliccando sull'apposito pulsante, viene attivata la WinDivert a livello di sistema, e tutta la connessione verrà redirezionata su Tor.
+A bootstrap terminato, cliccando sull'apposito pulsante, viene attivata la WinDivert, e tutta la connessione verrà redirezionata su Tor.
 
 Su Windows 7:
 
@@ -63,3 +63,37 @@ Su Windows 7:
 Su Windows 10:
 
 ![Alt text](https://github.com/randomtable/Sec/blob/master/win10.png)
+
+Questo procedimento permette di rimanere sicuri, in quanto a livello di sistema non abbiamo possibilità che altri possano connettersi direttamente alla macchina.
+
+A livello di rete, Tor effettua uno scambio di messaggi cifrato, facendo rimbalzare la connessione su nodi esterni, impedendo che informazioni "in chiaro" possano essere sniffate dal router compromesso.
+
+non basta un firewall più robusto e HTTPS?
+
+Per quanto riguarda il Firewall, non è un problema di cosa si usa, ma la logica di tali sistemi, ovvero per avere una sicurezza adeguata si dovrebbe usare un IDS/IPS ben configurato, che è ben diverso dall'avere il semplice Firewall attivo sulla macchina.
+
+Per evitare problemi, quindi, su una rete compromessa è meglio utilizzare una logica "acceso/spento", ovvero bloccare tutte le connessioni in ingresso.
+
+Per quanto riguarda HTTPS, purtroppo i fattori in gioco sono molteplici se consideriamo che la rete di riferimento è compromessa.
+
+Un browser, nella sua fase iniziale, scambia delle informazioni con il server, per decidere quale sia la cifratura ottimale e disponibile.
+
+Se i software non sono perfettamente aggiornati, e se ci si connette ad un sito che non utilizza configurazioni ottimali, il risultato sarà disastroso, in quanto è come non avere nessuna sicurezza (algoritmi di cifratura obsoleti, certificati non correttamente settati, server non correttamente configurati... provate ad effettuare un test su SSLLabs inserendo qualche istituto bancario... avrete belle sorprese).
+
+Detto questo, dato che non dipende totalmente dalla nostra connessione o computer, Tor permette di risolvere il problema senza dover fare affidamento a "variabili esterne".
+
+E' tutto oro quello che luccica?
+
+Assolutamente no! HTTPS è un tassello importante, nonostante gli svantaggi che può presentare.
+
+Utilizzare Tor e connettersi ad un sito senza HTTPS vuol dire che tutte le informazioni possono essere lette dal cosiddetto "Exit Node", ovvero l'ultimo nodo che permette di "atterrare" effettivamente sul sito/server/servizio che vogliamo accedere.
+
+Inoltre, questo approccio non è votato all'anonimato, permette solo di mantenere un livello di sicurezza adeguato su una rete compromessa.
+
+Inoltre, l'utilizzo di Tor viene bloccato a volte da alcuni servizi o siti.
+
+Diverso è, ovviamente, l'utilizzo di un Hidden Service.
+
+Per gli Hidden Service Tor utilizza un protocollo di cifratura end-to-end, e non è richiesto (anzi, in alcuni casi potrebbe essere pericoloso) l'utilizzo di HTTPS su di un Hidden Service.
+
+In conclusione questa può essere una soluzione al problema, ma comunque consiglio sempre di ragionare bene, per "risolvere" il problema e non "spostarlo".
