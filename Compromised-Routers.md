@@ -24,16 +24,3 @@ Cominciamo quindi a "mettere in sicurezza" il sistema.
 
 Per farlo possiamo utilizzare sia il firewall di windows, sia gli strumenti messi a disposizione da "Security Policies" (secpol.msc).
 
-In questa guida utilizzerò secpol.msc
-
-Perchè secpol:
-
-Il Firewall di Windows ha tutte le potenzialità per il raggiungimento dello scopo, ma data la "dinamicità" di alcuni software, e data anche la possibilità maggiore di errore da parte dell'utente, preferisco utilizzare delle regole più "rigide" rispetto al firewall di windows.
-
-Cominciamo, quindi, con impostare su secpol.msc solo le porte necessarie alla navigazione:
-
-Andiamo su "Start", digitiamo "secpol.msc" ed entriamo sul pannello:
-
-![Alt text](https://github.com/randomtable/Sec/blob/master/Compromised-Routers/imgs/1.png)
-
-Andiamo su "criteri di sicurezza IP su computer locale"
