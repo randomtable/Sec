@@ -1,0 +1,4 @@
+# Tallow default torrc file.
+GeoIPFile "geoip"
+GeoIPv6File "geoip6"
+
